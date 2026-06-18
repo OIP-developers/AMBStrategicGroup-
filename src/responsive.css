@@ -15,10 +15,10 @@
   /* ── Navbar ── */
   .navbar               { padding: 1.56vw 0; }
   .navbar--scrolled     { padding: 0.94vw 0; }
-  .navbar__logo-img     { width: 11.46vw; }
+  .navbar__logo-img     { width: 14.063vw; }
   .navbar__nav          { gap: 4.32vw; }
   .navbar__link         { font-size: 0.83vw; line-height: 0.9896vw; }
-  .navbar__cta          { gap: 0.52vw; padding: 0.78vw 1.30vw; font-size: 0.73vw; border-radius: 0.36vw; }
+  .navbar__cta          { gap: 0.52vw; padding: 0.78vw 1.30vw; font-size: 0.73vw; border-radius: 0.36vw;    line-height: 0.938vw; }
   .navbar__cta-icon     { width: 0.31vw; height: 0.47vw; }
   .navbar--scrolled     { box-shadow: 0 0.10vw 1.04vw rgba(0,0,0,0.5); }
   .navbar__link         { gap: 0.36vw; }
