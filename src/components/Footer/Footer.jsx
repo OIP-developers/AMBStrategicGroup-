@@ -16,10 +16,10 @@ const navLinks = [
 ]
 
 const socialIcons = [
-  { label: 'Facebook',  img: facebookIcon, href: 'https://www.facebook.com'        },
-  { label: 'Instagram', img: instaIcon,     href: 'https://www.instagram.com'       },
-  { label: 'LinkedIn',  img: linkedIcon,    href: 'https://www.linkedin.com'        },
-  { label: 'X',         img: xIcon,         href: 'https://www.x.com'               },
+  { label: 'Facebook',  img: facebookIcon, href: 'https://www.facebook.com/profile.php?id=61590599206805' },
+  { label: 'Instagram', img: instaIcon,     href: 'https://www.instagram.com/ambstrategicgroup/' },
+  // { label: 'LinkedIn',  img: linkedIcon,    href: 'https://www.linkedin.com'        },
+  // { label: 'X',         img: xIcon,         href: 'https://www.x.com'               },
 ]
 
 export default function Footer() {
@@ -63,8 +63,8 @@ export default function Footer() {
             <div className="footer__right">
               <div className="footer__info-block">
                 <h4 className="footer__info-title">Contact Us</h4>
-                <a href="tel:+19998887766" className="footer__info-text footer__info-text--mb">+1 (999) 888-77-66</a>
-                <a href="mailto:info@ambstrategicgroup.com" className="footer__info-text">ambstrategicgroup.com</a>
+                <a href="tel:+19998887766" className="footer__info-text footer__info-text--mb">+1 (999) 888-77-66</a><br/>
+                <a href="mailto:info@ambstrategicgroup.com" className="footer__info-text">info@ambstrategicgroup.com</a>
               </div>
               <div className="footer__info-block">
                 <h4 className="footer__info-title">Location</h4>

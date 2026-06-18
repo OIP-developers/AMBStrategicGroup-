@@ -161,7 +161,7 @@
   border-radius: 20px;
 }
 
-.getstarted__form-box-wrap::before {
+/* .getstarted__form-box-wrap::before {
   content: '';
   position: absolute;
   inset: 0;
@@ -178,7 +178,7 @@
   mask-composite: exclude;
   pointer-events: none;
   z-index: 1;
-}
+} */
 
 /* Inner box clips iframe corners */
 .getstarted__form-box {
@@ -186,6 +186,6 @@
   width: 100%;
   height: 854px;
   background: transparent;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   overflow: hidden;
 }

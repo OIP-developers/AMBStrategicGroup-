@@ -311,8 +311,10 @@
   .getstarted__contact-icon-wrap::before { border-radius: 0.12vw; padding: 0.05vw; }
   .getstarted__contact-icon       { width: 0.99vw; height: 0.99vw; }
   .getstarted__contact-text       { font-size: 0.83vw; }
-  .getstarted__form-box           { height: 44.48vw; border-radius: 1.04vw; backdrop-filter: blur(6.51vw); }
-  .getstarted__form-box-wrap::before { border-radius: 1.04vw; padding: 0.052vw; }
+  .getstarted__form-box           { height: 48.48vw; 
+                                    /* border-radius: 1.04vw;  */
+                                    backdrop-filter: blur(6.51vw); }
+  /* .getstarted__form-box-wrap::before { border-radius: 1.04vw; padding: 0.052vw; } */
 
   /* ── Footer ── */
   .footer::after          { height: 41.67vw; }
@@ -780,7 +782,10 @@
   .getstarted__card   { padding: 0; gap: 20px; }
   .getstarted__left   { width: 100%; padding-top: 20px; order: 1; }
   .getstarted__form-box-wrap { border-radius: 16px; }
-  .getstarted__form-box { height: 950px; border-radius: 16px; }
+  .getstarted__form-box { 
+                           height: 950px; 
+                           /* border-radius: 16px;  */
+                        }
   .getstarted__title  { font-size: 34px; }
   .getstarted__desc   { font-size: 15px; padding: 16px 0 30px; }
   .getstarted__contacts { gap: 16px; }
@@ -904,7 +909,10 @@
 
   .getstarted         { padding: 30px 0 50px; }
   .getstarted__card   { padding: 0; gap: 20px; }
-  .getstarted__form-box { height: 1050px; border-radius: 14px; }
+  .getstarted__form-box { 
+                           height: 1050px; 
+                           /* border-radius: 14px;  */
+                        }
   .getstarted__title  { font-size: 24px; }
   .getstarted__desc   { font-size: 14px; padding: 14px 0 24px; }
   .getstarted__contacts { gap: 14px; }

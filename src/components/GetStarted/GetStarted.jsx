@@ -45,7 +45,7 @@ export default function GetStarted() {
                 <div className="getstarted__contact-icon-wrap">
                   <img src={emailIcon} alt="" className="getstarted__contact-icon" />
                 </div>
-                <span className="getstarted__contact-text">ambstrategicgroup.com</span>
+                <span className="getstarted__contact-text">info@ambstrategicgroup.com</span>
               </a>
               <div className="getstarted__contact-item">
                 <div className="getstarted__contact-icon-wrap">
