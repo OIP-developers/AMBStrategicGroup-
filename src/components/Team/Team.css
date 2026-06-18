@@ -1,0 +1,117 @@
+.team {
+  padding: 100px 0;
+  background: var(--color-white);
+}
+
+.team__header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.team__header .section-subtitle {
+  margin: 0 auto;
+}
+
+.team__header .section-tag,
+.team__header .section-title {
+  display: block;
+  text-align: center;
+}
+
+.team__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+
+/* Team Card */
+.team-card {
+  background: var(--color-light);
+  border: 1px solid var(--color-gray-light);
+  border-radius: var(--radius-lg);
+  padding: 36px 24px;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.team-card:hover {
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+
+.team-card__avatar {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+}
+
+.team-card__initials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  border-radius: 50%;
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  position: relative;
+  z-index: 1;
+}
+
+.team-card__avatar-ring {
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background: linear-gradient(var(--color-light), var(--color-light)) padding-box,
+              linear-gradient(135deg, var(--color-accent), transparent) border-box;
+  transition: var(--transition);
+}
+
+.team-card:hover .team-card__avatar-ring {
+  background: linear-gradient(var(--color-light), var(--color-light)) padding-box,
+              linear-gradient(135deg, var(--color-accent), var(--color-accent-light)) border-box;
+}
+
+.team-card__name {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 4px;
+}
+
+.team-card__role {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.team-card__bio {
+  font-size: 0.84rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+@media (max-width: 992px) {
+  .team__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .team__grid {
+    grid-template-columns: 1fr;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+}

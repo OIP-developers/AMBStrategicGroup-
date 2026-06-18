@@ -1,0 +1,114 @@
+.our-model {
+  padding: 60px 0px;
+  background: #000000;
+}
+
+.our-model__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.our-model__star {
+  width: 77px;
+  height: auto;
+  padding-bottom: 28px;
+}
+
+.our-model__title {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 118%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.our-model__desc {
+  width: 860px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 180%;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 20px 0 65px;
+  margin: 0;
+}
+
+/* ── Cards row ── */
+.our-model__cards {
+  display: flex;
+  gap: 30px;
+}
+
+.our-model__card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 40px 38px;
+  background: linear-gradient(168.65deg, rgba(0, 0, 0, 0.5) -2.45%, rgba(22, 22, 22, 0.5) 102.09%);
+  backdrop-filter: blur(22.5px);
+  border-radius: 20px;
+  will-change: transform;
+  transition: transform 0.4s ease;
+}
+
+.our-model__card:hover {
+  transform: scale(1.04) translateZ(0);
+}
+
+.our-model__card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 1px;
+  background: linear-gradient(167.12deg, rgba(255, 0, 191, 0.4) -9.1%, rgba(0, 142, 249, 0.4) 104.68%);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.our-model__card-label {
+  width: 260px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 140%;
+  color: #FFFFFF;
+  text-align: left;
+}
+
+.our-model__card-icon {
+  width: 68px;
+  height: auto;
+}
+
+/* ── Bottom tagline ── */
+.our-model__tagline {
+  width: 583px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 160%;
+  text-align: center;
+  color: #FFFFFF;
+  padding-top: 70px;
+  margin: 0;
+}

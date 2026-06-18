@@ -1,0 +1,120 @@
+.our-philosophy {
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.our-philosophy__container {
+  max-width: 1470px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.our-philosophy__inner {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+/* ── Left ── */
+.our-philosophy__left {
+  flex-shrink: 0;
+}
+
+.our-philosophy__title {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 118%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 0;
+  padding-bottom: 21px;
+}
+
+.our-philosophy__desc {
+  width: 499px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 150%;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+/* ── Right ── */
+.our-philosophy__right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.our-philosophy__star-wrap {
+  position: relative;
+  width: 515px;
+  height: 513px;
+}
+
+.our-philosophy__star {
+  width: 515px;
+  height: auto;
+  display: block;
+}
+
+/* ── Badges ── */
+.our-philosophy__badge {
+  position: absolute;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+  padding: 15px 25px;
+  border-radius: 100px;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  white-space: nowrap;
+}
+
+.our-philosophy__badge::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 100px;
+  padding: 1px;
+  background: linear-gradient(274.18deg, #FF00BF 1%, #008EF9 92.32%);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* Badge positions */
+.badge--cleaner {
+  top: 42%;
+  left: -140px;
+}
+
+.badge--ownership {
+  bottom: 32%;
+  left: -64px;
+}
+
+.badge--ai {
+  top: 22%;
+  right: -80px;
+}
+
+.badge--smarter {
+  top: 37%;
+  right: -82px;
+}

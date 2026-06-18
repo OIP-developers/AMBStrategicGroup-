@@ -1,0 +1,250 @@
+.packages {
+  padding: 30px 0px 180px;
+  background: #000000;
+}
+
+/* Header with image + title */
+.packages__header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 50px;
+}
+
+.packages__hero-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  mix-blend-mode: screen;
+}
+
+/* Title */
+.packages__title {
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 118%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* Cards Row */
+.packages__cards {
+  display: flex;
+  gap: 30px;
+  align-items: stretch;
+  margin: 0 auto;
+  padding-top: 90px;
+}
+
+/* Card */
+.pkg-card {
+  flex: 1;
+  position: relative;
+  background: #0D0D14;
+  border-radius: 16px;
+  padding: 55px 30px 30px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pkg-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  padding: 1px;
+  background: linear-gradient(285.07deg, rgba(0, 142, 249, 0.4) 1.32%, rgba(255, 0, 191, 0.4) 85.77%);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* Center card bg image */
+.pkg-card--popular::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  background-image: url('/src/imagesfolder/Packages/packagescenterbox.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.pkg-card--popular > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Most Popular Badge */
+.pkg-card__badge {
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 139.42%;
+  color: #FFFFFF;
+  padding: 11.2058px 23.5322px;
+  background: linear-gradient(90deg, #008EF9 0%, #FF00BF 100%);
+  border-radius: 62.7524px;
+  white-space: nowrap;
+}
+
+/* Header */
+.pkg-card__header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 0;
+}
+
+.pkg-card__icon {
+  width: 30px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.pkg-card__title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44.3077px;
+  line-height: 123.76%;
+  color: #FFFFFF;
+}
+
+/* Description */
+.pkg-card__desc {
+  width: 400px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #FFFFFF;
+  padding: 27px 0px 45px;
+}
+
+/* Talk To Us Button */
+.pkg-card__btn {
+  display: inline-flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 13px;
+  width: 100%;
+  padding: 14px 20px;
+  border-radius: 8px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #FFFFFF;
+  background: linear-gradient(101.72deg, rgba(255,0,191,0) 1.23%, rgba(0,142,249,0) 94.61%);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 32px;
+  transition: background 0.4s ease, border-color 0.4s ease;
+}
+
+.pkg-card__btn:hover {
+  background: linear-gradient(101.72deg, #FF00BF 1.23%, #008EF9 94.61%);
+  border-color: transparent;
+}
+
+.pkg-card__btn--popular {
+  background: linear-gradient(101.72deg, #FF00BF 1.23%, #008EF9 50%, #FF00BF 100%);
+  background-size: 200% 100%;
+  background-position: 0% 0%;
+  border: none;
+  transition: background-position 0.4s ease;
+}
+
+.pkg-card__btn--popular:hover {
+  background-position: 100% 0%;
+}
+
+.pkg-card__btn-icon {
+  width: 6px;
+  height: 9px;
+  object-fit: contain;
+}
+
+/* Features List */
+.pkg-card__features {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  flex: 1;
+  margin-bottom: 0;
+  list-style: none;
+  padding: 0;
+  margin-left: 0;
+}
+
+.pkg-card__feature {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #FFFFFF;
+}
+
+.pkg-card__check {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+/* Timeline */
+.pkg-card__timeline {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 150%;
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: auto;
+  padding-top: 70px;
+}
+
+/* Footer Note */
+.packages__note {
+  width: 90%;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+  color: #B8B8B8;
+  padding-top: 56px;
+  margin: 0 auto;
+  text-align: center;
+}

@@ -1,0 +1,206 @@
+.bsection {
+  padding: 80px 0;
+  background: #000000;
+}
+
+/* ── Header ── */
+.bsection__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 80px;
+}
+
+.bsection__star {
+  width: 50px;
+  height: auto;
+  margin-bottom: 20px;
+  animation: bsectionStarSpin 8s linear infinite;
+  transform-origin: center center;
+}
+
+@keyframes bsectionStarSpin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.bsection__title {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 123.76%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-align: center;
+  margin: 0;
+}
+
+/* ── Rows ── */
+.bsection__row {
+  display: flex;
+  gap: 24px;
+}
+
+.bsection__row--top {
+  margin-bottom: 24px;
+}
+
+.bsection__row--bottom {
+  justify-content: center;
+}
+
+/* ── Card base ── */
+.bsection__card {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(168.65deg, rgba(0, 0, 0, 0.8) -2.45%, rgba(22, 22, 22, 0.9) 102.09%);
+  backdrop-filter: blur(22.5px);
+  border-radius: 20px;
+  padding: 30px 30px;
+  overflow: hidden;
+}
+
+.bsection__card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 1px;
+  background: linear-gradient(167.12deg, rgba(255, 0, 191, 0.4) -9.1%, rgba(0, 142, 249, 0.4) 104.68%);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* Bottom 2 cards — flex row: text left, image right */
+.bsection__card--bottom {
+  flex: 0 0 calc(50% - 12px);
+  max-width: calc(50% - 12px);
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  padding: 0px 30px;
+}
+
+.bsection__card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Card header (title + optional star) ── */
+.bsection__card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.bsection__card-title {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin: 0;
+  padding-bottom: 17px;
+}
+
+.bsection__card-star {
+  width: 30px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+/* ── Card description ── */
+.bsection__card-desc {
+  width: 403px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+/* ── Card image — top 3 ── */
+.bsection__card-img-wrap {
+  display: flex;
+  justify-content: center;
+  padding-top: 24px;
+}
+
+/* Sirf center card (AI Automation) ki image bottom border se chipki */
+.bsection__row--top .bsection__card:nth-child(2) .bsection__card-img-wrap {
+  margin-top: auto;
+  margin-bottom: -30px;
+  padding-top: 0;
+}
+
+.bsection__card-img {
+  width: 334px;
+  height: 211px;
+  object-fit: contain;
+}
+
+/* ── Card image — bottom 2 ── */
+.bsection__card-img-wrap--program,
+.bsection__card-img-wrap--strategic {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 0;
+}
+
+.bsection__card-img--bottom {
+  width: 220px;
+  height: 200px;
+  object-fit: contain;
+}
+
+/* ── Book Consultation CTA ── */
+.bsection__cta {
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+.bsection__cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+  padding: 15px 25px;
+  background: linear-gradient(101.72deg, #FF00BF 1.23%, #008EF9 50%, #FF00BF 100%);
+  background-size: 200% 100%;
+  background-position: 0% 0%;
+  border-radius: 7px;
+  transition: background-position 0.4s ease;
+}
+
+.bsection__cta-btn:hover {
+  background-position: 100% 0%;
+}
+
+.bsection__cta-icon {
+  width: 13.5px;
+  height: 13.5px;
+  object-fit: contain;
+}

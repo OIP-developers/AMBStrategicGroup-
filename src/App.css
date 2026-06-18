@@ -1,0 +1,17 @@
+/* App-level styles */
+
+.hero-wrapper {
+  position: relative;
+}
+
+.hero-wrapper::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('/src/imagesfolder/headersection/headersectionmask.png');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  z-index: 0;
+}

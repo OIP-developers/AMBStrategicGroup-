@@ -1,0 +1,72 @@
+.faqs-banner {
+  position: relative;
+  padding: 140px 0 0;
+}
+
+.faqs-banner__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Badge */
+.faqs-banner__badge {
+  position: relative;
+  display: inline-block;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+  padding: 15px 25px;
+  border-radius: 100px;
+  background: transparent;
+}
+
+.faqs-banner__badge::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 100px;
+  padding: 1px;
+  background: linear-gradient(274.18deg, #FF00BF 1%, #008EF9 92.32%);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* Title */
+.faqs-banner__title {
+  width: 757px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 122.01%;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 30px 0 49px;
+  margin: 0;
+}
+
+/* Description */
+.faqs-banner__desc {
+  width: 680px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 146%;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0;
+}

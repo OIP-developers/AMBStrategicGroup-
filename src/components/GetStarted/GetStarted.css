@@ -1,0 +1,191 @@
+.getstarted {
+  padding: 50px 0px 50px;
+  background: #000000;
+}
+
+/* Outer card with gradient border */
+.getstarted__card {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px 60px 40px 90px;
+  border-radius: 20px;
+  background: transparent;
+  backdrop-filter: none;
+}
+
+.getstarted__card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 1px;
+  background: linear-gradient(167.12deg, #FF00BF -9.1%, #008EF9 104.68%);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* Left */
+.getstarted__left {
+  flex-shrink: 0;
+  width: 534px;
+  padding-top: 140px;
+}
+
+.getstarted__title-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.getstarted__title {
+  width: 534px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 111%;
+  color: #FFFFFF;
+}
+
+.getstarted__star {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  width: 150px;
+  height: auto;
+  animation: starSpin 8s linear infinite;
+  transform-origin: center center;
+}
+
+@keyframes starSpin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.getstarted__desc {
+  width: 534px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 139.42%;
+  color: #B8B8B8;
+  padding: 23px 0px 70px;
+}
+
+/* Contact items */
+.getstarted__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+}
+
+.getstarted__contact-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.getstarted__contact-icon-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background: linear-gradient(168.65deg, rgba(0, 0, 0, 0.8) -2.45%, rgba(22, 22, 22, 0.9) 102.09%);
+  backdrop-filter: blur(25.35px);
+  border-radius: 2.25333px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.getstarted__contact-item:hover .getstarted__contact-icon-wrap {
+  transform: translateY(-4px) scale(1.12);
+  background: linear-gradient(135deg, #FF00BF 0%, #008EF9 100%);
+  box-shadow: 0 8px 24px rgba(255, 0, 191, 0.35), 0 4px 12px rgba(0, 142, 249, 0.25);
+}
+
+.getstarted__contact-item:hover .getstarted__contact-icon-wrap img {
+  filter: brightness(1.3);
+}
+
+.getstarted__contact-icon-wrap::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 2.25333px;
+  padding: 1px;
+  background: linear-gradient(167.12deg, #FF00BF -9.1%, #008EF9 104.68%);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.getstarted__contact-icon {
+  width: 19px;
+  height: 19px;
+  object-fit: contain;
+}
+
+.getstarted__contact-text {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 139.42%;
+  color: #FFFFFF;
+}
+
+/* Right - Form */
+.getstarted__right {
+  flex: 1;
+}
+
+/* Wrapper holds the gradient border */
+.getstarted__form-box-wrap {
+  position: relative;
+  border-radius: 20px;
+}
+
+.getstarted__form-box-wrap::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 1px;
+  background: linear-gradient(167.12deg, #FF00BF -9.1%, #008EF9 104.68%);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Inner box clips iframe corners */
+.getstarted__form-box {
+  position: relative;
+  width: 100%;
+  height: 854px;
+  background: transparent;
+  border-radius: 20px;
+  overflow: hidden;
+}

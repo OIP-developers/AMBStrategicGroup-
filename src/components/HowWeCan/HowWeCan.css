@@ -1,0 +1,138 @@
+.howwecan {
+  padding: 115px 0px 100px;
+  background: #000000;
+}
+
+/* Top Row */
+.howwecan__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 60px;
+  margin-bottom: 55px;
+}
+
+.howwecan__title {
+  width: 629px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 46px;
+  line-height: 122%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  flex-shrink: 0;
+}
+
+.howwecan__desc {
+  width: 650px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 180%;
+  color: #FFFFFF;
+}
+
+/* Cards Row */
+.howwecan__cards {
+  display: flex;
+  gap: 30px;
+}
+
+/* Card */
+.hwc-card {
+  flex: 1;
+  position: relative;
+  padding: 50px 40px 38px 40px;
+  border-radius: 16px;
+  box-shadow:
+    0px 5px 10px rgba(0, 0, 0, 0.05),
+    0px 15px 30px rgba(0, 0, 0, 0.15),
+    0px 20px 40px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+}
+
+.hwc-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  padding: 2px;
+  background: linear-gradient(285.07deg, rgba(0, 142, 249, 0.5) 1.32%, rgba(255, 0, 191, 0.5) 85.77%);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.hwc-card__title {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 118%;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.hwc-card__img {
+  width: 391px;
+  height: 155.18px;
+  object-fit: contain;
+  margin-bottom: 65px;
+  align-self: flex-end;
+}
+
+.hwc-card__desc {
+  width: 450px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #FFFFFF;
+  margin-bottom: 55px;
+  flex: 1;
+}
+
+/* Learn More Button */
+.hwc-card__btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background: linear-gradient(145.3deg, #19161B 15.17%, rgba(11, 12, 19, 0.3) 97.65%);
+  box-shadow:
+    0px 5px 10px rgba(0, 0, 0, 0.05),
+    0px 15px 30px rgba(0, 0, 0, 0.15),
+    0px 20px 40px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  transition: opacity 0.25s ease;
+}
+
+.hwc-card__btn:hover {
+  opacity: 0.8;
+}
+
+.hwc-card__btn-icon {
+  width: 6px;
+  height: 9px;
+  object-fit: contain;
+  flex-shrink: 0;
+}

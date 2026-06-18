@@ -1,0 +1,126 @@
+.whatwedo {
+  padding: 60px 0px 180px;
+  background: #000000;
+  position: relative;
+}
+
+.whatwedo__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.whatwedo__star {
+  width: 77px;
+  height: auto;
+  padding-bottom: 28px;
+  animation: whatwedoStarSpin 8s linear infinite;
+  transform-origin: center center;
+}
+
+@keyframes whatwedoStarSpin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.whatwedo__title {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 118%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.whatwedo__desc {
+  width: 860px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 180%;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 20px 0 65px;
+  margin: 0;
+}
+
+/* ── Cards row ── */
+.whatwedo__cards {
+  display: flex;
+  gap: 30px;
+}
+
+.whatwedo__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 22px 30px;
+  background: linear-gradient(168.65deg, rgba(0, 0, 0, 0.5) -2.45%, rgba(22, 22, 22, 0.5) 102.09%);
+  backdrop-filter: blur(22.5px);
+  border-radius: 20px;
+  will-change: transform;
+  transition: transform 0.4s ease;
+}
+
+.whatwedo__card:hover {
+  transform: scale(1.04) translateZ(0);
+}
+
+.whatwedo__card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 1px;
+  background: linear-gradient(167.12deg, rgba(255, 0, 191, 0.4) -9.1%, rgba(0, 142, 249, 0.4) 104.68%);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.whatwedo__card-number {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 140%;
+  background: linear-gradient(163.5deg, #FFFFFF 21.41%, #008EF9 104.63%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.whatwedo__card-label {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #FFFFFF;
+  text-align: left;
+  margin-top: 8px;
+}
+
+/* ── Bottom tagline ── */
+.whatwedo__tagline {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 160%;
+  text-align: center;
+  color: #FFFFFF;
+  padding-top: 70px;
+  margin: 0;
+}

@@ -1,0 +1,205 @@
+.hero {
+  position: relative;
+  padding: 146px 0px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: transparent;
+}
+
+/* Left & Right sparkle images */
+.hero__side-img {
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+  width: 450px;
+  height: 580px;
+  object-fit: cover;
+}
+
+.hero__side-img--left {
+  left: 0px;
+  bottom: 120px;
+  animation: floatLeft 6s ease-in-out infinite;
+}
+
+.hero__side-img--right {
+  right: 0;
+  top: 0;
+  animation: floatRight 6s ease-in-out infinite;
+}
+
+@keyframes floatLeft {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(18px); }
+}
+
+@keyframes floatRight {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-18px); }
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to right, rgba(0,0,0,0.75) 0%, transparent 12%, transparent 88%, rgba(0,0,0,0.75) 100%),
+    linear-gradient(to bottom, transparent 70%, #000000 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Center content */
+.hero__content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Badge */
+.hero__badge {
+  position: relative;
+  display: inline-block;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+  padding: 15px 25px;
+  border-radius: 100px;
+  background: transparent;
+}
+
+.hero__badge::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 100px;
+  padding: 1px;
+  background: linear-gradient(274.18deg, #FF00BF 1%, #008EF9 92.32%);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* Heading */
+.hero__title {
+  width: 943px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 122.01%;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 50px 0px 35px;
+}
+
+/* Description */
+.hero__desc {
+  width: 763px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 146%;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/* Button */
+.hero__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+  padding: 15px 25px;
+  background: linear-gradient(101.72deg, #FF00BF 1.23%, #008EF9 50%, #FF00BF 100%);
+  background-size: 200% 100%;
+  background-position: 0% 0%;
+  border-radius: 7px;
+  margin-top: 56px;
+  margin-bottom: 150px;
+  transition: background-position 0.4s ease;
+}
+
+.hero__btn:hover {
+  background-position: 100% 0%;
+}
+
+.hero__btn-icon {
+  width: 13.5px;
+  height: 13.5px;
+  object-fit: contain;
+}
+
+/* Practitioner text */
+.hero__practitioner {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 122.01%;
+  text-align: center;
+  letter-spacing: -0.04em;
+  color: #FFFFFF;
+  margin-top: 0;
+}
+
+.hero__practitioner-gradient {
+  background: linear-gradient(90deg, #FF00BF 0%, #008EF9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Partner logos marquee */
+.hero__logos-wrap {
+  margin-top: 1.72vw;
+  width: 52.08vw;
+  overflow: hidden;
+  -webkit-mask: linear-gradient(to right, transparent 0%, #000 28%, #000 72%, transparent 100%);
+  mask: linear-gradient(to right, transparent 0%, #000 28%, #000 72%, transparent 100%);
+}
+
+.hero__logos-track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  animation: logoMarquee 40s linear infinite;
+}
+
+.hero__logo-item {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 0.94vw;
+  color: #FFFFFF;
+  white-space: nowrap;
+  flex-shrink: 0;
+  padding: 0 1.56vw;
+  letter-spacing: 0.01em;
+}
+
+@keyframes logoMarquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-33.33%); }
+}
