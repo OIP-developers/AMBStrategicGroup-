@@ -9,7 +9,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url('/src/imagesfolder/aboutsection/aboutsectionbg.png');
+  background-image: url('/src/imagesfolder/aboutsection/aboutsectionbg.webp');
   background-size: cover;
   background-position: 100% -60%;
   background-repeat: no-repeat;
