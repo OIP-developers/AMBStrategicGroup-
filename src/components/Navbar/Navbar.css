@@ -87,10 +87,10 @@
   opacity: 1;
 }
 
-.navbar__link:hover .navbar__link-text::after,
+/* .navbar__link:hover .navbar__link-text::after,
 .navbar__link--active .navbar__link-text::after {
   transform: scaleX(1);
-}
+} */
 
 /* CTA Button */
 .navbar__cta {
