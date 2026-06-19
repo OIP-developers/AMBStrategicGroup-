@@ -10,8 +10,8 @@ const logos = [
   'HSBC',
   'Bank of America',
   'United Bank',
-  'Deloitte',
-  'McKinsey & Co',
+  // 'Deloitte',
+  // 'McKinsey & Co',
 ]
 
 export default function Hero() {
