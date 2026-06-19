@@ -13,7 +13,7 @@ export default function AboutBanner() {
       <div className="container">
         <div className="about-banner__content">
 
-          <span className="about-banner__badge">About Us 12</span>
+          <span className="about-banner__badge">About Us</span>
 
           <h1 className="about-banner__title">AMB Strategic Group</h1>
 
