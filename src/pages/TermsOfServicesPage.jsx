@@ -151,7 +151,7 @@ export default function TermsOfServicesPage() {
               <p>AMB Strategic Group</p>
               <p>Website: <a href="https://www.ambstrategicgroup.com">www.ambstrategicgroup.com</a></p>
               <p>Email: <a href="mailto:info@ambstrategicgroup.com">info@ambstrategicgroup.com</a></p>
-              <p>Address: 1209 Barton Springs Rd Texas, Austin, United States</p>
+              <p>Address: Teaneck, New Jersey, United States</p>
             </div>
           </div>
 

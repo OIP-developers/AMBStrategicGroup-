@@ -35,11 +35,11 @@ export default function GetStarted() {
             </p>
 
             <div className="getstarted__contacts">
-              <a href="tel:+12345678910" className="getstarted__contact-item">
+              <a href="tel:+19292635128" className="getstarted__contact-item">
                 <div className="getstarted__contact-icon-wrap">
                   <img src={phoneIcon} alt="" className="getstarted__contact-icon" />
                 </div>
-                <span className="getstarted__contact-text">+12 3456789 10</span>
+                <span className="getstarted__contact-text">+1 929-263-5128</span>
               </a>
               <a href="mailto:info@ambstrategicgroup.com" className="getstarted__contact-item">
                 <div className="getstarted__contact-icon-wrap">
@@ -51,7 +51,7 @@ export default function GetStarted() {
                 <div className="getstarted__contact-icon-wrap">
                   <img src={locationIcon} alt="" className="getstarted__contact-icon" />
                 </div>
-                <span className="getstarted__contact-text">1209 Barton Springs Rd Texas, Austin, United States</span>
+                <span className="getstarted__contact-text">Teaneck, New Jersey, United States</span>
               </div>
             </div>
           </div>
@@ -62,7 +62,7 @@ export default function GetStarted() {
             <div className="getstarted__form-box">
               <iframe
                 src="https://api.leadconnectorhq.com/widget/form/KFInBiyxT7Ueg4h2tZhK"
-                style={{ width: '100%', height: '100%', border: 'none' }}
+                style={{ width: '100%', border: 'none' }}
                 id="inline-KFInBiyxT7Ueg4h2tZhK"
                 data-layout="{'id':'INLINE'}"
                 data-trigger-type="alwaysShow"

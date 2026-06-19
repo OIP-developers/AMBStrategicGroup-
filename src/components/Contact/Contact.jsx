@@ -9,7 +9,7 @@ const contactInfo = [
       </svg>
     ),
     label: 'Office',
-    value: 'Level 12, Blue Area Tower\nIslamabad, Pakistan',
+    value: 'Teaneck, New Jersey\nUnited States',
   },
   {
     icon: (
@@ -27,7 +27,7 @@ const contactInfo = [
       </svg>
     ),
     label: 'Phone',
-    value: '+92 51 123 4567\n+92 21 987 6543',
+    value: '+1 929-263-5128',
   },
 ]
 

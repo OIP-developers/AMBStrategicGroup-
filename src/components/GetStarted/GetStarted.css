@@ -9,7 +9,7 @@
   display: flex;
   align-items: flex-start;
   gap: 40px;
-  padding: 40px 60px 40px 90px;
+  padding: 40px 60px 60px 90px;
   border-radius: 20px;
   background: transparent;
   backdrop-filter: none;
@@ -161,31 +161,11 @@
   border-radius: 20px;
 }
 
-/* .getstarted__form-box-wrap::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: 20px;
-  padding: 1px;
-  background: linear-gradient(167.12deg, #FF00BF -9.1%, #008EF9 104.68%);
-  -webkit-mask:
-    linear-gradient(#fff 0 0) content-box,
-    linear-gradient(#fff 0 0);
-  mask:
-    linear-gradient(#fff 0 0) content-box,
-    linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  pointer-events: none;
-  z-index: 1;
-} */
-
-/* Inner box clips iframe corners */
+/* Inner box — height auto, let form_embed.js set iframe height */
 .getstarted__form-box {
   position: relative;
   width: 100%;
-  height: 854px;
+  height: auto;
   background: transparent;
-  /* border-radius: 20px; */
-  overflow: hidden;
+  overflow: visible;
 }
