@@ -22,7 +22,7 @@
   left: 0;
   width: 100%;
   height: 800px;
-  background-image: url('/src/imagesfolder/footersection/footermask.webp');
+  background-image: url('../../imagesfolder/footersection/footermask.webp');
   background-size: cover;
   background-position: bottom center;
   background-repeat: no-repeat;
@@ -229,14 +229,16 @@
 .footer__bottom {
   position: relative;
   z-index: 1;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 60px 0px 50px;
+  padding: 0px 0px 50px;
 }
+
 
 .footer__bottom .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 60px;
 }
 
 .footer__copy {
