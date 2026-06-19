@@ -510,16 +510,16 @@
   .faqs__desc         { width: 80%; font-size: 17px; margin: 0 auto; }
   .faq-item__answer   { width: 100%; }
 
-  .getstarted__card   { flex-direction: column; padding: 40px 20px; gap: 0; }
+  .getstarted__card   { flex-direction: column; padding: 40px 20px; gap: 60px; }
   .getstarted__form-box-wrap::before { display: none; }
-  .getstarted__left   { width: 100%; padding-top: 40px; order: 1; }
+  .getstarted__left   { width: 100%; padding-top: 0; order: 1; }
   .getstarted__right  { order: -1; width: 100%; }
   .getstarted__title  { font-size: 36px; width: 100%; }
   .getstarted__desc   { width: 100%; font-size: 15px; padding: 20px 0 50px; }
   .getstarted__star   { position: relative; top: auto; right: auto; width: 100px; }
   .getstarted__title-wrap { display: flex; align-items: flex-start; gap: 16px; }
   .getstarted__contacts { flex-direction: column; gap: 20px; }
-  .getstarted__form-box { height: 950px; }
+  .getstarted__form-box { height: auto; }
 
   .footer__main       { padding: 70px 0 63px; }
   .footer__row1       { flex-direction: column; gap: 50px; margin-bottom: 50px; }
@@ -653,10 +653,10 @@
   .faqs__desc         { font-size: 16px; }
   .faq-item__question { font-size: 16px; }
 
-  .getstarted__card   { padding: 30px 20px; }
+  .getstarted__card   { padding: 30px 20px; gap: 60px; }
   .getstarted__title  { font-size: 35px; }
-  .getstarted__left   { width: 100%; padding-top: 50px; order: 1; }
-  .getstarted__form-box { height: 950px; }
+  .getstarted__left   { width: 100%; padding-top: 0; order: 1; }
+  .getstarted__form-box { height: auto; }
 
   .footer__nav        { grid-template-columns: repeat(1, auto); gap: 16px; }
   .footer__right      { flex-direction: column; gap: 36px; }
@@ -779,11 +779,11 @@
 
   .getstarted         { padding: 40px 0 60px; }
   .getstarted__card::before { display: none; }
-  .getstarted__card   { padding: 0; gap: 20px; }
-  .getstarted__left   { width: 100%; padding-top: 60px; order: 1; }
+  .getstarted__card   { padding: 0; gap: 60px; }
+  .getstarted__left   { width: 100%; padding-top: 0; order: 1; }
   .getstarted__form-box-wrap { border-radius: 16px; }
-  .getstarted__form-box { 
-                           height: 950px; 
+  .getstarted__form-box {
+                           height: auto;
                            /* border-radius: 16px;  */
                         }
   .getstarted__title  { font-size: 34px; }
@@ -908,9 +908,10 @@
   .faqs__star         { width: 70px; }
 
   .getstarted         { padding: 30px 0 50px; }
-  .getstarted__card   { padding: 0; gap: 20px; }
-  .getstarted__form-box { 
-                           height: 1050px; 
+  .getstarted__card   { padding: 0; gap: 60px; }
+  .getstarted__left   { width: 100%; padding-top: 0; order: 1; }
+  .getstarted__form-box {
+                           height: auto;
                            /* border-radius: 14px;  */
                         }
   .getstarted__title  { font-size: 24px; }
@@ -989,10 +990,11 @@
   .faqs__title        { font-size: 28px; }
   .faq-item__question { font-size: 13px; }
 
-  .getstarted__card   { padding: 0; gap: 20px; }
+  .getstarted__card   { padding: 0; gap: 60px; }
+  .getstarted__left   { width: 100%; padding-top: 0; order: 1; }
   .getstarted__title  { font-size: 24px; }
   .getstarted__desc   { font-size: 13px; }
-  .getstarted__form-box { height: 1200px; }
+  .getstarted__form-box { height: auto; }
 
   .faqs__title        { font-size: 26px; }
   .faqs__desc         { font-size: 13px; }
