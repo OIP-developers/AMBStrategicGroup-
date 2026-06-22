@@ -6,23 +6,23 @@ import './FAQs.css'
 const faqs = [
   {
     question: 'Can I request a custom AI solution?',
-    answer: 'Yes! We offer full social media management, including content creation, strategy development, scheduling, and engagement. We help grow your presence, connect with your audience, and turn followers into loyal customers.',
+    answer: 'Yes. We specialize in building custom AI solutions tailored to your business needs. Whether you need sales automation, customer support, lead generation, workflow automation, or a completely unique AI system, we design and implement solutions that fit your goals and existing processes.',
   },
   {
     question: 'How can AI automation help my business?',
-    answer: 'AI automation eliminates repetitive tasks, reduces operational costs, and allows your team to focus on high-value work. From lead generation to customer support, automation drives measurable efficiency gains.',
+    answer: 'AI automation helps reduce manual work, improve response times, increase productivity, and create better customer experiences. From handling inquiries and generating leads to automating follow-ups and internal workflows, AI allows your team to focus on growth instead of repetitive tasks.',
   },
   {
     question: 'Is AI difficult to integrate into my current system?',
-    answer: 'Not at all. We handle the full integration process — from audit to deployment — ensuring your existing tools and workflows connect seamlessly with the new AI systems.',
+    answer: 'Not at all. Our team handles the entire integration process and can connect AI solutions with your existing CRM, website, phone system, email platform, calendar, e-commerce store, and other business tools. We ensure a smooth implementation with minimal disruption.',
   },
   {
     question: 'How long does AI setup take?',
-    answer: 'Setup timelines vary by package. Starter systems are typically live within 7 days, Gold within 15 days, and Premium within 30 days. Complex custom builds may take longer.',
+    answer: 'Most AI solutions can be implemented within 1–4 weeks depending on the complexity of the project, required integrations, and customization needs. During our consultation, we\'ll provide a clear timeline based on your specific requirements.',
   },
   {
-    question: 'How can AI automation help my business?',
-    answer: 'AI automation gives your business a competitive edge by operating 24/7, reducing human error, and scaling without additional headcount.',
+    question: 'What kind of support do you provide after setup?',
+    answer: 'We provide ongoing monitoring, optimization, and technical support. Our retainer plans include regular performance reviews and updates to ensure your AI systems continuously improve over time.',
   },
 ]
 

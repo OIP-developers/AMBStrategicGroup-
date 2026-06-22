@@ -61,21 +61,10 @@ export default function GetStarted() {
             <div className="getstarted__form-box-wrap">
             <div className="getstarted__form-box">
               <iframe
-                src="https://api.leadconnectorhq.com/widget/form/KFInBiyxT7Ueg4h2tZhK"
-                style={{ width: '100%', border: 'none' }}
-                id="inline-KFInBiyxT7Ueg4h2tZhK"
-                data-layout="{'id':'INLINE'}"
-                data-trigger-type="alwaysShow"
-                data-trigger-value=""
-                data-activation-type="alwaysActivated"
-                data-activation-value=""
-                data-deactivation-type="neverDeactivate"
-                data-deactivation-value=""
-                data-form-name="Website Form"
-                data-height="854"
-                data-layout-iframe-id="inline-KFInBiyxT7Ueg4h2tZhK"
-                data-form-id="KFInBiyxT7Ueg4h2tZhK"
-                title="Website Form"
+                src="https://api.leadconnectorhq.com/widget/booking/rx4FnQDUZqhEEzKmElBs"
+                style={{ width: '100%', border: 'none', overflow: 'hidden' }}
+                scrolling="no"
+                id="rx4FnQDUZqhEEzKmElBs_1782148430321"
               />
             </div>
             </div>

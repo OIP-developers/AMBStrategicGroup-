@@ -40,7 +40,7 @@ export default function About() {
             <div className="about__person-info">
               <p className="about__founder">Founder &amp; CEO</p>
               <h3 className="about__name">Azra Rehan</h3>
-              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="about__linkedin">
+              <a href="https://www.linkedin.com/in/azra-rehan-96103212" target="_blank" rel="noopener noreferrer" className="about__linkedin">
                 Connect on LinkedIn
               </a>
             </div>

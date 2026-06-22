@@ -18,7 +18,7 @@ export default function Founder() {
                 <h3 className="founder__card-name">
                   Azra<br />Rehan
                 </h3>
-                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="founder__card-btn">Connect on LinkedIn</a>
+                <a href="https://www.linkedin.com/in/azra-rehan-96103212" target="_blank" rel="noopener noreferrer" className="founder__card-btn">Connect on LinkedIn</a>
               </div>
             </div>
           </div>

@@ -9,6 +9,18 @@
   padding-top: 150px;
 }
 
+.faqs.faqs--page .faqs__left {
+  display: none;
+}
+
+.faqs.faqs--page .faqs__layout {
+  display: block;
+}
+
+.faqs.faqs--page .faqs__right {
+  width: 100%;
+}
+
 .faqs::before {
   content: '';
   position: absolute;
@@ -26,6 +38,10 @@
 .faqs .container {
   position: relative;
   z-index: 1;
+}
+
+.faqs.faqs--page .container {
+  max-width: 970px;
 }
 
 /* Layout */
@@ -154,11 +170,12 @@
   width: 27px;
   height: 27px;
   object-fit: contain;
+  transform: rotate(45deg);
   transition: transform 0.4s ease;
 }
 
 .faq-item--open .faq-item__icon-img {
-  transform: rotate(45deg);
+  transform: rotate(0deg);
 }
 
 /* Answer body */

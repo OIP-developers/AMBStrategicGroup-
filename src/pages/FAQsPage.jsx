@@ -12,7 +12,7 @@ export default function FAQsPage() {
         <FAQsBanner />
       </div>
       <main>
-        <FAQs />
+        <FAQs className="faqs--page" />
         <GetStarted />
       </main>
       <Footer />
