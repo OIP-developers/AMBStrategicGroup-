@@ -164,7 +164,7 @@
   .founder__inner             { gap: 1.04vw; }
   .founder__title             { font-size: 6.30vw; margin: 0 0 3.65vw 0; }
   .founder__image-wrap        { width: 41.67vw; height: 31.25vw; top: -5.73vw; }
-  .founder__card              { top: 15.10vw; left: 1.98vw; backdrop-filter: blur(1.17vw); border-radius: 1.04vw; padding: 1.20vw 1.82vw 2.08vw; }
+  .founder__card              { top: 18.75vw; left: 0vw; backdrop-filter: blur(1.17vw); border-radius: 1.04vw; padding: 1.20vw 1.82vw 2.08vw; }
   .founder__card::before      { border-radius: 1.04vw; padding: 0.05vw; }
   .founder__card-role         { font-size: 0.83vw; }
   .founder__card-name         { font-size: 3.17vw; margin: 0.52vw 0 1.15vw; }
@@ -405,7 +405,7 @@
   .founder__left            { order: 1; width: 100%; }
   .founder__image-wrap      { width: 400px; height: auto; position: relative; top: 0; margin: 0 auto; }
   .founder__img             { width: 100%; height: auto; object-fit: cover; display: block; }
-  .founder__card            { position: absolute; top: auto; bottom: 30px; left: 50%; right: auto; transform: translateX(-50%); width: 80%; padding: 20px 24px 40px; text-align: center; }
+  .founder__card            { position: absolute; top: auto; bottom: -50px; left: 50%; right: auto; transform: translateX(-50%); width: 80%; padding: 20px 24px 40px; text-align: center; }
   .founder__card-name       { font-size: 36px; }
   .founder__right           { order: -1; position: relative; right: auto; width: 100%; display: flex; flex-direction: column; align-items: center; text-align: center; }
   .founder__desc            { width: 100%; font-size: 14px; line-height: 160%; }
@@ -723,6 +723,7 @@
   .founder__card-name { font-size: 28px; }
   .founder__desc      { font-size: 14px; }
   .our-model          { padding: 40px 0; }
+  .our-model__content { padding-top: 50px; }
   .our-model__card    { flex: none; width: 100%; max-width: calc(100% - 15px); padding: 30px 15px; }
   .our-model__title   { font-size: 24px; }
   .our-model__desc    { font-size: 14px; }
@@ -847,6 +848,7 @@
   .founder__title         { font-size: 36px; }
   .founder__card-name     { font-size: 28px; }
   .founder__image-wrap    { width: 100%; height: auto; position: relative; top: 0; margin: 0 auto; }
+  .our-model__content     { padding-top: 50px; }
   .our-model__card        { flex: none; width: 100%; max-width: calc(100% - 15px); padding: 30px 15px; }
   .our-model__title       { font-size: 22px; }
   .our-philosophy__title  { font-size: 22px; }
