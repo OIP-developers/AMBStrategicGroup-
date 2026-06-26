@@ -63,6 +63,29 @@
   border-radius: 20px;
   background: linear-gradient(168.65deg, rgba(0, 0, 0, 0.5) -2.45%, rgba(22, 22, 22, 0.5) 102.09%);
   backdrop-filter: blur(22.5px);
+  transform: translateZ(0);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.aisolutions__card.aisolutions__card-v2:hover {
+  box-shadow: 0 20px 60px rgba(0, 142, 249, 0.15), 0 4px 20px rgba(255, 0, 191, 0.08);
+}
+
+.aisolutions__card.aisolutions__card-v2::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  background: url('../../imagesfolder/aiAutomation/hoverOnBox.png') no-repeat center right;
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.aisolutions__card.aisolutions__card-v2:hover::after {
+  opacity: 1;
 }
 
 .aisolutions__card::before {
@@ -153,6 +176,11 @@
   justify-content: flex-start;
   padding: 32px;
   gap: 0;
+}
+
+.aisolutions__card.aisolutions__card-v2 > * {
+  position: relative;
+  z-index: 1;
 }
 
 .aisv2__header-row {
