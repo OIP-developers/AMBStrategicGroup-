@@ -35,11 +35,11 @@ export default function GetStarted() {
             </p>
 
             <div className="getstarted__contacts">
-              <a href="tel:+19292635128" className="getstarted__contact-item">
+              <a href="tel:+19714247685" className="getstarted__contact-item">
                 <div className="getstarted__contact-icon-wrap">
                   <img src={phoneIcon} alt="" className="getstarted__contact-icon" />
                 </div>
-                <span className="getstarted__contact-text">+1 929-263-5128</span>
+                <span className="getstarted__contact-text">+1 971-424-7685</span>
               </a>
               <a href="mailto:info@ambstrategicgroup.com" className="getstarted__contact-item">
                 <div className="getstarted__contact-icon-wrap">

@@ -63,7 +63,7 @@ export default function Footer() {
             <div className="footer__right">
               <div className="footer__info-block">
                 <h4 className="footer__info-title">Contact Us</h4>
-                <a href="tel:+19292635128" className="footer__info-text footer__info-text--mb">+1 929-263-5128</a><br/>
+                <a href="tel:+19714247685" className="footer__info-text footer__info-text--mb">+1 971-424-7685</a><br/>
                 <a href="mailto:info@ambstrategicgroup.com" className="footer__info-text">info@ambstrategicgroup.com</a>
               </div>
               <div className="footer__info-block">
