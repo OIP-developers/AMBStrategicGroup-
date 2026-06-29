@@ -85,7 +85,7 @@
 
   /* ── AISolutions ── */
   .aisolutions                          { padding: 4.17vw 0; }
-  .aisolutions__container               { max-width: 65.10vw; padding: 0 1.04vw; }
+  .aisolutions__container               { max-width: 76.563vw; padding: 0 1.04vw; }
   .aisolutions__header                  { gap: 0.83vw; margin-bottom: 3.65vw; }
   .aisolutions__star                    { width: 2.08vw; }
   .aisolutions__title                   { font-size: 2.08vw; }
@@ -99,6 +99,23 @@
   .aisolutions__icon                    { height: 5.83vw; }
   .aisolutions__cta                     { padding-top: 3.13vw; }
   .aisolutions__cta-btn                 { gap: 0.42vw; font-size: 0.73vw; line-height: 0.94vw; padding: 0.78vw 1.30vw; border-radius: 0.36vw; }
+
+  /* ── AISolutions v2 grid ── */
+  .aisolutions__grid                    { gap: 1.25vw; }
+  .aisolutions__card.aisolutions__card-v2 { padding: 1.67vw; }
+  .aisv2__header-row                    { gap: 1.04vw; margin-bottom: 1.04vw; align-items: center; }
+  .aisv2__title                         { font-size: 1.35vw; min-height: 3.80vw; display: flex; align-items: center; }
+  .aisv2__bullets                       { grid-template-columns: 1fr; gap: 0; }
+  .aisv2__icon-box                      { width: 12.40vw; height: 3.75vw; border-radius: 0.52vw; }
+  .aisv2__icon-img                      { width: 100%; height: 100%; }
+  .aisv2__desc                          { font-size: 0.83vw; margin-bottom: 2vw; max-width: 90%; }
+  .aisv2__bullets                       { margin-bottom: 1.25vw; }
+  .aisv2__bullet-item                   { font-size: 0.83vw; gap: 0.63vw; }
+  .aisv2__bullet-dot                    { width: 0.36vw; height: 0.36vw; }
+  .aisv2__divider                       { margin-bottom: 1.04vw; }
+  .aisv2__bestfor-row                   { gap: 0.63vw; }
+  .aisv2__bestfor-badge                 { padding: 0.36vw 0.83vw; height: 1.67vw; font-size: 0.57vw; min-width: 5.16vw; border-radius: 5.21vw; }
+  .aisv2__bestfor-text                  { font-size: 0.73vw; }
 
   /* ── BTBanner ── */
   .bt-banner                  { padding: 7.29vw 0 4.17vw; }
