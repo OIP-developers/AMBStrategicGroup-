@@ -87,7 +87,7 @@ const solutions = [
       'Lead scraping & enrichment via Apollo & Clay',
       'Multi-step sequences with reply detection',
       'Direct calendar booking on positive replies',
-      'Channel ops managed by HIP — not just provisioned',
+      'Channel ops managed by AMB — not just provisioned',
     ],
     bestFor: 'B2B agencies, SaaS companies, recruiters, and consultants',
   },
