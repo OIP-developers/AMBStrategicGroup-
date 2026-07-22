@@ -253,11 +253,7 @@
   letter-spacing: -0.03em;
   color: #ff00bf;
   text-decoration: underline;
-  transition: color 0.3s ease;
-}
-
-.getstarted__dental-link:hover {
-  color: #008ef9;
+  cursor: default;
 }
 
 @keyframes mdGetStartedStarSpin {
