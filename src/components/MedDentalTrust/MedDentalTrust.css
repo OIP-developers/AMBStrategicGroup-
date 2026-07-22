@@ -294,11 +294,12 @@
 }
 
 @media (max-width: 481px) {
-  .md-trust__title { font-size: 24px; }
+  .md-trust__title { font-size: 27px; }
   .md-trust__card-inner p { font-size: 14px; }
   .md-trust__right { width: 100%; gap: 30px; }
   .md-trust__card::before { border-radius: 12px; }
   .md-trust__card-inner { border-radius: 12px; flex-wrap: unset; }
+  .md-trust__tag { height: auto; padding: 12px 20px; line-height: 1; letter-spacing: 0; }
 }
 
 @media (max-width: 320px) {

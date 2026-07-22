@@ -311,8 +311,10 @@
 }
 
 @media (max-width: 481px) {
-  .getstarted__title--dental { font-size: 24px; }
+  .getstarted__title--dental { font-size: 30px; }
+  .getstarted__title--dental br { display: none; }
   .getstarted__dental-link { font-size: 13px; }
+  .getstarted--medicaldental .getstarted__card { gap: 40px; }
 }
 
 

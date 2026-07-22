@@ -340,6 +340,7 @@
 
 @media (max-width: 481px) {
   .md-hiw__title { font-size: 22px; }
+  .md-hiw__tag { padding: 12px 20px; line-height: 1.1; }
 }
 
 @media (max-width: 320px) {

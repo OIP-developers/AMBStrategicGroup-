@@ -492,8 +492,8 @@
   .md-hero__title { font-size: 22px; }
   .md-hero__visual { max-width: 220px; }
   .md-hero__doctor { max-width: 220px; }
-  .md-hero__tooth { display: none; }
-  .md-hero__sparkle { width: 65px; }
+  .md-hero__tooth { display: block; width: 40px; left: 10px; top: 90px; }
+  .md-hero__sparkle { width: 76px; }
 }
 
 @media (max-width: 320px) {
