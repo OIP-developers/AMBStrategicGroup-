@@ -505,7 +505,13 @@
 
 @media (max-width: 481px) {
   .md-pkg__title { font-size: 24px; }
-  .md-pkg__card-title { font-size: 22px; }
+  .md-pkg__card-title { font-size: 22px; padding: 0 10px; }
+  .md-pkg__timeline { padding: 0 10px; }
+  .md-pkg__features-heading { padding: 0 10px; font-size: 16px; }
+  .md-pkg__features { padding: 0 10px; margin-bottom: 40px; }
+  .md-pkg__features li { font-size: 14px; line-height: 1.7; }
+  .md-pkg__btn { width: auto; }
+  .md-pkg__btn-circle { width: 30px; height: 30px; }
 }
 
 @media (max-width: 320px) {

@@ -295,6 +295,10 @@
 
 @media (max-width: 481px) {
   .md-trust__title { font-size: 24px; }
+  .md-trust__card-inner p { font-size: 14px; }
+  .md-trust__right { width: 100%; gap: 30px; }
+  .md-trust__card::before { border-radius: 12px; }
+  .md-trust__card-inner { border-radius: 12px; flex-wrap: unset; }
 }
 
 @media (max-width: 320px) {

@@ -488,10 +488,11 @@
 }
 
 @media (max-width: 481px) {
+  .md-hero__actions { gap: 22px; }
   .md-hero__title { font-size: 22px; }
   .md-hero__visual { max-width: 220px; }
   .md-hero__doctor { max-width: 220px; }
-  .md-hero__tooth { width: 40px; top: 90px; }
+  .md-hero__tooth { display: none; }
   .md-hero__sparkle { width: 65px; }
 }
 
