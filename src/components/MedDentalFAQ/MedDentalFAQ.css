@@ -7,9 +7,9 @@
   position: absolute;
   z-index: -1;
   right: -300px;
-  top: 100px;
+  top: 60px;
   width: 820px;
-  height: 820px;
+  height: 500px;
   border-radius: 50%;
   background: #cb15a6;
   opacity: 0.35;
@@ -51,9 +51,9 @@ section#book-a-call {
     position: absolute;
     z-index: -1;
     right: -15.625vw;
-    top: 5.2083vw;
+    top: 3.125vw;
     width: 42.7083vw;
-    height: 42.7083vw;
+    height: 26.0417vw;
     border-radius: 50%;
     background: #cb15a6;
     opacity: 0.35;
@@ -75,6 +75,14 @@ section#book-a-call {
     top: 3.125vw;
     animation: mdFaqSparkleSpin 9s linear infinite;
     transform-origin: center center;
+  }
+}
+
+@media (max-width: 481px) {
+  section#book-a-call {
+    background: #0B0B0B;
+    position: relative;
+    padding: 30px 0 10px;
   }
 }
 
