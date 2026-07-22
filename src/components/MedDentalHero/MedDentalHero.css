@@ -108,7 +108,6 @@
 .md-hero__btn-circle img {
   width: 10px;
   height: 16px;
-  transform: rotate(-45deg);
 }
 
 .md-hero__btn-arrow--white {
@@ -316,7 +315,6 @@
   .md-hero__btn-circle img {
     width: 0.5208vw;
     height: 0.8333vw;
-    transform: rotate(-45deg);
   }
   .md-hero__stats {
     display: flex;

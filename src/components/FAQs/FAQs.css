@@ -407,6 +407,6 @@
 }
 
 @media (max-width: 481px) {
-  .faqs--medicaldental .faqs__title { font-size: 22px; }
+  .faqs--medicaldental .faqs__title { font-size: 30px; }
   .faqs--medicaldental .faqs__tag { height: auto; line-height: 1.1; padding: 12px 30px 6px; }
 }

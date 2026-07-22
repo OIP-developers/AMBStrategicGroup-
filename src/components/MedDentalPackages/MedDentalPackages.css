@@ -266,9 +266,6 @@
   transition: transform 0.3s ease;
 }
 
-.md-pkg__btn:hover .md-pkg__btn-circle img {
-  transform: rotate(45deg);
-}
 
 .md-pkg__btn-arrow--white {
   filter: brightness(0) invert(1);

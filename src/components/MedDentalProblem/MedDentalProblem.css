@@ -137,7 +137,6 @@
   width: 10px;
   height: 16px;
   filter: brightness(0) invert(1);
-  transform: rotate(-45deg);
 }
 
 .md-problem::before {
@@ -282,8 +281,7 @@
     width: 0.5208vw;
     height: 0.8333vw;
     filter: brightness(0) invert(1);
-    transform: rotate(-45deg);
-  }
+    }
   .md-problem::before {
     content: '';
     position: absolute;
