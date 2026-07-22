@@ -9,6 +9,7 @@ import ContactPage            from './pages/ContactPage'
 import PrivacyPolicyPage      from './pages/PrivacyPolicyPage'
 import TermsOfServicesPage    from './pages/TermsOfServicesPage'
 import MedicalDentalPage      from './pages/MedicalDentalPage'
+import LawAccountingPage      from './pages/LawAccounting/LawAccountingPage'
 import './App.css'
 import './responsive.css'
 
@@ -26,6 +27,7 @@ function App() {
       <Route path="/privacy-policy"          element={<PrivacyPolicyPage />} />
       <Route path="/terms-of-services"       element={<TermsOfServicesPage />} />
       <Route path="/medicaldental"           element={<MedicalDentalPage />} />
+      <Route path="/law-accounting"          element={<LawAccountingPage />} />
       </Routes>
     </>
   )
