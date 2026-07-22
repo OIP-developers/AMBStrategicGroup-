@@ -1,0 +1,101 @@
+.md-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  height: 54.51px;
+  padding: 0 14px 0 22px;
+  border-radius: 53.5px;
+  font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
+  font-weight: 600;
+  font-size: 15.44px;
+  letter-spacing: -0.03em;
+  white-space: nowrap;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.md-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0, 142, 249, 0.28);
+}
+
+.md-btn__circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36.74px;
+  height: 36.74px;
+  border-radius: 50%;
+  background: #ffffff;
+  flex-shrink: 0;
+}
+
+.md-btn__arrow {
+  width: 10px;
+  height: 16px;
+}
+
+.md-btn--primary {
+  background: linear-gradient(90deg, #ff00bf 0%, #008ef9 100%);
+  color: #ffffff;
+}
+.md-btn--primary .md-btn__circle {
+  color: #008ef9;
+}
+
+.md-btn--dark {
+  background: #333333;
+  color: #ffffff;
+}
+.md-btn--dark .md-btn__circle {
+  color: #333333;
+}
+
+@media (max-width: 767px) {
+  .md-btn {
+    height: 48px;
+    padding: 0 6px 0 20px;
+    font-size: 13px;
+  }
+  .md-btn__circle {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .md-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6771vw;
+    height: 2.8391vw;
+    padding: 0 0.7292vw 0 1.1458vw;
+    border-radius: 2.7865vw;
+    font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    font-size: 0.8042vw;
+    letter-spacing: -0.03em;
+    white-space: nowrap;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .md-btn:hover {
+    transform: translateY(-0.1042vw);
+    box-shadow: 0 0.5208vw 1.25vw rgba(0, 142, 249, 0.28);
+  }
+  .md-btn__circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.9135vw;
+    height: 1.9135vw;
+    border-radius: 50%;
+    background: #ffffff;
+    flex-shrink: 0;
+  }
+  .md-btn__arrow {
+    width: 0.5208vw;
+    height: 0.8333vw;
+  }
+}

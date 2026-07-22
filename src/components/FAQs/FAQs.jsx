@@ -3,7 +3,7 @@ import starImg from '../../imagesfolder/howitworks/howitworkstarimg.png'
 import faqIcon from '../../imagesfolder/faqsection/faqimg.png'
 import './FAQs.css'
 
-const faqs = [
+const defaultFaqs = [
   {
     question: 'Can I request a custom AI solution?',
     answer: 'Yes. We specialize in building custom AI solutions tailored to your business needs. Whether you need sales automation, customer support, lead generation, workflow automation, or a completely unique AI system, we design and implement solutions that fit your goals and existing processes.',
@@ -26,7 +26,7 @@ const faqs = [
   },
 ]
 
-export default function FAQs({ className = '' }) {
+export default function FAQs({ className = '', items = defaultFaqs, title = 'FAQs', desc = 'Our AI-driven automation eliminates busywork, streamlines your operations, and helps your business grow, without extra effort.', tag = null }) {
   const [openIndex, setOpenIndex] = useState(0)
 
   return (
@@ -36,19 +36,19 @@ export default function FAQs({ className = '' }) {
 
           {/* Left */}
           <div className="faqs__left">
+            {tag && <span className="faqs__tag">{tag}</span>}
             <div className="faqs__title-row">
-              <h2 className="faqs__title">FAQs</h2>
+              <h2 className="faqs__title">{title}</h2>
               <img src={starImg} alt="" className="faqs__star" />
             </div>
             <p className="faqs__desc">
-              Our AI-driven automation eliminates busywork, streamlines your operations,
-              and helps your business grow, without extra effort.
+              {desc}
             </p>
           </div>
 
           {/* Right */}
           <div className="faqs__right">
-            {faqs.map((faq, index) => (
+            {items.map((faq, index) => (
               <div
                 key={index}
                 className={`faq-item ${openIndex === index ? 'faq-item--open' : ''}`}

@@ -204,3 +204,203 @@
   color: #FFFFFF;
   padding-top: 19px;
 }
+
+/* ================================================
+   Medical Dental variant — scoped, does not affect
+   the default/home-page FAQs styling above.
+   ================================================ */
+
+.faqs--medicaldental {
+  padding: 90px 0;
+  background: transparent;
+}
+
+.faqs--medicaldental::before {
+  content: none;
+}
+
+.faqs--medicaldental .faqs__layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.faqs--medicaldental .faqs__left {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.faqs--medicaldental .faqs__tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  padding: 0 20px;
+  border-radius: 100px;
+  background: linear-gradient(90deg, #ff00bf 0%, #008ef9 100%);
+  font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.faqs--medicaldental .faqs__star {
+  display: none;
+}
+
+.faqs--medicaldental .faqs__title {
+  font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 111%;
+  letter-spacing: -0.03em;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.faqs--medicaldental .faqs__desc {
+  display: none;
+}
+
+.faqs--medicaldental .faqs__right {
+  width: 100%;
+  max-width: 970px;
+  gap: 16px;
+}
+
+.faqs--medicaldental .faq-item {
+  background: linear-gradient(160deg, rgba(0, 0, 0, 0.8) 0%, rgba(75, 75, 75, 0.2) 100%);
+  border-radius: 10px;
+  transition: padding 0.4s ease;
+}
+
+.faqs--medicaldental .faq-item::before {
+  transition: background 0.4s ease;
+}
+
+.faqs--medicaldental .faq-item__body {
+  transition: grid-template-rows 0.4s ease-in-out;
+}
+
+.faqs--medicaldental .faq-item__body > * {
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.faqs--medicaldental .faq-item__body--open > * {
+  opacity: 1;
+}
+
+.faqs--medicaldental .faq-item__icon-img {
+  transition: transform 0.4s ease;
+}
+
+.faqs--medicaldental .faq-item__question {
+  font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.faqs--medicaldental .faq-item__answer {
+  width: auto;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding-top: 16px;
+  margin-top: 12px;
+}
+
+
+@media (min-width: 992px) {
+  .faqs--medicaldental {
+    padding: 4.6875vw 0;
+    background: transparent;
+  }
+  .faqs--medicaldental .faqs__left {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2.5vw;
+  }
+  .faqs--medicaldental .faqs__tag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.875vw;
+    padding: 0 1.0417vw;
+    border-radius: 5.2083vw;
+    background: linear-gradient(90deg, #ff00bf 0%, #008ef9 100%);
+    font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
+    font-weight: 500;
+    font-size: 0.7292vw;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 1.0417vw;
+  }
+  .faqs--medicaldental .faqs__title {
+    font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
+    font-weight: 500;
+    font-size: 2.6042vw;
+    line-height: 111%;
+    letter-spacing: -0.03em;
+    text-transform: capitalize;
+    color: #ffffff;
+  }
+  .faqs--medicaldental .faqs__right {
+    width: 100%;
+    max-width: 50.5208vw;
+    gap: 0.8333vw;
+  }
+  .faqs--medicaldental .faq-item {
+    background: linear-gradient(160deg, rgba(0, 0, 0, 0.8) 0%, rgba(75, 75, 75, 0.2) 100%);
+    border-radius: 0.5208vw;
+    transition: padding 0.4s ease;
+  }
+  .faqs--medicaldental .faq-item__question {
+    font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
+    font-weight: 500;
+    font-size: 0.9375vw;
+  }
+  .faqs--medicaldental .faq-item__answer {
+    width: auto;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 0.7292vw;
+    line-height: 150%;
+    border-top: 0.0521vw solid rgba(255, 255, 255, 0.12);
+    padding-top: 0.8333vw;
+    margin-top: 0.625vw;
+  }
+}
+
+@media (max-width: 991px) {
+  .faqs--medicaldental .faqs__title { font-size: 36px; }
+  .faqs--medicaldental .faqs__right { max-width: 100%; padding: 0 16px; }
+}
+
+@media (max-width: 767px) {
+  .faqs--medicaldental .faqs__title { font-size: 28px; }
+  .faqs--medicaldental .faq-item__question { font-size: 16px; }
+}
+
+@media (max-width: 599px) {
+  .faqs--medicaldental .faqs__title { font-size: 24px; }
+  .faqs--medicaldental .faq-item__answer { font-size: 12px; }
+}
+
+@media (max-width: 481px) {
+  .faqs--medicaldental .faqs__title { font-size: 22px; }
+}

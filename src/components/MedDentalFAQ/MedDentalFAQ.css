@@ -1,0 +1,95 @@
+.md-faq-wrap {
+  position: relative;
+}
+
+.md-faq-wrap::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  right: -300px;
+  top: 100px;
+  width: 820px;
+  height: 820px;
+  border-radius: 50%;
+  background: #cb15a6;
+  opacity: 0.35;
+  filter: blur(200px);
+  pointer-events: none;
+}
+
+@keyframes mdFaqSparkleSpin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.md-faq-wrap .md-faq__tooth {
+    position: absolute;
+    z-index: 0;
+    width: 235px;
+    right: 200px;
+    top: 300px;
+}
+
+.md-faq-wrap .md-faq__sparkle {
+  position: absolute;
+  z-index: 0;
+  width: 240px;
+  left: 150px;
+  top: 60px;
+}
+
+section#book-a-call {
+    background: #0B0B0B;
+    position: relative;
+}
+
+
+
+@media (min-width: 992px) {
+  .md-faq-wrap::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    right: -15.625vw;
+    top: 5.2083vw;
+    width: 42.7083vw;
+    height: 42.7083vw;
+    border-radius: 50%;
+    background: #cb15a6;
+    opacity: 0.35;
+    filter: blur(10.4167vw);
+    pointer-events: none;
+  }
+  .md-faq-wrap .md-faq__tooth {
+      position: absolute;
+      z-index: 0;
+      width: 12.2396vw;
+      right: 10.4167vw;
+      top: 15.625vw;
+  }
+  .md-faq-wrap .md-faq__sparkle {
+    position: absolute;
+    z-index: 0;
+    width: 12.5vw;
+    left: 7.8125vw;
+    top: 3.125vw;
+    animation: mdFaqSparkleSpin 9s linear infinite;
+    transform-origin: center center;
+  }
+}
+
+@media (max-width: 991px) {
+  .md-faq-wrap::before { width: 500px; height: 500px; right: -200px; top: 60px; filter: blur(120px); }
+  .md-faq-wrap .md-faq__tooth { display: none; }
+  .md-faq-wrap .md-faq__sparkle { width: 140px; left: 10px; top: 20px; }
+}
+
+@media (max-width: 767px) {
+  .md-faq-wrap::before { width: 340px; height: 340px; right: -140px; top: 40px; filter: blur(90px); }
+  .md-faq-wrap .md-faq__sparkle { width: 100px; }
+}
+
+@media (max-width: 599px) {
+  .md-faq-wrap::before { display: none; }
+  .md-faq-wrap .md-faq__sparkle { display: none; }
+}

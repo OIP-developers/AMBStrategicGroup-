@@ -1,0 +1,17 @@
+.md-tag {
+  display: inline-block;
+  padding: 7px 18px;
+  border-radius: 22px;
+  background: #e1f8fa;
+  color: #008ef9;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.md-tag--on-dark {
+  background: rgba(255, 255, 255, 0.15);
+}

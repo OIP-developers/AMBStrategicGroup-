@@ -1,3 +1,35 @@
+/* Orbiter FBS Trial — used on the Medical Dental landing page */
+@font-face {
+  font-family: 'Orbiter FBS Trial';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/orbiter-fbs-trial/Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Orbiter FBS Trial';
+  font-style: normal;
+  font-weight: 500;
+  src: url('/fonts/orbiter-fbs-trial/Medium.woff') format('woff');
+}
+@font-face {
+  font-family: 'Orbiter FBS Trial';
+  font-style: normal;
+  font-weight: 600;
+  src: url('/fonts/orbiter-fbs-trial/SemiBold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Orbiter FBS Trial';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/orbiter-fbs-trial/Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Orbiter FBS Trial';
+  font-style: normal;
+  font-weight: 800;
+  src: url('/fonts/orbiter-fbs-trial/ExtraBold.woff') format('woff');
+}
+
 /* Global Reset & Variables */
 *, *::before, *::after {
   margin: 0;
@@ -38,7 +70,7 @@ html {
 body {
   font-family: var(--font-body);
   color: var(--color-text);
-  background-color: #000000;
+  background-color: #0b0b0b;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }

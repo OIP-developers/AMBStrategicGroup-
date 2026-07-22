@@ -8,6 +8,7 @@ import FAQsPage               from './pages/FAQsPage'
 import ContactPage            from './pages/ContactPage'
 import PrivacyPolicyPage      from './pages/PrivacyPolicyPage'
 import TermsOfServicesPage    from './pages/TermsOfServicesPage'
+import MedicalDentalPage      from './pages/MedicalDentalPage'
 import './App.css'
 import './responsive.css'
 
@@ -24,6 +25,7 @@ function App() {
       <Route path="/contact"                 element={<ContactPage />} />
       <Route path="/privacy-policy"          element={<PrivacyPolicyPage />} />
       <Route path="/terms-of-services"       element={<TermsOfServicesPage />} />
+      <Route path="/medicaldental"           element={<MedicalDentalPage />} />
       </Routes>
     </>
   )

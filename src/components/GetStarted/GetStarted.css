@@ -3,6 +3,20 @@
   background: #000000;
 }
 
+.getstarted--medicaldental {
+  background: #0b0b0b;
+}
+
+.getstarted--medicaldental .getstarted__card {
+  backdrop-filter: none;
+  padding: 40px 50px 50px 60px;
+  transition: box-shadow 0.4s ease;
+}
+
+.getstarted--medicaldental .getstarted__card:hover {
+  box-shadow: 0 0 60px rgba(255, 0, 191, 0.25), 0 0 90px rgba(0, 142, 249, 0.2);
+}
+
 /* Outer card with gradient border */
 .getstarted__card {
   position: relative;
@@ -12,7 +26,6 @@
   padding: 40px 60px 60px 90px;
   border-radius: 20px;
   background: transparent;
-  backdrop-filter: none;
 }
 
 .getstarted__card::before {
@@ -168,4 +181,203 @@
   height: auto;
   background: transparent;
   overflow: hidden;
+}
+
+/* ================================================
+   Medical Dental variant — scoped to getstarted__left--dental,
+   does not affect the default left column above.
+   ================================================ */
+
+.getstarted__left--dental {
+  position: relative;
+  padding-top: 0;
+}
+
+.getstarted__title--dental {
+  width: auto;
+  font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 111%;
+  letter-spacing: -0.03em;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.getstarted__underline {
+  display: block;
+  width: 364px;
+  height: auto;
+  margin: 20px 0 24px;
+}
+
+.getstarted__desc--dental {
+  width: auto;
+  max-width: 320px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color: #b8b8b8;
+  padding: 0 0 30px;
+}
+
+.getstarted__dental-decor {
+  position: relative;
+  width: 200px;
+  height: 140px;
+  margin-bottom: 30px;
+}
+
+.getstarted__dental-tooth {
+  position: absolute;
+  left: 310px;
+  top: -190px;
+  width: 240px;
+  height: auto;
+}
+
+.getstarted__dental-star {
+  position: absolute;
+  right: -360px;
+  bottom: 80px;
+  width: 228px;
+}
+
+.getstarted__dental-link {
+  display: inline-block;
+  font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: -0.03em;
+  color: #ff00bf;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.getstarted__dental-link:hover {
+  color: #008ef9;
+}
+
+@keyframes mdGetStartedStarSpin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@media (max-width: 991px) {
+  .getstarted--medicaldental .getstarted__card {
+    padding: 40px 40px 40px 40px;
+  }
+  .getstarted__left--dental {
+    width: 100%;
+    text-align: center;
+  }
+  .getstarted__title--dental {
+    font-size: 42px;
+  }
+  .getstarted__desc--dental {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .getstarted__dental-decor {
+    display: none;
+  }
+  .getstarted__dental-tooth {
+    display: none;
+  }
+  .getstarted__dental-star {
+    right: -110px;
+    bottom: 40px;
+    width: 150px;
+  }
+  .getstarted__underline {
+    margin: 20px auto 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .getstarted__title--dental {
+    font-size: 32px;
+  }
+  .getstarted__desc--dental {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 599px) {
+  .getstarted__title--dental { font-size: 26px; }
+  .getstarted--medicaldental .getstarted__card { padding: 30px 15px 30px 15px; }
+}
+
+@media (max-width: 481px) {
+  .getstarted__title--dental { font-size: 24px; }
+}
+
+
+
+@media (min-width: 992px) {
+  .getstarted--medicaldental .getstarted__card {
+    padding: 2.0833vw 2.6042vw 2.6042vw 3.125vw;
+  }
+  .getstarted__left--dental {
+    padding-top: 0;
+  }
+  .getstarted__title--dental {
+    width: auto;
+    font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
+    font-weight: 500;
+    font-size: 3.125vw;
+    line-height: 111%;
+    letter-spacing: -0.03em;
+    text-transform: capitalize;
+    color: #ffffff;
+  }
+  .getstarted__desc--dental {
+    width: auto;
+    max-width: 16.6667vw;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 0.9375vw;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    color: #b8b8b8;
+    padding: 0 0 1.5625vw;
+  }
+  .getstarted__dental-decor {
+    position: relative;
+    width: 10.4167vw;
+    height: 7.2917vw;
+    margin-bottom: 1.5625vw;
+  }
+  .getstarted__dental-tooth {
+    position: absolute;
+    left: 16.1458vw;
+    top: -9.8958vw;
+    width: 12.5vw;
+    height: auto;
+  }
+  .getstarted__dental-star {
+    position: absolute;
+    right: -18.75vw;
+    bottom: 4.1667vw;
+    width: 11.875vw;
+    animation: mdGetStartedStarSpin 9s linear infinite;
+    transform-origin: center center;
+  }
+  .getstarted__dental-link {
+    display: inline-block;
+    font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 0.9375vw;
+    letter-spacing: -0.03em;
+    color: #ff00bf;
+    text-decoration: underline;
+  }
+  .getstarted__underline {
+    display: block;
+    width: 18.9583vw;
+    height: auto;
+    margin: 1.0417vw 0 1.25vw;
+  }
 }

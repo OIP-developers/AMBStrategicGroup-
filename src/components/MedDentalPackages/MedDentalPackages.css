@@ -1,0 +1,515 @@
+.md-pkg {
+  position: relative;
+  padding: 90px 0;
+  text-align: center;
+}
+
+.md-pkg__leftstar {
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  top: 0;
+  width: 220px;
+}
+
+.md-pkg::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  right: -300px;
+  top: -100px;
+  width: 704px;
+  height: 704px;
+  border-radius: 50%;
+  background: #cb15a6;
+  opacity: 0.35;
+  filter: blur(200px);
+  pointer-events: none;
+}
+
+.md-pkg__tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  padding: 0 20px;
+  border-radius: 100px;
+  background: linear-gradient(90deg, #ff00bf 0%, #008ef9 100%);
+  font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 111%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.md-pkg__title {
+  font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 111%;
+  letter-spacing: -0.03em;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.md-pkg__subtitle {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #ffffff;
+  max-width: 649px;
+  margin: 0 auto 56px;
+}
+
+.md-pkg__cards {
+  display: flex;
+  align-items: stretch;
+  gap: 30px;
+  text-align: left;
+  margin-top: 45px;
+}
+
+.md-pkg__card {
+  position: relative;
+  flex: 1;
+}
+
+.md-pkg__card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 3.65px;
+  padding: 1px;
+  background: linear-gradient(180deg, #ff00bf 0%, #008ef9 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.md-pkg__card-inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 39px 0 0;
+  border-radius: 3.65px;
+  background: linear-gradient(160deg, rgba(0, 0, 0, 0.8) 0%, rgba(75, 75, 75, 0.2) 100%);
+}
+
+.md-pkg__card--highlight .md-pkg__card-inner {
+  background: linear-gradient(180deg, rgba(9, 9, 9, 0.5) 12.5%, #ff00bf 164.16%);
+}
+
+.md-pkg__badge {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: -18px;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  padding: 0 18px;
+  border-radius: 100px;
+  background: linear-gradient(90deg, #ff00bf 0%, #008ef9 100%);
+  font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.md-pkg__card-title {
+  padding: 0 36px;
+  font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 100%;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-bottom: 19px;
+}
+
+.md-pkg__timeline {
+  display: flex;
+  align-items: center;
+  gap: 10.62px;
+  padding: 0 36px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 21.24px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  text-transform: capitalize;
+  color: #ffffff;
+  white-space: nowrap;
+  margin-bottom: 39px;
+}
+
+.md-pkg__features-heading {
+  padding: 0 36px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  text-transform: capitalize;
+  white-space: nowrap;
+  margin-bottom: 27px;
+  background: linear-gradient(90deg, #ffffff 0%, #008ef9 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.md-pkg__features-heading--solid {
+  background: none;
+  color: #ffffff;
+  -webkit-text-fill-color: #ffffff;
+}
+
+.md-pkg__features {
+  padding: 0 36px;
+  margin-bottom: 40px;
+}
+
+.md-pkg__features li {
+  position: relative;
+  padding-left: 18px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 36.18px;
+  color: #ffffff;
+}
+
+.md-pkg__features li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 15px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #79e6e3;
+}
+
+.md-pkg__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  gap: 13px;
+  width: fit-content;
+  height: 54.51px;
+  padding: 10px 10px 10px 22px;
+  border-radius: 53.5px;
+  margin: auto auto -24px;
+  left: 50%;
+  right: 50%;
+  font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
+  font-weight: 600;
+  font-size: 15.44px;
+  letter-spacing: -0.03em;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.md-pkg__btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(255, 0, 191, 0.25), 0 4px 12px rgba(0, 142, 249, 0.2);
+}
+
+.md-pkg__btn--white {
+  background: #ffffff;
+  color: #000000;
+}
+
+.md-pkg__btn--grad {
+  background: linear-gradient(90deg, #ff00bf 0%, #008ef9 100%);
+  color: #ffffff;
+}
+
+.md-pkg__btn-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36.74px;
+  height: 36.74px;
+  border-radius: 50%;
+  background: #ffffff;
+  flex-shrink: 0;
+}
+
+.md-pkg__btn--white .md-pkg__btn-circle {
+  background: linear-gradient(90deg, #ff00bf 0%, #008ef9 100%);
+}
+
+.md-pkg__btn-circle img {
+  width: 10px;
+  height: 16px;
+}
+
+.md-pkg__btn-arrow--white {
+  filter: brightness(0) invert(1);
+}
+
+
+@media (min-width: 992px) {
+  .md-pkg {
+    position: relative;
+    padding: 4.6875vw 0;
+    text-align: center;
+  }
+  .md-pkg__leftstar {
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 0;
+    width: 11.4583vw;
+  }
+  .md-pkg::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    right: -15.625vw;
+    top: -5.2083vw;
+    width: 36.6667vw;
+    height: 36.6667vw;
+    border-radius: 50%;
+    background: #cb15a6;
+    opacity: 0.35;
+    filter: blur(10.4167vw);
+    pointer-events: none;
+  }
+  .md-pkg__tag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.875vw;
+    padding: 0 1.0417vw;
+    border-radius: 5.2083vw;
+    background: linear-gradient(90deg, #ff00bf 0%, #008ef9 100%);
+    font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
+    font-weight: 500;
+    font-size: 0.7292vw;
+    line-height: 111%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 1.5625vw;
+  }
+  .md-pkg__title {
+    font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
+    font-weight: 500;
+    font-size: 3.125vw;
+    line-height: 111%;
+    letter-spacing: -0.03em;
+    text-transform: capitalize;
+    color: #ffffff;
+    margin-bottom: 1.0417vw;
+  }
+  .md-pkg__subtitle {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.0417vw;
+    line-height: 150%;
+    color: #ffffff;
+    max-width: 33.8021vw;
+    margin: 0 auto 2.9167vw;
+  }
+  .md-pkg__cards {
+    display: flex;
+    align-items: stretch;
+    gap: 1.5625vw;
+    text-align: left;
+    margin-top: 2.3438vw;
+  }
+  .md-pkg__card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 0.1901vw;
+    padding: 0.0521vw;
+    background: linear-gradient(180deg, #ff00bf 0%, #008ef9 100%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+  .md-pkg__card-inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 2.0313vw 0 0;
+    border-radius: 0.1901vw;
+    background: linear-gradient(160deg, rgba(0, 0, 0, 0.8) 0%, rgba(75, 75, 75, 0.2) 100%);
+  }
+  .md-pkg__badge {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: -0.9375vw;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.875vw;
+    padding: 0 0.9375vw;
+    border-radius: 5.2083vw;
+    background: linear-gradient(90deg, #ff00bf 0%, #008ef9 100%);
+    font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
+    font-weight: 500;
+    font-size: 0.7292vw;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    white-space: nowrap;
+  }
+  .md-pkg__card-title {
+    padding: 0 1.875vw;
+    font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
+    font-weight: 500;
+    font-size: 1.875vw;
+    line-height: 100%;
+    text-transform: capitalize;
+    color: #ffffff;
+    margin-bottom: 0.9896vw;
+  }
+  .md-pkg__timeline {
+    display: flex;
+    align-items: center;
+    gap: 0.5531vw;
+    padding: 0 1.875vw;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.1062vw;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    text-transform: capitalize;
+    color: #ffffff;
+    white-space: nowrap;
+    margin-bottom: 2.0313vw;
+  }
+  .md-pkg__features-heading {
+    padding: 0 1.875vw;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.0417vw;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    text-transform: capitalize;
+    white-space: nowrap;
+    margin-bottom: 1.4063vw;
+    background: linear-gradient(90deg, #ffffff 0%, #008ef9 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .md-pkg__features {
+    padding: 0 1.875vw;
+    margin-bottom: 2.0833vw;
+  }
+  .md-pkg__features li {
+    position: relative;
+    padding-left: 0.9375vw;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 0.9375vw;
+    line-height: 1.8844vw;
+    color: #ffffff;
+  }
+  .md-pkg__features li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.7813vw;
+    width: 0.3646vw;
+    height: 0.3646vw;
+    border-radius: 50%;
+    background: #79e6e3;
+  }
+  .md-pkg__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    gap: 0.6771vw;
+    width: fit-content;
+    height: 2.8391vw;
+    padding: 0.5208vw 0.5208vw 0.5208vw 1.1458vw;
+    border-radius: 2.7865vw;
+    margin: auto auto -1.25vw;
+    left: 50%;
+    right: 50%;
+    font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    font-size: 0.8042vw;
+    letter-spacing: -0.03em;
+  }
+  .md-pkg__btn-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.9135vw;
+    height: 1.9135vw;
+    border-radius: 50%;
+    background: #ffffff;
+    flex-shrink: 0;
+  }
+  .md-pkg__btn-circle img {
+    width: 0.5208vw;
+    height: 0.8333vw;
+  }
+}
+
+@media (max-width: 991px) {
+  .md-pkg { padding: 60px 0; }
+  .md-pkg__leftstar { width: 140px; top: -60px; }
+  .md-pkg::before { width: 400px; height: 400px; right: -150px; top: -60px; filter: blur(120px); }
+  .md-pkg__title { font-size: 39px; }
+  .md-pkg__subtitle { max-width: 90%; font-size: 16px; margin-bottom: 40px; }
+  .md-pkg__cards { flex-direction: column; gap: 60px; margin-top: 30px; }
+  .md-pkg__card-title { font-size: 28px; }
+  .md-pkg__timeline { font-size: 17px; }
+}
+
+@media (max-width: 767px) {
+  .md-pkg { padding: 50px 0; }
+  .md-pkg__leftstar { width: 100px; }
+  .md-pkg::before { width: 300px; height: 300px; right: -100px; top: -40px; filter: blur(90px); }
+  .md-pkg__title { font-size: 28px; }
+  .md-pkg__subtitle { font-size: 14px; margin-bottom: 28px; }
+  .md-pkg__card-title { font-size: 24px; }
+  .md-pkg__timeline { font-size: 15px; }
+}
+
+@media (max-width: 599px) {
+  .md-pkg__title { font-size: 23px; }
+  .md-pkg__subtitle { font-size: 13px; }
+  .md-pkg__leftstar { display: none; }
+  .md-pkg::before { display: none; }
+  .md-pkg__cards { flex-direction: column; gap: 80px; margin-top: 30px; }
+  .md-pkg__timeline { margin-bottom: 20px; }
+  .md-pkg__features-heading { margin-bottom: 13px; }
+}
+
+@media (max-width: 481px) {
+  .md-pkg__title { font-size: 24px; }
+  .md-pkg__card-title { font-size: 22px; }
+}
+
+@media (max-width: 320px) {
+  .md-pkg__title { font-size: 22px; }
+  .md-pkg__card-title { font-size: 20px; }
+  .md-pkg__timeline { font-size: 14px; }
+}
