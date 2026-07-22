@@ -12,6 +12,11 @@
   50%      { transform: translateY(-8px); }
 }
 
+@keyframes mdNoteFloatReverse {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(8px); }
+}
+
 .md-hero__row {
   display: flex;
   align-items: center;
@@ -363,6 +368,8 @@
     height: 9.3229vw;
     left: 2.6042vw;
     top: 14.375vw;
+    animation: mdNoteFloat 5s ease-in-out infinite;
+    animation-delay: 0.3s;
   }
   .md-hero__sparkle {
     position: absolute;
@@ -432,8 +439,7 @@
     left: -4.1667vw;
     top: 27.6042vw;
     max-width: 14.7917vw;
-    animation: mdNoteFloat 4.5s ease-in-out infinite;
-    animation-delay: 0.6s;
+    animation: mdNoteFloatReverse 4s ease-in-out infinite;
   }
 }
 
@@ -492,7 +498,7 @@
   .md-hero__title { font-size: 22px; }
   .md-hero__visual { max-width: 220px; }
   .md-hero__doctor { max-width: 220px; }
-  .md-hero__tooth { display: block; width: 40px; left: 10px; top: 90px; }
+  .md-hero__tooth { display: block; width: 40px; left: 10px; top: 120px; }
   .md-hero__sparkle { width: 76px; }
 }
 

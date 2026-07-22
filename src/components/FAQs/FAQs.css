@@ -315,6 +315,9 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
+}
+
+.faqs--medicaldental .faq-item__body--open .faq-item__answer {
   border-top: 1px solid rgba(255, 255, 255, 0.12);
   padding-top: 16px;
   margin-top: 12px;
@@ -380,6 +383,8 @@
     font-weight: 400;
     font-size: 0.7292vw;
     line-height: 150%;
+  }
+  .faqs--medicaldental .faq-item__body--open .faq-item__answer {
     border-top: 0.0521vw solid rgba(255, 255, 255, 0.12);
     padding-top: 0.8333vw;
     margin-top: 0.625vw;

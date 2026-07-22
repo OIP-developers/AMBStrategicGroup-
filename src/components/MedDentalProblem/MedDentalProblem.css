@@ -4,12 +4,17 @@
   text-align: center;
 }
 
+@keyframes mdProblemSparkleSpin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
 .md-problem__tag {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 36px;
-  padding: 0 20px;
+  height: auto;
+  padding: 10px 20px;
   border-radius: 100px;
   background: linear-gradient(90deg, #ff00bf 0%, #008ef9 100%);
   font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
@@ -178,8 +183,8 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    height: 1.875vw;
-    padding: 0 1.0417vw;
+    height: auto;
+    padding: 0.5208vw 1.0417vw;
     border-radius: 5.2083vw;
     background: linear-gradient(90deg, #ff00bf 0%, #008ef9 100%);
     font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
@@ -306,6 +311,8 @@
     height: auto;
     right: 2.6042vw;
     bottom: 1.5625vw;
+    animation: mdProblemSparkleSpin 9s linear infinite;
+    transform-origin: center center;
   }
 }
 

@@ -1,18 +1,7 @@
 import arrowImg from '../../imagesfolder/medicaldental/herosection/buttonicon.png'
 import leftStarImg from '../../imagesfolder/medicaldental/Packages section/leftstarimg.png'
+import boxStarImg from '../../imagesfolder/medicaldental/Packages section/boxstar.png'
 import './MedDentalPackages.css'
-
-const timelineIcon = () => (
-  <svg width="17.7" height="17.7" viewBox="0 0 24 24" fill="none">
-    <defs>
-      <linearGradient id="pkgTimelineGrad" x1="0" y1="0" x2="24" y2="0">
-        <stop offset="0" stopColor="#ffffff" />
-        <stop offset="1" stopColor="#008ef9" />
-      </linearGradient>
-    </defs>
-    <path d="M12 2l2.6 7.2H22l-6 4.4 2.3 7.4L12 16.8 5.7 21l2.3-7.4-6-4.4h7.4L12 2z" fill="url(#pkgTimelineGrad)" />
-  </svg>
-)
 
 const packages = [
   {
@@ -86,7 +75,7 @@ export default function MedDentalPackages() {
                 <h3 className="md-pkg__card-title">{pkg.title}</h3>
 
                 <div className="md-pkg__timeline">
-                  {timelineIcon()}
+                  <img src={boxStarImg} alt="" className="md-pkg__timeline-icon" />
                   {pkg.timeline}
                 </div>
 

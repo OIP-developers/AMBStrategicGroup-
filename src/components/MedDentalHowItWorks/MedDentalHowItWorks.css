@@ -22,7 +22,7 @@
   align-items: center;
   justify-content: center;
   height: 36px;
-  padding: 0 20px;
+  padding: 10px 20px;
   border-radius: 100px;
   background: linear-gradient(90deg, #ff00bf 0%, #008ef9 100%);
   font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
@@ -190,8 +190,8 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    height: 1.875vw;
-    padding: 0 1.0417vw;
+    height: auto;
+    padding: 0.5208vw 1.0417vw;
     border-radius: 5.2083vw;
     background: linear-gradient(90deg, #ff00bf 0%, #008ef9 100%);
     font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
@@ -201,6 +201,7 @@
     text-transform: uppercase;
     color: #ffffff;
     margin-bottom: 1.5625vw;
+    line-height: 111%;
   }
   .md-hiw__title {
     font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
