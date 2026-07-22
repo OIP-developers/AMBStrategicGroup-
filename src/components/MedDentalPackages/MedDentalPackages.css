@@ -262,7 +262,6 @@
 .md-pkg__btn-circle img {
   width: 10px;
   height: 16px;
-  transform: rotate(-45deg);
   transition: transform 0.3s ease;
 }
 
