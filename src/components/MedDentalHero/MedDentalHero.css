@@ -75,14 +75,14 @@
 
 
 .md-hero__btn--primary {
-  background: linear-gradient(90deg, #ff00bf 0%, #008ef9 100%);
-  color: #ffffff;
+  background: #ffffff;
+  color: #000000;
   transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .md-hero__btn--primary:hover {
-  background: #ffffff;
-  color: #000000;
+  background: linear-gradient(101.72deg, #ff00bf 1.23%, #008ef9 94.61%);
+  color: #ffffff;
   box-shadow: 0 10px 24px rgba(255, 0, 191, 0.25), 0 4px 12px rgba(0, 142, 249, 0.2);
 }
 
@@ -109,12 +109,12 @@
 }
 
 .md-hero__btn-circle--grad {
-  background: #ffffff;
+  background: linear-gradient(90deg, #ff00bf 0%, #008ef9 100%);
   transition: background 0.3s ease;
 }
 
 .md-hero__btn--primary:hover .md-hero__btn-circle--grad {
-  background: linear-gradient(101.72deg, #ff00bf 1.23%, #008ef9 94.61%);
+  background: #ffffff;
 }
 
 .md-hero__btn-circle--grad-bg {
@@ -135,7 +135,7 @@
   display: inline-block;
   width: 10px;
   height: 16px;
-  background-color: #008ef9;
+  background-color: #ffffff;
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   -webkit-mask-size: contain;
@@ -146,7 +146,7 @@
 }
 
 .md-hero__btn--primary:hover .md-hero__btn-arrow-mask {
-  background-color: #ffffff;
+  background-color: #008ef9;
 }
 
 .md-hero__btn-arrow-white-mask {

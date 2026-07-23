@@ -94,14 +94,14 @@
 
 
 .ms-hero__btn--primary {
-  background: linear-gradient(90deg, #ff00bf 0%, #008ef9 100%);
-  color: #ffffff;
+  background: #ffffff;
+  color: #000000;
   transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .ms-hero__btn--primary:hover {
-  background: #ffffff;
-  color: #000000;
+  background: linear-gradient(101.72deg, #ff00bf 1.23%, #008ef9 94.61%);
+  color: #ffffff;
   box-shadow: 0 10px 24px rgba(255, 0, 191, 0.25), 0 4px 12px rgba(0, 142, 249, 0.2);
 }
 
@@ -128,12 +128,12 @@
 }
 
 .ms-hero__btn-circle--grad {
-  background: #ffffff;
+  background: linear-gradient(90deg, #ff00bf 0%, #008ef9 100%);
   transition: background 0.3s ease;
 }
 
 .ms-hero__btn--primary:hover .ms-hero__btn-circle--grad {
-  background: linear-gradient(101.72deg, #ff00bf 1.23%, #008ef9 94.61%);
+  background: #ffffff;
 }
 
 .ms-hero__btn-circle--grad-bg {
@@ -154,7 +154,7 @@
   display: inline-block;
   width: 10px;
   height: 16px;
-  background-color: #008ef9;
+  background-color: #ffffff;
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   -webkit-mask-size: contain;
@@ -165,7 +165,7 @@
 }
 
 .ms-hero__btn--primary:hover .ms-hero__btn-arrow-mask {
-  background-color: #ffffff;
+  background-color: #008ef9;
 }
 
 .ms-hero__btn-arrow-white-mask {
@@ -241,7 +241,7 @@
 
 .ms-hero__tooth {
   position: absolute;
-  z-index: 0;
+  z-index: 3;
   width: 149px;
   height: 179px;
   left: -90px;
@@ -250,7 +250,7 @@
 
 .ms-hero__sparkle {
   position: absolute;
-  z-index: 0;
+  z-index: 2;
   width: 250px;
   height: auto;
   top: -100px;
@@ -460,7 +460,7 @@
   }
   .ms-hero__tooth {
     position: absolute;
-    z-index: 0;
+    z-index: 3;
     width: 7.7604vw;
     height: 9.3229vw;
     left: -4.6875vw;
@@ -470,7 +470,7 @@
   }
   .ms-hero__sparkle {
     position: absolute;
-    z-index: 0;
+    z-index: 2;
     width: 13.0208vw;
     height: auto;
     top: -5.2083vw;
@@ -566,17 +566,33 @@
   .ms-hero__row { margin-top: 40px; }
   .ms-hero__eyebrow { font-size: 26px; }
   .ms-hero__title { font-size: 32px; }
-  .ms-hero__desc { font-size: 15px; margin-bottom: 30px; }
+  .ms-hero__desc { font-size: 15px; margin-bottom: 30px; max-width: 100%; }
   .ms-hero__actions { flex-wrap: wrap; gap: 12px; margin-bottom: 40px; }
   .ms-hero__stats { gap: 16px; }
-  .ms-hero__visual { max-width: 320px; }
+  .ms-hero__visual { max-width: 100%; display: flex; flex-direction: column; align-items: center; }
   .ms-hero__visual::before { width: 200px; height: 200px; top: 40px; right: 20px; filter: blur(100px); }
-  .ms-hero__doctor { max-width: 320px; }
-  .ms-hero__tooth { width: 68px; left: 10px; top: 150px; }
-  .ms-hero__sparkle { width: 110px; right: -70px; }
-  .ms-hero__note--top { font-size: 11px; }
-  .ms-hero__note--top .ms-hero__note-text { font-size: 11px; }
-  .ms-hero__note--bottom { font-size: 10.5px; }
+  .ms-hero__doctor { max-width: 100%; width: 100%; }
+  .ms-hero__tooth { width: 100px; left: -20px; top: auto; bottom: 250px; }
+  .ms-hero__sparkle { display: none; }
+  .ms-hero__visual .ms-hero__note--top {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: fit-content;
+    max-width: 90%;
+    font-size: 12px;
+    margin: 24px auto 0;
+  }
+  .ms-hero__visual .ms-hero__note--top .ms-hero__note-text { font-size: 12px; }
+  .ms-hero__visual .ms-hero__note--bottom {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: fit-content;
+    max-width: 90%;
+    font-size: 12px;
+    margin: 16px auto 0;
+  }
 }
 
 @media (max-width: 599px) {
@@ -584,29 +600,47 @@
   .ms-hero__title { font-size: 32px; }
   .ms-hero__desc { font-size: 14px; max-width: 100%; }
   .ms-hero__stats { gap: 12px; }
-  .ms-hero__visual { max-width: 260px; }
-  .ms-hero__doctor { max-width: 260px; }
-  .ms-hero__tooth { width: 50px; left: 10px; top: 140px; }
-  .ms-hero__sparkle { width: 80px; right: -70px; }
-  .ms-hero__note { display: none; }
+  .ms-hero__visual { max-width: 100%; display: flex; flex-direction: column; align-items: center; }
+  .ms-hero__doctor { max-width: 100%; width: 100%; }
+  .ms-hero__tooth { width: 80px; left: -20px; top: auto; bottom: 200px; }
+  .ms-hero__sparkle { display: none; }
+  .ms-hero__note { padding: 12px 14px 12px 14px; gap: 10px; }
+  .ms-hero__visual .ms-hero__note--top {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: fit-content;
+    max-width: 90%;
+    font-size: 11px;
+    margin: 20px auto 0;
+  }
+  .ms-hero__visual .ms-hero__note--top .ms-hero__note-text { font-size: 11px; }
+  .ms-hero__visual .ms-hero__note--bottom {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: fit-content;
+    max-width: 90%;
+    font-size: 11px;
+    margin: 14px auto 0;
+  }
 }
 
 @media (max-width: 481px) {
+  .ms-hero__content { padding-top: 20px; }
   .ms-hero__actions { gap: 22px; }
-  .ms-hero__eyebrow { font-size: 18px; }
-  .ms-hero__title { font-size: 22px; }
-  .ms-hero__visual { max-width: 220px; }
-  .ms-hero__doctor { max-width: 220px; }
-  .ms-hero__tooth { display: block; width: 40px; left: 10px; top: 120px; }
-  .ms-hero__sparkle { width: 76px; }
+  .ms-hero__eyebrow { font-size: 15px; }
+  .ms-hero__title { font-size: 22px; margin-bottom: 20px; }
+  .ms-hero__visual { max-width: 100%; }
+  .ms-hero__doctor { max-width: 100%; width: 100%; }
+  .ms-hero__tooth { display: none; }
 }
 
 @media (max-width: 320px) {
   .ms-hero__eyebrow { font-size: 16px; }
   .ms-hero__title { font-size: 20px; }
   .ms-hero__desc { font-size: 13px; }
-  .ms-hero__visual { max-width: 180px; }
-  .ms-hero__doctor { max-width: 180px; }
-  .ms-hero__tooth { width: 32px; top: 75px; }
-  .ms-hero__sparkle { width: 50px; }
+  .ms-hero__visual { max-width: 100%; }
+  .ms-hero__doctor { max-width: 100%; width: 100%; }
+  .ms-hero__tooth { display: none; }
 }

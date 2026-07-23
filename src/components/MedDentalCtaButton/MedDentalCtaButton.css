@@ -45,23 +45,26 @@
 }
 
 .md-btn--primary {
-  background: linear-gradient(90deg, #ff00bf 0%, #008ef9 100%);
-  color: #ffffff;
+  background: #ffffff;
+  color: #000000;
   transition: background 0.3s ease, color 0.3s ease;
 }
 .md-btn--primary .md-btn__circle {
-  color: #008ef9;
+  background: linear-gradient(90deg, #ff00bf 0%, #008ef9 100%);
+}
+.md-btn--primary .md-btn__arrow-mask {
+  background-color: #ffffff;
 }
 
 .md-btn--primary:hover {
-  background: #ffffff;
-  color: #000000;
+  background: linear-gradient(101.72deg, #ff00bf 1.23%, #008ef9 94.61%);
+  color: #ffffff;
 }
 .md-btn--primary:hover .md-btn__circle {
-  background: linear-gradient(101.72deg, #ff00bf 1.23%, #008ef9 94.61%);
+  background: #ffffff;
 }
 .md-btn--primary:hover .md-btn__arrow-mask {
-  background-color: #ffffff;
+  background-color: #008ef9;
 }
 
 .md-btn--dark {

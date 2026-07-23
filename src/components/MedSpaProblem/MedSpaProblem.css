@@ -84,6 +84,7 @@
   letter-spacing: -0.02em;
   text-transform: capitalize;
   color: #ff00bf;
+  min-height: 54px;
   margin-bottom: 56px;
 }
 
@@ -187,7 +188,7 @@
   width: 300px;
   height: auto;
   right: 50px;
-  bottom: 30px;
+  bottom: -20px;
 }
 
 
@@ -264,6 +265,7 @@
     letter-spacing: -0.02em;
     text-transform: capitalize;
     color: #ff00bf;
+    min-height: 2.8125vw;
     margin-bottom: 2.9167vw;
   }
   .ms-problem__card p {
@@ -330,7 +332,7 @@
     width: 15.625vw;
     height: auto;
     right: 2.6042vw;
-    bottom: 1.5625vw;
+    bottom: -1.0417vw;
     animation: mdProblemSparkleSpin 9s linear infinite;
     transform-origin: center center;
   }
@@ -357,7 +359,7 @@
   .ms-problem__grid { flex-direction: column; }
   .ms-problem__card { flex: 1; }
   .ms-problem__card-inner { padding: 22px 18px; }
-  .ms-problem__tooth { width: 100px; }
+  .ms-problem__tooth { width: 80px; left: 10px; top: 180px; }
   .ms-problem__sparkle { width: 130px; }
 }
 
@@ -367,12 +369,17 @@
   .ms-problem__grid { gap: 16px; }
   .ms-problem__tooth { display: none; }
   .ms-problem__sparkle { display: none; }
-  .ms-problem__card h3 { font-size: 22px; }
+  .ms-problem__card h3 { font-size: 22px; min-height: auto; }
+  .ms-problem__card h3 br { display: none; }
   .ms-problem__card p { width: 100%; font-size: 14px; }
+  .ms-problem__btn-circle { width: 30px; height: 30px; }
 }
 
 @media (max-width: 481px) {
   .ms-problem__title { font-size: 22px; }
+  .ms-problem__subtitle { font-size: 13px; max-width: 100%; }
+  .ms-problem__tooth { display: none; }
+  .ms-problem__sparkle { display: none; }
 }
 
 @media (max-width: 320px) {

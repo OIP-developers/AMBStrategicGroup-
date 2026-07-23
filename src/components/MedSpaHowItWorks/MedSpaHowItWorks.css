@@ -382,7 +382,7 @@
 
 @media (max-width: 767px) {
   .ms-hiw { padding: 50px 0; }
-  .ms-hiw::before { width: 360px; height: 360px; left: 0; top: -40px; filter: blur(50px); }
+  .ms-hiw::before { display: none; }
   .ms-hiw__title { font-size: 28px; }
   .ms-hiw__subtitle { font-size: 14px; margin-bottom: 28px; }
   .ms-hiw__grid { flex-direction: column; gap: 16px; }
@@ -399,8 +399,10 @@
 }
 
 @media (max-width: 481px) {
+  .ms-hiw { padding: 30px 0; }
   .ms-hiw__title { font-size: 22px; }
   .ms-hiw__tag { padding: 12px 20px; line-height: 1.1; }
+  .ms-hiw__card-inner { padding: 18px 12px; }
 }
 
 @media (max-width: 320px) {

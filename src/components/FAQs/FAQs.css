@@ -395,7 +395,7 @@
 
 @media (max-width: 991px) {
   .faqs--medicaldental .faqs__title, .faqs--medspa .faqs__title { font-size: 36px; }
-  .faqs--medicaldental .faqs__right, .faqs--medspa .faqs__right { max-width: 100%; padding: 0 16px; }
+  .faqs--medicaldental .faqs__right, .faqs--medspa .faqs__right { max-width: 100%; padding: 0; }
 }
 
 @media (max-width: 767px) {
@@ -406,9 +406,17 @@
 @media (max-width: 599px) {
   .faqs--medicaldental .faqs__title, .faqs--medspa .faqs__title { font-size: 24px; }
   .faqs--medicaldental .faq-item__answer, .faqs--medspa .faq-item__answer { font-size: 12px; }
+  .faqs--medicaldental .faqs__tag, .faqs--medspa .faqs__tag {
+    height: auto;
+    padding: 6px 25px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0;
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 481px) {
-  .faqs--medicaldental .faqs__title, .faqs--medspa .faqs__title { font-size: 30px; }
+  .faqs--medicaldental .faqs__title, .faqs--medspa .faqs__title { font-size: 22px; }
   .faqs--medicaldental .faqs__tag, .faqs--medspa .faqs__tag { height: auto; line-height: 1.1; padding: 12px 30px 6px; }
 }

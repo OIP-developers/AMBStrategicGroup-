@@ -356,19 +356,24 @@
   .ms-trust { padding: 50px 0; }
   .ms-trust::before { width: 340px; height: 340px; left: -170px; top: -60px; filter: blur(90px); }
   .ms-trust__title { font-size: 32px; }
-  .ms-trust__bio { font-size: 14px; }
-  .ms-trust__card-inner { flex-wrap: wrap; padding: 14px 16px; }
+  .ms-trust__bio { font-size: 14px; width: 90%; }
+  .ms-trust__card-inner { flex-wrap: wrap; padding: 14px 16px; border-radius: 10px; }
+  .ms-trust__card::before { border-radius: 10px; }
 }
 
 @media (max-width: 599px) {
-  .ms-trust__title { font-size: 26px; margin-bottom: 26px; }
-  .ms-trust__bio { font-size: 13px; }
+  .ms-trust__title { font-size: 23px; margin-bottom: 19px; }
+  .ms-trust__bio { font-size: 13px; width: 100%; }
   .ms-trust::before { display: none; }
   .ms-trust__card-inner h3 { font-size: 20px; }
+  .ms-trust__card-inner p { font-size: 14px; }
+  .ms-trust__card-inner { flex-wrap: wrap; padding: 14px 14px; border-radius: 10px; gap: 12px; }
+  .ms-trust__right { width: 100%; gap: 30px; }
 }
 
 @media (max-width: 481px) {
-  .ms-trust__title { font-size: 27px; }
+  .ms-trust__title { font-size: 22px; margin-bottom: 19px; }
+  .ms-trust__bio { font-size: 12px; }
   .ms-trust__card-inner p { font-size: 14px; }
   .ms-trust__right { width: 100%; gap: 30px; }
   .ms-trust__card::before { border-radius: 12px; }
@@ -377,6 +382,6 @@
 }
 
 @media (max-width: 320px) {
-  .ms-trust__title { font-size: 22px; }
+  .ms-trust__title { font-size: 20px; margin-bottom: 19px; }
   .ms-trust__card-inner { padding: 12px 14px; }
 }

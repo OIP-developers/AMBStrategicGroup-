@@ -181,7 +181,9 @@
 
 @media (max-width: 767px) {
   .ms-footer__logo { width: 140px; }
-  .ms-footer__col-grid { flex-direction: column; gap: 16px; }
+  .ms-footer__top { gap: 14px; margin-bottom: 40px; }
+  .ms-footer__col h4 { margin-bottom: 0; }
+  .ms-footer__col-grid { flex-direction: column; gap: 0; }
   .ms-footer__legal { flex-wrap: wrap; gap: 14px; }
 }
 

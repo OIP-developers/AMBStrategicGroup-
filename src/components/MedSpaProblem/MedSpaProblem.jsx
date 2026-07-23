@@ -1,3 +1,4 @@
+import { Fragment } from 'react'
 import toothImg from '../../imagesfolder/MedSpaLanding/bottleimg.png'
 import sparkleImg from '../../imagesfolder/medicaldental/costofwaiting/star.png'
 import arrowImg from '../../imagesfolder/medicaldental/herosection/buttonicon.png'
@@ -9,11 +10,11 @@ const cards = [
     desc: "Ad leads arrive at 2 AM. Whoever replies first wins the consult — and it usually isn't you.",
   },
   {
-    title: 'Calls missed mid-treatment',
+    title: 'Calls missed\nmid-treatment',
     desc: "Your injector can't stop mid-appointment. Every missed call is a $400–$1,500 consult lost.",
   },
   {
-    title: 'No-shows & lost deposits',
+    title: 'No-shows & \nlost deposits',
     desc: 'High-value consults vanish without reminders and confirmations working around the clock.',
   },
   {
@@ -45,7 +46,14 @@ export default function MedSpaProblem() {
           {cards.map((c) => (
             <div key={c.title} className="ms-problem__card">
               <div className="ms-problem__card-inner">
-                <h3>{c.title}</h3>
+                <h3>
+                  {c.title.split('\n').map((line, i, arr) => (
+                    <Fragment key={i}>
+                      {line}
+                      {i < arr.length - 1 && <br />}
+                    </Fragment>
+                  ))}
+                </h3>
                 <p>{c.desc}</p>
               </div>
             </div>
@@ -54,7 +62,7 @@ export default function MedSpaProblem() {
 
         <div className="ms-problem__cta">
           <a href="#book-a-call" className="ms-problem__btn" onClick={scroll}>
-            Book a Free Consultation
+            Book A Free Consultation
             <span className="ms-problem__btn-circle">
               <span
                 className="ms-problem__btn-arrow-mask"
