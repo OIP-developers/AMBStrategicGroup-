@@ -79,7 +79,7 @@ export default function Pricing() {
               ))}
             </ul>
             <button type="button" className="btn-pill" onClick={scrollToCalendar}>
-              Book a call
+              <span className="btn-label">Book a call</span>
               <BtnIcon />
             </button>
           </div>

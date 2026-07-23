@@ -18,7 +18,7 @@ export function BookAFreeConsultation({ className = '', onClick }) {
 
   return (
     <button type="button" className={`btn-pill ${className}`.trim()} onClick={handleClick}>
-      Book a Free Consultation
+      <span className="btn-label">Book a Free Consultation</span>
       <BtnIcon />
     </button>
   )

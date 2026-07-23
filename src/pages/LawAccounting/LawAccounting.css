@@ -331,20 +331,28 @@
   overflow: hidden;
   display: inline-flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   background: var(--white);
   border-radius: 999px;
-  padding: 8px 8px 8px 24px;
+  padding: 4px 12px 4px 18px;
   border: none;
   cursor: pointer;
   font-family: var(--heading-font);
   font-weight: 600;
   font-size: 15.44px;
-  letter-spacing: -0.45px;
+  letter-spacing: 0;
   text-transform: capitalize;
   color: #000;
   transition: transform 0.25s ease, box-shadow 0.25s ease, color 0.35s ease 0.1s;
-  line-height: 3;
+  min-height: 54.32px;
+}
+
+.law-accounting-page .btn-label {
+  display: inline-flex;
+  align-items: center;
+  height: 36.74px;
+  padding-top: 2px;
+  line-height: normal;
 }
 
 .law-accounting-page .btn-pill::before {
@@ -1613,11 +1621,11 @@
     letter-spacing: -0.01vw;
   }
 .law-accounting-page .btn-pill {
-    gap: 0.625vw;
+    gap: 0.521vw;
     border-radius: 52.031vw;
-    padding: 0.417vw 0.417vw 0.417vw 1.25vw;
+    padding: 0.208vw 0.625vw 0.208vw 0.938vw;
     font-size: 0.804vw;
-    letter-spacing: -0.023vw;
+    min-height: 2.828vw;
   }
 .law-accounting-page .btn-pill:hover {
     transform: translateY(-0.156vw);
@@ -1629,6 +1637,10 @@
 .law-accounting-page .btn-pill .btn-icon {
     width: 1.914vw;
     height: 1.914vw;
+  }
+.law-accounting-page .btn-label {
+    height: 1.914vw;
+    padding-top: 0.104vw;
   }
 .law-accounting-page .btn-pill .btn-icon-arrow {
     width: 0.521vw;
@@ -2174,11 +2186,15 @@
     padding: 7px 7px 7px 22px;
     font-size: 15px;
     letter-spacing: 0px;
-    line-height: 30px;
+    min-height: 44px;
   }
 .law-accounting-page .btn-pill .btn-icon {
     width: 35px;
     height: 35px;
+  }
+.law-accounting-page .btn-label {
+    height: 35px;
+    padding-top:1px;
   }
 .law-accounting-page .btn-pill .btn-icon-arrow {
     width: 8px;
@@ -3085,7 +3101,7 @@
     padding: 6px 6px 6px 21px;
     font-size: 14px;
     letter-spacing: 0px;
-    line-height: 28px;
+    min-height: 40px;
   }
 .law-accounting-page .hero-badges {
     flex-direction: row;
@@ -3145,6 +3161,10 @@
     width: 31px;
     height: 31px;
   }
+.law-accounting-page .btn-label {
+    height: 31px;
+    padding-top:2px;
+  }
 .law-accounting-page .book-call-card {
     align-items: flex-start;
     padding: 22px 12px 28px;
@@ -3179,6 +3199,13 @@
   }
 .law-accounting-page .pricing-features li {
     font-size: 12px;
+    letter-spacing: 0.2px;
+    margin: 0;
+  }
+  .law-accounting-page .pricing-label {
+    font-size: 14px;
+    margin: 18px 0 16px;
+    letter-spacing: 0;
   }
 .law-accounting-page .trust-list h3 {
     font-size: 15px;
@@ -3235,7 +3262,7 @@
   }
   .law-accounting-page .footer-bottom {
     font-size: 12px;
-    justify-content: space-between;
+    justify-content: center;
   }
   .law-accounting-page .footer-col .lin-box {
     gap: 10px;
