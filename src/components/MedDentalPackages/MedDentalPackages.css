@@ -231,11 +231,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  line-height: 1;
+  align-self: center;
   gap: 23px;
   width: fit-content;
-  height: auto;
-  padding: 10px 10px 10px 22px;
+  height: 54.51px;
+  padding: 0 10px 0 22px;
   border-radius: 53.5px;
   margin: auto auto -24px;
   font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
@@ -498,11 +498,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    line-height: 1;
     gap: 1.1979vw;
     width: fit-content;
-    height: auto;
-    padding: 0.5208vw 0.5208vw 0.5208vw 1.1458vw;
+    height: 2.8391vw;
+    padding: 0 0.5208vw 0 1.1458vw;
     border-radius: 2.7865vw;
     margin: auto auto -1.25vw;
     font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
@@ -581,7 +580,7 @@
   .md-pkg__features-heading { padding: 0 10px; font-size: 16px; }
   .md-pkg__features { padding: 0 10px; margin-bottom: 40px; }
   .md-pkg__features li { font-size: 14px; line-height: 1.7; }
-  .md-pkg__btn { width: auto; height: auto; line-height: 1.1; letter-spacing: 0; }
+  .md-pkg__btn { letter-spacing: 0; }
   .md-pkg__btn-circle { width: 30px; height: 30px; }
   .md-pkg__badge { height: auto; padding: 10px 18px; letter-spacing: 0; line-height: 1.1; }
 }
