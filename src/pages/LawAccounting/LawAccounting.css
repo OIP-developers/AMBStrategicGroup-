@@ -2630,6 +2630,9 @@
     padding-top: 15.994px;
     max-width: 100%;
   }
+  .law-accounting-page .faq-item.open .faq-answer br {
+    display: none;
+  }
 
 }
 

@@ -3,19 +3,19 @@ import { useState } from 'react'
 const FAQS = [
   {
     q: 'Is client information kept confidential?',
-    a: 'Yes. We build with confidentiality, privilege-awareness, and governed data handling as the foundation — and we show your team exactly how before launch.',
+    a: 'Yes. We build with confidentiality, privilege-awareness, and governed data handling as the foundation and\n we show your team exactly how before launch.',
   },
   {
     q: 'Will it give legal or financial advice?',
-    a: "No. It captures, qualifies, and books — it never advises. It screens inquiries, routes qualified prospects to you, and filters out what doesn't fit.",
+    a: "No. It captures, qualifies, and books it never advises. It screens inquiries, routes qualified prospects to\n you, and filters out what doesn't fit.",
   },
   {
     q: 'Can it replace our answering service?',
-    a: 'Yes. Instead of just taking a message, it qualifies the caller and books the consult — 24/7, including after hours.',
+    a: 'Yes. Instead of just taking a message, it qualifies the caller and books the consult — 24/7, including after\n hours.',
   },
   {
     q: 'Does it fit our current scheduling?',
-    a: 'Yes. It books directly into the GHL calendar your firm already uses.',
+    a: 'Yes. It books directly into the GHL calendar your firm already\n uses.',
   },
 ]
 
@@ -60,7 +60,11 @@ export default function Faq() {
                 <span className="faq-toggle" aria-hidden="true" />
               </div>
               <div className="faq-answer-wrap">
-                <p className="faq-answer">{item.a}</p>
+                <p className="faq-answer">
+                  {item.a.split('\n').flatMap((line, idx) =>
+                    idx === 0 ? [line] : [<br key={idx} />, line]
+                  )}
+                </p>
               </div>
             </div>
           )
