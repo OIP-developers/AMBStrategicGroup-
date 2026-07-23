@@ -273,7 +273,7 @@
 .law-accounting-page .badge {
   display: inline-flex;
   align-items: center;
-  padding: 10px 17px;
+  padding:10px 17px 8px;
   border: 1px solid transparent;
   border-radius: 100px;
   background:
@@ -1592,7 +1592,7 @@
     max-width: 76.563vw;
   }
 .law-accounting-page .badge {
-    padding: 0.521vw 0.885vw;
+    padding: 0.521vw 0.885vw 0.417vw;
     border: 0.052vw solid transparent;
     border-radius: 5.208vw;
     font-size: 0.729vw;
