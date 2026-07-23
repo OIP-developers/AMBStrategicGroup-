@@ -3045,6 +3045,10 @@
   .law-accounting-page .faq-answer {
     letter-spacing: 0;
   }
+  .law-accounting-page .footer-col .lin-box {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
 
 }
 
