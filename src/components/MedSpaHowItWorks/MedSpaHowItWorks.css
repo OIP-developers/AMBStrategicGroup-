@@ -98,14 +98,14 @@
   inset: 0;
   z-index: 0;
   background: linear-gradient(180deg, rgba(9, 9, 9, 0.5) 12.5%, #ff00bf 198.57%);
-  transform: scale(0);
-  transform-origin: var(--hx, 50%) var(--hy, 50%);
-  transition: transform 0.8s ease-out;
+  transform: scaleX(0);
+  transform-origin: var(--hover-origin-x, 50%) center;
+  transition: transform 0.4s ease;
   pointer-events: none;
 }
 
 .ms-hiw__card:hover .ms-hiw__card-inner::before {
-  transform: scale(2);
+  transform: scaleX(1);
 }
 
 .ms-hiw__card-inner > * {
@@ -298,13 +298,13 @@
     z-index: 0;
     border-radius: 0.1912vw;
     background: linear-gradient(180deg, rgba(9, 9, 9, 0.5) 12.5%, #ff00bf 198.57%);
-    transform: scale(0);
-    transform-origin: var(--hx, 50%) var(--hy, 50%);
-    transition: transform 0.8s ease-out;
+    transform: scaleX(0);
+    transform-origin: var(--hover-origin-x, 50%) center;
+    transition: transform 0.4s ease;
     pointer-events: none;
   }
   .ms-hiw__card:hover .ms-hiw__card-inner::before {
-    transform: scale(2);
+    transform: scaleX(1);
   }
   .ms-hiw__card-inner > * {
     position: relative;
@@ -395,6 +395,8 @@
   .ms-hiw__title { font-size: 24px; }
   .ms-hiw__subtitle { font-size: 13px; }
   .ms-hiw::before { display: none; }
+  .ms-hiw__grid { flex-direction: column; }
+  .ms-hiw__card { flex: 1 1 100%; }
   .ms-hiw__card h3 { margin-bottom: 20px; }
   .ms-hiw__num { margin-bottom: 10px; }
 }
@@ -407,6 +409,6 @@
 }
 
 @media (max-width: 320px) {
-  .ms-hiw__title { font-size: 20px; }
+  .ms-hiw__title { font-size: 24px; width: 90%; margin: 0 auto 18px; line-height: 1.3; }
   .ms-hiw__card-inner { padding: 16px 16px; }
 }

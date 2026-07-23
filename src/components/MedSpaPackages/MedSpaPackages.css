@@ -571,6 +571,13 @@
   .ms-pkg__features-heading { margin-bottom: 13px; }
   .ms-pkg__features li { font-size: 16px; line-height: 33px; }
   .ms-pkg__btn-circle { width: 30px; height: 30px; }
+  .ms-pkg__card--highlight .ms-pkg__card-inner::before { transform: scaleX(1); }
+  .ms-pkg__card--highlight .ms-pkg__btn {
+    background: linear-gradient(90deg, #ff00bf 0%, #008ef9 100%);
+    color: #ffffff;
+  }
+  .ms-pkg__card--highlight .ms-pkg__btn-circle { background: #ffffff; }
+  .ms-pkg__card--highlight .ms-pkg__btn-arrow { background-color: #008ef9; }
 }
 
 @media (max-width: 481px) {
@@ -586,7 +593,8 @@
 }
 
 @media (max-width: 320px) {
-  .ms-pkg__title { font-size: 22px; }
+  .ms-pkg__title { font-size: 22px; line-height: 1.3; }
   .ms-pkg__card-title { font-size: 20px; }
   .ms-pkg__timeline { font-size: 14px; }
+  .ms-pkg__features li { font-size: 12px; line-height: 27px; }
 }

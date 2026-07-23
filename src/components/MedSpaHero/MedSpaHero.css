@@ -26,7 +26,7 @@
   display: flex;
   align-items: center;
   gap: 155px;
-  margin-top: 150px;
+  margin-top: 130px;
 }
 
 /* ---- Content column ---- */
@@ -342,7 +342,7 @@
     display: flex;
     align-items: center;
     gap: 8.0729vw;
-    margin-top: 7.8125vw;
+    margin-top: 6.7708vw;
   }
   .ms-hero__content {
     flex: 0 0 auto;
@@ -607,12 +607,12 @@
 @media (max-width: 599px) {
   .ms-hero { padding: 0; }
   .ms-hero__title { font-size: 32px; }
-  .ms-hero__desc { font-size: 14px; max-width: 100%; }
+  .ms-hero__desc { font-size: 13px; max-width: 100%; line-height: 1.7; }
   .ms-hero__stats { gap: 12px; }
   .ms-hero__visual { max-width: 100%; display: flex; flex-direction: column; align-items: center; }
   .ms-hero__doctor { max-width: 100%; width: 100%; }
   .ms-hero__tooth { width: 80px; left: -20px; top: auto; bottom: 200px; }
-  .ms-hero__sparkle { display: none; }
+  .ms-hero__sparkle { width: 110px; top: 20px; right: 0; }
   .ms-hero__note { padding: 12px 14px 12px 14px; gap: 10px; }
   .ms-hero__visual .ms-hero__note--top {
     position: relative;
@@ -639,17 +639,22 @@
   .ms-hero__content { padding-top: 20px; }
   .ms-hero__actions { gap: 22px; }
   .ms-hero__eyebrow { font-size: 15px; }
-  .ms-hero__title { font-size: 22px; margin-bottom: 20px; }
+  .ms-hero__title { font-size: 32px; width: 90%; margin: 0 auto 26px; }
+  .ms-hero__desc { font-size: 13px; max-width: 100%; line-height: 1.7; }
   .ms-hero__visual { max-width: 100%; }
   .ms-hero__doctor { max-width: 100%; width: 100%; }
   .ms-hero__tooth { display: none; }
 }
 
 @media (max-width: 320px) {
+  .ms-hero__row { margin-top: 30px; }
   .ms-hero__eyebrow { font-size: 16px; }
-  .ms-hero__title { font-size: 20px; }
+  .ms-hero__title { font-size: 25px; width: 90%; }
   .ms-hero__desc { font-size: 13px; line-height: 1.6; }
+  .ms-hero__stats { gap: 6px; flex-direction: column; justify-content: center; align-items: center; }
+  .ms-hero__stats li img { display: none; }
   .ms-hero__visual { max-width: 100%; }
   .ms-hero__doctor { max-width: 100%; width: 100%; }
   .ms-hero__tooth { display: none; }
+  .ms-hero__sparkle { width: 60px; top: 20px; right: 0; }
 }

@@ -354,7 +354,7 @@
   .md-problem__title { font-size: 28px; }
   .md-problem__subtitle { font-size: 14px; margin-bottom: 28px; }
   .md-problem__card-inner { padding: 22px 18px; }
-  .md-problem__tooth { width: 100px; }
+  .md-problem__tooth { display: none; }
   .md-problem__sparkle { width: 130px; }
 }
 
