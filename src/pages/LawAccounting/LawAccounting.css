@@ -3234,7 +3234,7 @@
   }
   .law-accounting-page .footer-bottom {
     font-size: 12px;
-    justify-content: flex-start;
+    justify-content: space-between;
   }
   .law-accounting-page .footer-col .lin-box {
     gap: 10px;
