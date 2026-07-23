@@ -344,6 +344,7 @@
   text-transform: capitalize;
   color: #000;
   transition: transform 0.25s ease, box-shadow 0.25s ease, color 0.35s ease 0.1s;
+  line-height: 3;
 }
 
 .law-accounting-page .btn-pill::before {
@@ -3045,6 +3046,10 @@
   .law-accounting-page .faq-answer {
     letter-spacing: 0;
   }
+  .law-accounting-page .footer-col .lin-box {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
 
 }
 
@@ -3230,7 +3235,7 @@
   }
   .law-accounting-page .footer-bottom {
     font-size: 12px;
-    justify-content: flex-start;
+    justify-content: space-between;
   }
   .law-accounting-page .footer-col .lin-box {
     gap: 10px;
