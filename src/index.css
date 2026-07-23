@@ -4,30 +4,35 @@
   font-style: normal;
   font-weight: 400;
   src: url('/fonts/orbiter-fbs-trial/Regular.woff') format('woff');
+  font-display: swap;
 }
 @font-face {
   font-family: 'Orbiter FBS Trial';
   font-style: normal;
   font-weight: 500;
   src: url('/fonts/orbiter-fbs-trial/Medium.woff') format('woff');
+  font-display: swap;
 }
 @font-face {
   font-family: 'Orbiter FBS Trial';
   font-style: normal;
   font-weight: 600;
   src: url('/fonts/orbiter-fbs-trial/SemiBold.woff') format('woff');
+  font-display: swap;
 }
 @font-face {
   font-family: 'Orbiter FBS Trial';
   font-style: normal;
   font-weight: 700;
   src: url('/fonts/orbiter-fbs-trial/Bold.woff') format('woff');
+  font-display: swap;
 }
 @font-face {
   font-family: 'Orbiter FBS Trial';
   font-style: normal;
   font-weight: 800;
   src: url('/fonts/orbiter-fbs-trial/ExtraBold.woff') format('woff');
+  font-display: swap;
 }
 
 /* Global Reset & Variables */

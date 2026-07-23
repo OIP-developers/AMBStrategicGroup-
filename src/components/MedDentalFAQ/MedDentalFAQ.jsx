@@ -1,5 +1,5 @@
-import toothImg from '../../imagesfolder/medicaldental/costofwaiting/3d-tooth.png'
-import sparkleImg from '../../imagesfolder/medicaldental/costofwaiting/star.png'
+import toothImg from '../../imagesfolder/medicaldental/costofwaiting/3d-tooth.webp'
+import sparkleImg from '../../imagesfolder/medicaldental/costofwaiting/star.webp'
 import FAQs from '../FAQs/FAQs'
 import './MedDentalFAQ.css'
 
@@ -25,8 +25,8 @@ const faqs = [
 export default function MedDentalFAQ() {
   return (
     <div id="faq" className="md-faq-wrap">
-      <img src={sparkleImg} alt="" className="md-faq__sparkle" />
-      <img src={toothImg} alt="" className="md-faq__tooth" />
+      <img src={sparkleImg} alt="" className="md-faq__sparkle" loading="lazy" width="240" height="240" />
+      <img src={toothImg} alt="" className="md-faq__tooth" loading="lazy" width="235" height="264" />
       <FAQs
         className="faqs--medicaldental"
         tag="FAQ's"

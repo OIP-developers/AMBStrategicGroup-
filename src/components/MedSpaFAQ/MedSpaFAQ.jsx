@@ -1,5 +1,5 @@
-import toothImg from '../../imagesfolder/MedSpaLanding/phoolimg.png'
-import sparkleImg from '../../imagesfolder/medicaldental/costofwaiting/star.png'
+import toothImg from '../../imagesfolder/MedSpaLanding/phoolimg.webp'
+import sparkleImg from '../../imagesfolder/medicaldental/costofwaiting/star.webp'
 import FAQs from '../FAQs/FAQs'
 import './MedSpaFAQ.css'
 
@@ -25,8 +25,8 @@ const faqs = [
 export default function MedSpaFAQ() {
   return (
     <div id="faq" className="ms-faq-wrap">
-      <img src={sparkleImg} alt="" className="ms-faq__sparkle" />
-      <img src={toothImg} alt="" className="ms-faq__tooth" />
+      <img src={sparkleImg} alt="" className="ms-faq__sparkle" loading="lazy" width="240" height="240" />
+      <img src={toothImg} alt="" className="ms-faq__tooth" loading="lazy" width="235" height="238" />
       <FAQs
         className="faqs--medspa"
         tag="FAQ's"
