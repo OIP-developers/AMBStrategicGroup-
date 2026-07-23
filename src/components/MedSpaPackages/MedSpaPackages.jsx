@@ -101,7 +101,7 @@ export default function MedSpaPackages() {
                   className={`ms-pkg__btn ${pkg.variant === 'highlight' ? 'ms-pkg__btn--grad' : 'ms-pkg__btn--white'}`}
                   onClick={scroll}
                 >
-                  Book A Call
+                  <span className="ms-pkg__btn-text">Book A Call</span>
                   <span className="ms-pkg__btn-circle">
                     <span
                       className="ms-pkg__btn-arrow"

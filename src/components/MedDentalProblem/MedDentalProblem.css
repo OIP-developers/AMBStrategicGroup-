@@ -14,7 +14,7 @@
   align-items: center;
   justify-content: center;
   height: auto;
-  padding: 10px 20px;
+  padding: 10px 20px 6px;
   border-radius: 100px;
   background: linear-gradient(90deg, #ff00bf 0%, #008ef9 100%);
   font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
@@ -25,6 +25,7 @@
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 30px;
+  transform: translateY(3px);
 }
 
 .md-problem__title {
@@ -205,7 +206,7 @@
     align-items: center;
     justify-content: center;
     height: auto;
-    padding: 0.5208vw 1.0417vw;
+    padding: 0.5208vw 1.0417vw 0.3125vw;
     border-radius: 5.2083vw;
     background: linear-gradient(90deg, #ff00bf 0%, #008ef9 100%);
     font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
@@ -216,6 +217,7 @@
     text-transform: uppercase;
     color: #ffffff;
     margin-bottom: 1.5625vw;
+    transform: translateY(0.1563vw);
   }
   .md-problem__title {
     font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
