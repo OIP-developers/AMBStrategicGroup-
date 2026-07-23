@@ -102,7 +102,7 @@ export default function MedDentalPackages() {
                   className={`md-pkg__btn ${pkg.variant === 'highlight' ? 'md-pkg__btn--grad' : 'md-pkg__btn--white'}`}
                   onClick={scroll}
                 >
-                  Book A Call
+                  <span className="md-pkg__btn-text">Book A Call</span>
                   <span className="md-pkg__btn-circle">
                     <span
                       className="md-pkg__btn-arrow"

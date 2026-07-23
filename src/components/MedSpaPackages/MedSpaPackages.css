@@ -32,7 +32,7 @@
   align-items: center;
   justify-content: center;
   height: auto;
-  padding: 10px 20px;
+  padding: 10px 20px 6px;
   border-radius: 100px;
   background: linear-gradient(90deg, #ff00bf 0%, #008ef9 100%);
   font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
@@ -43,6 +43,7 @@
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 30px;
+  transform: translateY(3px);
 }
 
 .ms-pkg__title {
@@ -129,12 +130,12 @@
   z-index: 1;
   left: 50%;
   top: -18px;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(3px);
   display: flex;
   align-items: center;
   justify-content: center;
   height: auto;
-  padding: 10px 17px;
+  padding: 10px 17px 5px;
   border-radius: 100px;
   background: linear-gradient(90deg, #ff00bf 0%, #008ef9 100%);
   font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
@@ -245,6 +246,11 @@
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
+.ms-pkg__btn-text {
+  display: inline-block;
+  transform: translateY(3px);
+}
+
 .ms-pkg__btn:hover {
   box-shadow: 0 10px 24px rgba(255, 0, 191, 0.25), 0 4px 12px rgba(0, 142, 249, 0.2);
 }
@@ -346,7 +352,7 @@
     align-items: center;
     justify-content: center;
     height: auto;
-    padding: 0.5208vw 1.0417vw;
+    padding: 0.5208vw 1.0417vw 0.3125vw;
     border-radius: 5.2083vw;
     background: linear-gradient(90deg, #ff00bf 0%, #008ef9 100%);
     font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
@@ -357,6 +363,7 @@
     text-transform: uppercase;
     color: #ffffff;
     margin-bottom: 1.5625vw;
+    transform: translateY(0.1563vw);
   }
   .ms-pkg__title {
     font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
@@ -410,12 +417,12 @@
     z-index: 1;
     left: 50%;
     top: -0.9375vw;
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateY(0.1563vw);
     display: flex;
     align-items: center;
     justify-content: center;
     height: auto;
-    padding: 0.5208vw 0.8854vw;
+    padding: 0.5208vw 0.8854vw 0.2604vw;
     border-radius: 5.2083vw;
     background: linear-gradient(90deg, #ff00bf 0%, #008ef9 100%);
     font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
@@ -522,6 +529,9 @@
   .ms-pkg__btn-arrow {
     width: 0.5208vw;
     height: 0.8333vw;
+  }
+  .ms-pkg__btn-text {
+    transform: translateY(0.1563vw);
   }
 }
 

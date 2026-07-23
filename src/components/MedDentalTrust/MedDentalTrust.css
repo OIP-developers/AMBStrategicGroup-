@@ -51,6 +51,7 @@
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 25px;
+  transform: translateY(3px);
 }
 
 .md-trust__title {
@@ -190,6 +191,7 @@
     text-transform: uppercase;
     color: #ffffff;
     margin-bottom: 1.3021vw;
+    transform: translateY(0.1563vw);
   }
   .md-trust__title {
     font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
