@@ -6,11 +6,20 @@ export function BtnIcon() {
   )
 }
 
+export function scrollToCalendar() {
+  document.getElementById('calendar')?.scrollIntoView({ behavior: 'smooth' })
+}
+
 export function BookAFreeConsultation({ className = '', onClick }) {
+  const handleClick = (e) => {
+    scrollToCalendar()
+    onClick?.(e)
+  }
+
   return (
-    <a href="#calendar" className={`btn-pill ${className}`.trim()} onClick={onClick}>
+    <button type="button" className={`btn-pill ${className}`.trim()} onClick={handleClick}>
       Book a Free Consultation
       <BtnIcon />
-    </a>
+    </button>
   )
 }

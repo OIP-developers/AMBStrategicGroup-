@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { scrollToCalendar } from './Buttons.jsx'
 
 export default function Footer() {
   return (
@@ -31,8 +32,8 @@ export default function Footer() {
             </div>
             <div className="footer-col">
               <h4>Get started</h4>
-              <a href="#calendar">Book a strategy call</a>
-              <a href="#calendar">Talk to us</a>
+              <a href="#" onClick={(e) => { e.preventDefault(); scrollToCalendar() }}>Book a strategy call</a>
+              <a href="#" onClick={(e) => { e.preventDefault(); scrollToCalendar() }}>Talk to us</a>
             </div>
           </div>
       </div>

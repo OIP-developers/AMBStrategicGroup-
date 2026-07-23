@@ -57,7 +57,7 @@ export default function Faq() {
             >
               <div className="faq-question">
                 {item.q}
-                <span className="faq-toggle">{isOpen ? '×' : '+'}</span>
+                <span className="faq-toggle" aria-hidden="true" />
               </div>
               <div className="faq-answer-wrap">
                 <p className="faq-answer">{item.a}</p>

@@ -1,4 +1,4 @@
-import { BtnIcon } from './Buttons.jsx'
+import { BtnIcon, scrollToCalendar } from './Buttons.jsx'
 
 const PRICING = [
   {
@@ -54,9 +54,9 @@ export default function Pricing() {
           Start small. Scale when it pays for itself.
         </h2>
         <p className="section-subtitle">
-          Every tier books into your existing GHL calendar. Pick where to
-          start — most practices see the Starter pay for itself before Gold
-          goes live.
+          Every tier books into your existing GHL calendar.
+          <br />
+          Pick where to start most practices see the Starter pay for itself before Gold goes live.
         </p>
       </div>
       <div className="pricing-grid">
@@ -78,10 +78,10 @@ export default function Pricing() {
                 <li key={f}>{f}</li>
               ))}
             </ul>
-            <a href="#calendar" className="btn-pill">
+            <button type="button" className="btn-pill" onClick={scrollToCalendar}>
               Book a call
               <BtnIcon />
-            </a>
+            </button>
           </div>
         ))}
       </div>
