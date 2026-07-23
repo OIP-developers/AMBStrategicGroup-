@@ -582,7 +582,7 @@
   .ms-hero__visual::before { width: 200px; height: 200px; top: 40px; right: 20px; filter: blur(100px); }
   .ms-hero__doctor { max-width: 100%; width: 100%; }
   .ms-hero__tooth { width: 100px; left: -20px; top: auto; bottom: 250px; }
-  .ms-hero__sparkle { display: none; }
+  .ms-hero__sparkle { display: block; right: 0; }
   .ms-hero__visual .ms-hero__note--top {
     position: relative;
     left: auto;
