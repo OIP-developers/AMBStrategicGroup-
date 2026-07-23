@@ -100,10 +100,18 @@
     padding: 3.6458vw 0 1.5625vw;
   }
   .md-footer__top {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    gap: 2.0833vw;
+    display: flex;
+    gap: 0;
     margin-bottom: 3.6458vw;
+  }
+  .md-footer__brand {
+    width: 70%;
+  }
+  .md-footer__col--page {
+    width: 25%;
+  }
+  .md-footer__col--start {
+    width: 15%;
   }
   .md-footer__logo {
     height: 2.0833vw;
