@@ -37,13 +37,19 @@ export default function MedDentalHero() {
               <a href="#book-a-call" className="md-hero__btn md-hero__btn--primary" onClick={(e) => scroll(e, 'book-a-call')}>
                 Book A Free Consultation
                 <span className="md-hero__btn-circle md-hero__btn-circle--grad">
-                  <img src={arrowImg} alt="" />
+                  <span
+                    className="md-hero__btn-arrow-mask"
+                    style={{ WebkitMaskImage: `url(${arrowImg})`, maskImage: `url(${arrowImg})` }}
+                  />
                 </span>
               </a>
               <a href="#how-it-works" className="md-hero__btn md-hero__btn--white" onClick={(e) => scroll(e, 'how-it-works')}>
                 See how it works
                 <span className="md-hero__btn-circle md-hero__btn-circle--grad-bg">
-                  <img src={arrowImg} alt="" className="md-hero__btn-arrow--white" />
+                  <span
+                    className="md-hero__btn-arrow-white-mask"
+                    style={{ WebkitMaskImage: `url(${arrowImg})`, maskImage: `url(${arrowImg})` }}
+                  />
                 </span>
               </a>
             </div>

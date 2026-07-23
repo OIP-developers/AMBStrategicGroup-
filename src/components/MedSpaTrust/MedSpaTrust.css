@@ -1,0 +1,382 @@
+.ms-trust {
+  position: relative;
+  padding: 180px 0px 140px;
+}
+
+@keyframes msFlameFlicker {
+  0%, 100% { transform: scale(1, 1) translateX(0); opacity: 0.85; }
+  20%      { transform: scale(0.9, 1.08) translateX(-0.5px); opacity: 1; }
+  40%      { transform: scale(1.05, 0.95) translateX(0.5px); opacity: 0.8; }
+  60%      { transform: scale(0.95, 1.1) translateX(-0.5px); opacity: 0.95; }
+  80%      { transform: scale(1.08, 0.92) translateX(0.5px); opacity: 0.9; }
+}
+
+.ms-trust::before {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  left: -500px;
+  top: -150px;
+  width: 820px;
+  height: 820px;
+  border-radius: 50%;
+  background: #cb15a6;
+  opacity: 0.35;
+  filter: blur(200px);
+  pointer-events: none;
+}
+
+.ms-trust__wrap {
+  max-width: 1346.5px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.ms-trust__row {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.ms-trust__row::before {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  top: -50px;
+  right: -170px;
+  width: 140px;
+  height: 140px;
+  background-image: url('/src/imagesfolder/MedSpaLanding/candlelight.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  pointer-events: none;
+}
+
+.ms-trust__row::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: -53px;
+  right: -90px;
+  width: 32px;
+  height: 44px;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  background: radial-gradient(circle at 50% 60%, #fff2b0 0%, #ffb347 45%, #ff7a1a 80%, rgba(255,122,26,0) 100%);
+  filter: blur(1px);
+  transform-origin: center bottom;
+  pointer-events: none;
+  animation: msFlameFlicker 1.6s ease-in-out infinite;
+}
+
+.ms-trust__left {
+  flex: 0 0 auto;
+  width: 742px;
+  padding-top: 0;
+}
+
+.ms-trust__tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  padding: 10px 20px;
+  border-radius: 100px;
+  background: linear-gradient(90deg, #ff00bf 0%, #008ef9 100%);
+  font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+
+.ms-trust__title {
+  font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 111%;
+  letter-spacing: -0.03em;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.ms-trust__bio {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #ffffff;
+  margin-bottom: 33px;
+}
+
+.ms-trust__tagline {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 136%;
+  color: #ff00bf;
+}
+
+.ms-trust__right {
+  flex: 0 0 auto;
+  width: 470px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.ms-trust__card {
+  position: relative;
+}
+
+.ms-trust__card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 1px;
+  background: linear-gradient(180deg, #ff00bf 0%, #008ef9 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.ms-trust__card-inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 18.3px;
+  height: 116px;
+  padding: 24px 24px;
+  border-radius: 20px;
+  background: linear-gradient(160deg, rgba(0, 0, 0, 0.8) 0%, rgba(75, 75, 75, 0.2) 100%);
+}
+
+.ms-trust__card-icon {
+  width: 17.7px;
+  height: 17.7px;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.ms-trust__card-inner h3 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 136%;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.ms-trust__card-inner p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 136%;
+  color: #ffffff;
+}
+
+
+@media (min-width: 992px) {
+  .ms-trust {
+    position: relative;
+    padding: 9.375vw 0px 7.2917vw;
+  }
+  .ms-trust::before {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    left: -26.0417vw;
+    top: -7.8125vw;
+    width: 42.7083vw;
+    height: 42.7083vw;
+    border-radius: 50%;
+    background: #cb15a6;
+    opacity: 0.35;
+    filter: blur(10.4167vw);
+    pointer-events: none;
+  }
+  .ms-trust__wrap {
+    max-width: 70.1302vw;
+    margin: 0 auto;
+    padding: 0 1.0417vw;
+  }
+  .ms-trust__row {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 3.125vw;
+  }
+  .ms-trust__row::before {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    top: -2.6042vw;
+    right: -8.8542vw;
+    width: 7.2917vw;
+    height: 7.2917vw;
+    background-image: url('/src/imagesfolder/MedSpaLanding/candlelight.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    pointer-events: none;
+  }
+  .ms-trust__row::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -2.7604vw;
+    right: -4.6875vw;
+    width: 1.6667vw;
+    height: 2.2917vw;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    background: radial-gradient(circle at 50% 60%, #fff2b0 0%, #ffb347 45%, #ff7a1a 80%, rgba(255,122,26,0) 100%);
+    filter: blur(0.05vw);
+    transform-origin: center bottom;
+    pointer-events: none;
+    animation: msFlameFlicker 1.6s ease-in-out infinite;
+  }
+  .ms-trust__left {
+    flex: 0 0 auto;
+    width: 38.6458vw;
+    padding-top: 0;
+  }
+  .ms-trust__tag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 0.5208vw 1.0417vw;
+    border-radius: 5.2083vw;
+    background: linear-gradient(90deg, #ff00bf 0%, #008ef9 100%);
+    font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
+    font-weight: 500;
+    font-size: 0.7292vw;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 1.3021vw;
+  }
+  .ms-trust__title {
+    font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
+    font-weight: 500;
+    font-size: 3.125vw;
+    line-height: 111%;
+    letter-spacing: -0.03em;
+    text-transform: capitalize;
+    color: #ffffff;
+    margin-bottom: 0.8333vw;
+  }
+  .ms-trust__bio {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.0417vw;
+    line-height: 150%;
+    color: #ffffff;
+    margin-bottom: 1.7188vw;
+  }
+  .ms-trust__tagline {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 0.9375vw;
+    line-height: 136%;
+    color: #ff00bf;
+  }
+  .ms-trust__right {
+    flex: 0 0 auto;
+    width: 24.4792vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2.0833vw;
+  }
+  .ms-trust__card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 1.0417vw;
+    padding: 0.0521vw;
+    background: linear-gradient(180deg, #ff00bf 0%, #008ef9 100%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+  .ms-trust__card-inner {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.9531vw;
+    height: 6.0417vw;
+    padding: 1.25vw 1.25vw;
+    border-radius: 1.0417vw;
+    background: linear-gradient(160deg, rgba(0, 0, 0, 0.8) 0%, rgba(75, 75, 75, 0.2) 100%);
+  }
+  .ms-trust__card-icon {
+    width: 0.9219vw;
+    height: 0.9219vw;
+    flex-shrink: 0;
+    margin-top: 0.2083vw;
+  }
+  .ms-trust__card-inner h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 1.25vw;
+    line-height: 136%;
+    color: #ffffff;
+    margin-bottom: 0.3125vw;
+  }
+  .ms-trust__card-inner p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 0.9375vw;
+    line-height: 136%;
+    color: #ffffff;
+  }
+}
+
+@media (max-width: 991px) {
+  .ms-trust { padding: 60px 0; }
+  .ms-trust::before { width: 500px; height: 500px; left: -250px; top: -100px; filter: blur(120px); }
+  .ms-trust__row { flex-direction: column; gap: 40px; }
+  .ms-trust__left { width: 100%; text-align: center; }
+  .ms-trust__title { font-size: 40px; }
+  .ms-trust__bio { font-size: 15px; width: 80%; margin: 0 auto 33px; }
+  .ms-trust__right { width: 100%; }
+  .ms-trust__card-inner { height: auto; padding: 16px 20px; }
+  .ms-trust__row::before,
+  .ms-trust__row::after {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .ms-trust { padding: 50px 0; }
+  .ms-trust::before { width: 340px; height: 340px; left: -170px; top: -60px; filter: blur(90px); }
+  .ms-trust__title { font-size: 32px; }
+  .ms-trust__bio { font-size: 14px; }
+  .ms-trust__card-inner { flex-wrap: wrap; padding: 14px 16px; }
+}
+
+@media (max-width: 599px) {
+  .ms-trust__title { font-size: 26px; margin-bottom: 26px; }
+  .ms-trust__bio { font-size: 13px; }
+  .ms-trust::before { display: none; }
+  .ms-trust__card-inner h3 { font-size: 20px; }
+}
+
+@media (max-width: 481px) {
+  .ms-trust__title { font-size: 27px; }
+  .ms-trust__card-inner p { font-size: 14px; }
+  .ms-trust__right { width: 100%; gap: 30px; }
+  .ms-trust__card::before { border-radius: 12px; }
+  .ms-trust__card-inner { border-radius: 12px; flex-wrap: unset; }
+  .ms-trust__tag { height: auto; padding: 12px 20px; line-height: 1; letter-spacing: 0; }
+}
+
+@media (max-width: 320px) {
+  .ms-trust__title { font-size: 22px; }
+  .ms-trust__card-inner { padding: 12px 14px; }
+}

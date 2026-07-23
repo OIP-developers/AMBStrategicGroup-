@@ -1,0 +1,202 @@
+.ms-footer {
+  padding: 70px 0 30px;
+}
+
+.ms-footer__top {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 70px;
+}
+
+.ms-footer__logo {
+  height: 40px;
+  margin-bottom: 16px;
+}
+
+.ms-footer__tagline {
+  font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: #fff;
+  margin-bottom: 10px;
+  max-width: 350px;
+}
+
+.ms-footer__location {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.ms-footer__col h4 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  background: linear-gradient(90deg, #ff00bf 0%, #008ef9 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 16px;
+}
+
+.ms-footer__col a {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 2;
+}
+
+.ms-footer__col-grid {
+  display: flex;
+  gap: 60px;
+}
+
+.ms-footer__col a:hover {
+  color: #ff00bf;
+}
+
+.ms-footer__divider {
+  height: 1px;
+  background: linear-gradient(90deg, rgba(255, 0, 191, 0.3) 0%, rgba(0, 142, 249, 0.3) 100%);
+  margin-bottom: 24px;
+}
+
+.ms-footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.ms-footer__bottom p {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #b8b8b8;
+}
+
+.ms-footer__legal {
+  display: flex;
+  gap: 24px;
+}
+
+.ms-footer__legal a {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #d0d0d0;
+}
+
+.ms-footer__legal a:hover {
+  color: #ff00bf;
+}
+
+
+@media (min-width: 992px) {
+  .ms-footer {
+    padding: 3.6458vw 0 1.5625vw;
+  }
+  .ms-footer__top {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 2.0833vw;
+    margin-bottom: 3.6458vw;
+  }
+  .ms-footer__logo {
+    height: 2.0833vw;
+    margin-bottom: 0.8333vw;
+  }
+  .ms-footer__tagline {
+    font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
+    font-weight: 500;
+    font-size: 0.8854vw;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: #fff;
+    margin-bottom: 0.5208vw;
+    max-width: 18.2292vw;
+  }
+  .ms-footer__location {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.625vw;
+    color: #ffffff;
+  }
+  .ms-footer__col h4 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 1.0417vw;
+    background: linear-gradient(90deg, #ff00bf 0%, #008ef9 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 0.8333vw;
+  }
+  .ms-footer__col a {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8333vw;
+    color: #ffffff;
+    line-height: 2;
+  }
+  .ms-footer__col-grid {
+    display: flex;
+    gap: 3.125vw;
+  }
+  .ms-footer__divider {
+    height: 0.0521vw;
+    background: linear-gradient(90deg, rgba(255, 0, 191, 0.3) 0%, rgba(0, 142, 249, 0.3) 100%);
+    margin-bottom: 1.25vw;
+  }
+  .ms-footer__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.625vw;
+  }
+  .ms-footer__bottom p {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.7292vw;
+    color: #b8b8b8;
+  }
+  .ms-footer__legal {
+    display: flex;
+    gap: 1.25vw;
+  }
+  .ms-footer__legal a {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.7292vw;
+    color: #d0d0d0;
+  }
+}
+
+@media (max-width: 991px) {
+  .ms-footer__top { grid-template-columns: 1fr; gap: 30px; }
+  .ms-footer__col-grid { gap: 30px; }
+  .ms-footer__bottom { flex-direction: column; align-items: flex-start; gap: 12px; }
+}
+
+@media (max-width: 767px) {
+  .ms-footer__logo { width: 140px; }
+  .ms-footer__col-grid { flex-direction: column; gap: 16px; }
+  .ms-footer__legal { flex-wrap: wrap; gap: 14px; }
+}
+
+@media (max-width: 599px) {
+  .ms-footer__top { grid-template-columns: 1fr; gap: 24px; margin-bottom: 40px; }
+  .ms-footer__legal { gap: 10px; }
+  .ms-footer__logo { width: 210px; }
+  .ms-footer__col h4 { margin-bottom: 0px; }
+  .ms-footer__col-grid { flex-direction: column; gap: 0; }
+}
+
+@media (max-width: 481px) {
+  .ms-footer__logo { width: 120px; }
+}
+
+@media (max-width: 320px) {
+  .ms-footer__tagline { font-size: 14px; }
+}

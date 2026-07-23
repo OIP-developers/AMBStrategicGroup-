@@ -56,7 +56,10 @@ export default function MedDentalProblem() {
           <a href="#book-a-call" className="md-problem__btn" onClick={scroll}>
             Book A Free Consultation
             <span className="md-problem__btn-circle">
-              <img src={arrowImg} alt="" className="md-problem__btn-arrow" />
+              <span
+                className="md-problem__btn-arrow-mask"
+                style={{ WebkitMaskImage: `url(${arrowImg})`, maskImage: `url(${arrowImg})` }}
+              />
             </span>
           </a>
         </div>

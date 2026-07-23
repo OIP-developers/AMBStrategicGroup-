@@ -3,17 +3,17 @@
   background: #000000;
 }
 
-.getstarted--medicaldental {
+.getstarted--medicaldental, .getstarted--medspa {
   background: #0b0b0b;
 }
 
-.getstarted--medicaldental .getstarted__card {
+.getstarted--medicaldental .getstarted__card, .getstarted--medspa .getstarted__card {
   backdrop-filter: none;
   padding: 40px 50px 50px 60px;
   transition: box-shadow 0.4s ease;
 }
 
-.getstarted--medicaldental .getstarted__card:hover {
+.getstarted--medicaldental .getstarted__card:hover, .getstarted--medspa .getstarted__card:hover {
   box-shadow: 0 0 60px rgba(255, 0, 191, 0.25), 0 0 90px rgba(0, 142, 249, 0.2);
 }
 
@@ -240,8 +240,8 @@
 
 .getstarted__dental-star {
   position: absolute;
-  right: -360px;
-  bottom: 80px;
+  right: -320px;
+  bottom: 120px;
   width: 228px;
 }
 
@@ -262,7 +262,7 @@
 }
 
 @media (max-width: 991px) {
-  .getstarted--medicaldental .getstarted__card {
+  .getstarted--medicaldental .getstarted__card, .getstarted--medspa .getstarted__card {
     padding: 40px 40px 40px 40px;
   }
   .getstarted__left--dental {
@@ -296,27 +296,32 @@
   .getstarted__title--dental {
     font-size: 32px;
   }
+  .getstarted__title--dental br {
+    display: none;
+  }
   .getstarted__desc--dental {
+    width: 80%;
     font-size: 15px;
+    padding: 16px 0 40px;
   }
 }
 
 @media (max-width: 599px) {
   .getstarted__title--dental { font-size: 26px; }
-  .getstarted--medicaldental .getstarted__card { padding: 30px 15px 30px 15px; }
+  .getstarted--medicaldental .getstarted__card, .getstarted--medspa .getstarted__card { padding: 30px 15px 30px 15px; }
 }
 
 @media (max-width: 481px) {
   .getstarted__title--dental { font-size: 30px; }
   .getstarted__title--dental br { display: none; }
   .getstarted__dental-link { font-size: 13px; }
-  .getstarted--medicaldental .getstarted__card { gap: 40px; }
+  .getstarted--medicaldental .getstarted__card, .getstarted--medspa .getstarted__card { gap: 40px; }
 }
 
 
 
 @media (min-width: 992px) {
-  .getstarted--medicaldental .getstarted__card {
+  .getstarted--medicaldental .getstarted__card, .getstarted--medspa .getstarted__card {
     padding: 2.0833vw 2.6042vw 2.6042vw 3.125vw;
   }
   .getstarted__left--dental {
@@ -358,8 +363,8 @@
   }
   .getstarted__dental-star {
     position: absolute;
-    right: -18.75vw;
-    bottom: 4.1667vw;
+    right: -16.6667vw;
+    bottom: 6.25vw;
     width: 11.875vw;
     animation: mdGetStartedStarSpin 9s linear infinite;
     transform-origin: center center;

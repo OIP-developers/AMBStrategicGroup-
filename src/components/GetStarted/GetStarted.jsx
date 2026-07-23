@@ -6,6 +6,7 @@ import locationIcon from '../../imagesfolder/getstarted/locationicon.png'
 import dentalToothImg from '../../imagesfolder/medicaldental/getstartsection/getstarttooth.png'
 import dentalStarImg from '../../imagesfolder/medicaldental/getstartsection/getstartstar.png'
 import dentalLineImg from '../../imagesfolder/medicaldental/getstartsection/getstartLine.png'
+import spaStarImg from '../../imagesfolder/medicaldental/herosection/herobannerstar.png'
 import './GetStarted.css'
 
 export default function GetStarted({
@@ -14,6 +15,7 @@ export default function GetStarted({
   bookingSrc = 'https://api.leadconnectorhq.com/widget/booking/rx4FnQDUZqhEEzKmElBs',
   bookingIframeId = 'rx4FnQDUZqhEEzKmElBs_1782148430321',
   dentalVariant = false,
+  spaVariant = false,
 }) {
   useEffect(() => {
     const script = document.createElement('script')
@@ -45,6 +47,27 @@ export default function GetStarted({
               <div className="getstarted__dental-decor">
                 <img src={dentalToothImg} alt="" className="getstarted__dental-tooth" />
                 <img src={dentalStarImg} alt="" className="getstarted__dental-star" />
+              </div>
+
+              <a
+                href={`#${sectionId}`}
+                className="getstarted__dental-link"
+                onClick={(e) => e.preventDefault()}
+              >
+                Book Your Free AI Strategy Session Today
+              </a>
+            </div>
+          ) : spaVariant ? (
+            <div className="getstarted__left getstarted__left--dental">
+              <h2 className="getstarted__title getstarted__title--dental">Book a<br />Strategy Call</h2>
+              <img src={dentalLineImg} alt="" className="getstarted__underline" />
+              <p className="getstarted__desc getstarted__desc--dental">
+                In 30 minutes, we'll show you where consults are slipping away and how a
+                sub-60-second response system pays for itself. No pressure, no hype.
+              </p>
+
+              <div className="getstarted__dental-decor">
+                <img src={spaStarImg} alt="" className="getstarted__dental-star" />
               </div>
 
               <a

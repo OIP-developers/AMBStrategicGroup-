@@ -10,6 +10,7 @@ import PrivacyPolicyPage      from './pages/PrivacyPolicyPage'
 import TermsOfServicesPage    from './pages/TermsOfServicesPage'
 import MedicalDentalPage      from './pages/MedicalDentalPage'
 import LawAccountingPage      from './pages/LawAccounting/LawAccountingPage'
+import MedSpaPage             from './pages/MedSpaPage'
 import './App.css'
 import './responsive.css'
 
@@ -28,6 +29,7 @@ function App() {
       <Route path="/terms-of-services"       element={<TermsOfServicesPage />} />
       <Route path="/medicaldental"           element={<MedicalDentalPage />} />
       <Route path="/law-accounting"          element={<LawAccountingPage />} />
+      <Route path="/med-spa"                 element={<MedSpaPage />} />
       </Routes>
     </>
   )

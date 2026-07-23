@@ -57,7 +57,10 @@ export default function MedDentalHowItWorks() {
           <a href="#book-a-call" className="md-hiw__btn" onClick={scroll}>
             Book A Free Consultation
             <span className="md-hiw__btn-circle">
-              <img src={arrowImg} alt="" className="md-hiw__btn-arrow" />
+              <span
+                className="md-hiw__btn-arrow-mask"
+                style={{ WebkitMaskImage: `url(${arrowImg})`, maskImage: `url(${arrowImg})` }}
+              />
             </span>
           </a>
         </div>

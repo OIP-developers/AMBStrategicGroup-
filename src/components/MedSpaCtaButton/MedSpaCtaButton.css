@@ -1,4 +1,4 @@
-.md-btn {
+.ms-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -14,11 +14,12 @@
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.md-btn:hover {
-  box-shadow: 0 10px 24px rgba(255, 0, 191, 0.25), 0 4px 12px rgba(0, 142, 249, 0.2);
+.ms-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0, 142, 249, 0.28);
 }
 
-.md-btn__circle {
+.ms-btn__circle {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,58 +28,36 @@
   border-radius: 50%;
   background: #ffffff;
   flex-shrink: 0;
-  transition: background 0.3s ease;
 }
 
-.md-btn__arrow-mask {
-  display: inline-block;
+.ms-btn__arrow {
   width: 10px;
   height: 16px;
-  background-color: #008ef9;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-size: contain;
-  mask-size: contain;
-  -webkit-mask-position: center;
-  mask-position: center;
-  transition: background-color 0.3s ease;
 }
 
-.md-btn--primary {
+.ms-btn--primary {
   background: linear-gradient(90deg, #ff00bf 0%, #008ef9 100%);
   color: #ffffff;
-  transition: background 0.3s ease, color 0.3s ease;
 }
-.md-btn--primary .md-btn__circle {
+.ms-btn--primary .ms-btn__circle {
   color: #008ef9;
 }
 
-.md-btn--primary:hover {
-  background: #ffffff;
-  color: #000000;
-}
-.md-btn--primary:hover .md-btn__circle {
-  background: linear-gradient(101.72deg, #ff00bf 1.23%, #008ef9 94.61%);
-}
-.md-btn--primary:hover .md-btn__arrow-mask {
-  background-color: #ffffff;
-}
-
-.md-btn--dark {
+.ms-btn--dark {
   background: #333333;
   color: #ffffff;
 }
-.md-btn--dark .md-btn__circle {
+.ms-btn--dark .ms-btn__circle {
   color: #333333;
 }
 
 @media (max-width: 767px) {
-  .md-btn {
+  .ms-btn {
     height: 48px;
     padding: 0 6px 0 20px;
     font-size: 13px;
   }
-  .md-btn__circle {
+  .ms-btn__circle {
     width: 32px;
     height: 32px;
   }
@@ -86,7 +65,7 @@
 
 
 @media (min-width: 992px) {
-  .md-btn {
+  .ms-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -101,10 +80,11 @@
     white-space: nowrap;
     transition: transform 0.25s ease, box-shadow 0.25s ease;
   }
-  .md-btn:hover {
-    box-shadow: 0 0.5208vw 1.25vw rgba(255, 0, 191, 0.25), 0 0.2083vw 0.625vw rgba(0, 142, 249, 0.2);
+  .ms-btn:hover {
+    transform: translateY(-0.1042vw);
+    box-shadow: 0 0.5208vw 1.25vw rgba(0, 142, 249, 0.28);
   }
-  .md-btn__circle {
+  .ms-btn__circle {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -114,8 +94,8 @@
     background: #ffffff;
     flex-shrink: 0;
   }
-  .md-btn__arrow-mask {
+  .ms-btn__arrow {
     width: 0.5208vw;
     height: 0.8333vw;
-  }
+    }
 }

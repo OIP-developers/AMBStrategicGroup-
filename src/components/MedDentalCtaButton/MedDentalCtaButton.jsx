@@ -11,7 +11,10 @@ export default function MedDentalCtaButton({ to = 'book-a-call', variant = 'prim
     <a href={`#${to}`} className={`md-btn md-btn--${variant}`} onClick={scroll}>
       {children}
       <span className="md-btn__circle">
-        <img src={arrowImg} alt="" className="md-btn__arrow" />
+        <span
+          className="md-btn__arrow-mask"
+          style={{ WebkitMaskImage: `url(${arrowImg})`, maskImage: `url(${arrowImg})` }}
+        />
       </span>
     </a>
   )
