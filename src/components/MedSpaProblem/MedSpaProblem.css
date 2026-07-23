@@ -14,15 +14,17 @@
   align-items: center;
   justify-content: center;
   height: auto;
-  padding: 10px 20px;
+  padding: 10px 17px;
   border-radius: 100px;
-  background: linear-gradient(90deg, #ff00bf 0%, #008ef9 100%);
+  background: linear-gradient(94.78deg, #FF00BF -0.53%, #008EF9 99.98%);
   font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
+  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 111%;
+  text-align: center;
   letter-spacing: -0.03em;
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: #ffffff;
   margin-bottom: 30px;
 }
@@ -206,15 +208,17 @@
     align-items: center;
     justify-content: center;
     height: auto;
-    padding: 0.5208vw 1.0417vw;
+    padding: 0.5208vw 0.8854vw;
     border-radius: 5.2083vw;
-    background: linear-gradient(90deg, #ff00bf 0%, #008ef9 100%);
+    background: linear-gradient(94.78deg, #FF00BF -0.53%, #008EF9 99.98%);
     font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
+    font-style: normal;
     font-weight: 500;
     font-size: 0.7292vw;
     line-height: 111%;
+    text-align: center;
     letter-spacing: -0.03em;
-    text-transform: uppercase;
+    text-transform: capitalize;
     color: #ffffff;
     margin-bottom: 1.5625vw;
   }
