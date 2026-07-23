@@ -1418,22 +1418,20 @@
   justify-content: center;
 }
 
-.getstarted__form-box-wrap,
-.law-accounting-page .getstarted__form-box {
+.law-accounting-page .getstarted__form-box-wrap {
   width: 100%;
 }
 
 .law-accounting-page .getstarted__form-box {
-  height: 915px;
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: transparent;
+  overflow: hidden;
   border-radius: 15px;
-  overflow-y: auto;
-  overflow-x: hidden;
-  width: 751px;
-  margin: 0 auto;
 }
 
 .law-accounting-page .getstarted__form-box iframe {
-  height: 100%;
   border-radius: 15px;
 }
 
@@ -2043,9 +2041,8 @@
     min-width: 15.625vw;
   }
 .law-accounting-page .getstarted__form-box {
-    height: 47.656vw;
+    height: auto;
     border-radius: 0.781vw;
-    width: 39.115vw;
   }
 .law-accounting-page .getstarted__form-box iframe {
     border-radius: 0.781vw;
@@ -2545,9 +2542,8 @@
   }
 .law-accounting-page .getstarted__form-box {
     width: 100%;
-    height:780px;
+    height: auto;
     border-radius: 12px;
-    overflow-y: auto;
   }
 .law-accounting-page .getstarted__form-box iframe {
     border-radius: 12px;
@@ -2968,7 +2964,7 @@
   }
 .law-accounting-page .getstarted__form-box {
       width: 100%;
-      height: revert-rule;
+      height: auto;
       border-radius: 10px;
   }
 .law-accounting-page .getstarted__form-box iframe {
@@ -3187,9 +3183,6 @@
   }
 .law-accounting-page .book-call-text p {
     font-size: 13px;
-  }
-.law-accounting-page .getstarted__form-box {
-    height: revert-rule;
   }
 .law-accounting-page .footer-col {
     align-items: center;
