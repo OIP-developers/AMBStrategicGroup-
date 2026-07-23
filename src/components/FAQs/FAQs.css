@@ -417,7 +417,7 @@
 }
 
 @media (max-width: 481px) {
-  .faqs--medicaldental .faqs__title, .faqs--medspa .faqs__title { font-size: 22px; }
+  .faqs--medicaldental .faqs__title, .faqs--medspa .faqs__title { font-size: 26px; }
   .faqs--medicaldental .faqs__tag, .faqs--medspa .faqs__tag { height: auto; line-height: 1.1; padding: 12px 30px 6px; }
   .faqs--medicaldental .faq-item__question, .faqs--medspa .faq-item__question { font-size: 14px; }
   .faqs--medicaldental .faqs__left, .faqs--medspa .faqs__left { margin-bottom: 30px; }

@@ -532,9 +532,18 @@
   .md-pkg::before { width: 400px; height: 400px; right: -150px; top: -60px; filter: blur(120px); }
   .md-pkg__title { font-size: 39px; }
   .md-pkg__subtitle { max-width: 90%; font-size: 16px; margin-bottom: 40px; }
-  .md-pkg__cards { flex-direction: column; gap: 60px; margin-top: 30px; }
+  .md-pkg__cards { flex-direction: column; gap: 80px; margin-top: 30px; }
+  .md-pkg__card { width: 80%; margin: 0 auto; }
   .md-pkg__card-title { font-size: 28px; }
   .md-pkg__timeline { font-size: 17px; }
+  .md-pkg__btn {
+    gap: 20px;
+    padding: 10px 10px 10px 22px;
+    border-radius: 53.5px;
+    margin: auto auto -23px;
+    font-size: 15px;
+    letter-spacing: 0;
+  }
 }
 
 @media (max-width: 767px) {
@@ -543,6 +552,7 @@
   .md-pkg::before { width: 300px; height: 300px; right: -100px; top: -40px; filter: blur(90px); }
   .md-pkg__title { font-size: 28px; }
   .md-pkg__subtitle { font-size: 14px; margin-bottom: 28px; }
+  .md-pkg__card { width: 100%; margin: 0; }
   .md-pkg__card-title { font-size: 24px; }
   .md-pkg__timeline { font-size: 15px; }
 }
@@ -555,10 +565,17 @@
   .md-pkg__cards { flex-direction: column; gap: 80px; margin-top: 30px; }
   .md-pkg__timeline { margin-bottom: 20px; }
   .md-pkg__features-heading { margin-bottom: 13px; }
+  .md-pkg__card--highlight .md-pkg__card-inner::before { transform: scaleX(1); }
+  .md-pkg__card--highlight .md-pkg__btn {
+    background: linear-gradient(90deg, #ff00bf 0%, #008ef9 100%);
+    color: #ffffff;
+  }
+  .md-pkg__card--highlight .md-pkg__btn-circle { background: #ffffff; }
+  .md-pkg__card--highlight .md-pkg__btn-arrow { background-color: #008ef9; }
 }
 
 @media (max-width: 481px) {
-  .md-pkg__title { font-size: 24px; }
+  .md-pkg__title { font-size: 24px; width: 100%; letter-spacing: 0; margin: 0 auto 20px; line-height: 1.2; }
   .md-pkg__card-title { font-size: 22px; padding: 0 10px; }
   .md-pkg__timeline { padding: 0 10px; }
   .md-pkg__features-heading { padding: 0 10px; font-size: 16px; }
@@ -570,7 +587,7 @@
 }
 
 @media (max-width: 320px) {
-  .md-pkg__title { font-size: 22px; }
+  .md-pkg__title { font-size: 24px; line-height: 1.3; }
   .md-pkg__card-title { font-size: 20px; }
   .md-pkg__timeline { font-size: 14px; }
 }

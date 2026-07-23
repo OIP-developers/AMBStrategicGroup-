@@ -366,5 +366,6 @@
 
 @media (max-width: 320px) {
   .md-hiw__title { font-size: 20px; }
+  .md-hiw__subtitle { font-size: 13px; max-width: 100%; }
   .md-hiw__card-inner { padding: 16px 16px; }
 }

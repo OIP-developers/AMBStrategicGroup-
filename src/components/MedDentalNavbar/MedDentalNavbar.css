@@ -1,7 +1,7 @@
 .md-navbar {
   position: relative;
   z-index: 10;
-  padding: 70px 0px 10px;
+  padding: 40px 0px 10px;
 }
 
 .md-navbar__inner {
@@ -135,7 +135,7 @@
   .md-navbar {
     position: relative;
     z-index: 10;
-    padding: 3.6458vw 0vw 0.5208vw;
+    padding: 2.0833vw 0vw 0.5208vw;
   }
   .md-navbar__inner {
     display: flex;

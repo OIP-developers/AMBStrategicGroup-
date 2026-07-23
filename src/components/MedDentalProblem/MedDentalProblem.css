@@ -373,6 +373,7 @@
 }
 
 @media (max-width: 320px) {
-  .md-problem__title { font-size: 20px; }
+  .md-problem__title { font-size: 22px; width: 90%; margin: 0 auto 20px; line-height: 1.3; }
+  .md-problem__subtitle { font-size: 13px; max-width: 100%; }
   .md-problem__card-inner { padding: 18px 14px; }
 }

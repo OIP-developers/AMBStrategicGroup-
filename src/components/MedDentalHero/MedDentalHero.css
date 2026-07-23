@@ -21,7 +21,7 @@
   display: flex;
   align-items: center;
   gap: 0px;
-  margin-top: 110px;
+  margin-top: 80px;
 }
 
 /* ---- Content column ---- */
@@ -316,7 +316,7 @@
     display: flex;
     align-items: center;
     gap: 0vw;
-    margin-top: 5.7292vw;
+    margin-top: 4.1667vw;
   }
   .md-hero__title {
     font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
@@ -529,7 +529,7 @@
 @media (max-width: 767px) {
   .md-hero { padding-bottom: 40px; }
   .md-hero__row { margin-top: 40px; }
-  .md-hero__title { font-size: 32px; }
+  .md-hero__title { font-size: 32px; line-height: 1.1; letter-spacing: 0; }
   .md-hero__desc { font-size: 15px; margin-bottom: 30px; }
   .md-hero__actions { flex-wrap: wrap; gap: 12px; margin-bottom: 40px; }
   .md-hero__stats { gap: 16px; }
@@ -557,7 +557,9 @@
 
 @media (max-width: 481px) {
   .md-hero__actions { gap: 22px; }
-  .md-hero__title { font-size: 22px; }
+  .md-hero__title { font-size: 26px; line-height: 1.2; }
+  .md-hero__stats { gap: 8px; flex-direction: column; align-items: center; }
+  .md-hero__stats li img { display: none; }
   .md-hero__visual { max-width: 220px; }
   .md-hero__doctor { max-width: 220px; }
   .md-hero__tooth { display: block; width: 40px; left: 10px; top: 120px; }
@@ -565,10 +567,12 @@
 }
 
 @media (max-width: 320px) {
-  .md-hero__title { font-size: 20px; }
+  .md-hero__row { margin-top: 30px; }
+  .md-hero__title { font-size: 24px; line-height: 1.2; }
+  .md-hero__stats li img { display: none; }
   .md-hero__desc { font-size: 13px; }
   .md-hero__visual { max-width: 180px; }
   .md-hero__doctor { max-width: 180px; }
-  .md-hero__tooth { width: 32px; top: 75px; }
-  .md-hero__sparkle { width: 50px; }
+  .md-hero__tooth { width: 35px; top: 92px; }
+  .md-hero__sparkle { width: 70px; }
 }
