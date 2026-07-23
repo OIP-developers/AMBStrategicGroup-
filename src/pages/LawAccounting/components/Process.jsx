@@ -4,12 +4,12 @@ const PROCESS = [
   {
     number: '01',
     title: 'Capture',
-    desc: 'Every call, form, and website inquiry is captured instantly — nothing goes to voicemail after hours.',
+    desc: 'Every call, form, and website inquiry is captured instantly nothing goes to voicemail after hours.',
   },
   {
     number: '02',
     title: 'Qualify',
-    desc: "The AI screens case or service type, jurisdiction or entity, and urgency — filtering out what doesn't fit.",
+    desc: "The AI screens case or service type, jurisdiction or entity, and urgency filtering out what doesn't fit.",
     featured: true,
   },
   {

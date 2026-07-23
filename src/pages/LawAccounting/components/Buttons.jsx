@@ -1,7 +1,7 @@
 export function BtnIcon() {
   return (
     <span className="btn-icon">
-      <img src="/law-accounting/assets/button-arrow-icon.png" alt="" />
+      <span className="btn-icon-arrow" />
     </span>
   )
 }

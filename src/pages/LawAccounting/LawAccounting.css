@@ -375,21 +375,34 @@
   width: 36.74px;
   height: 36.74px;
   border-radius: 50%;
-  transition: transform 0.25s ease;
+  transition: transform 0.25s ease, background 0.45s ease;
   background: var(--gradient-accent-btn);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.law-accounting-page .btn-pill .btn-icon img {
+.law-accounting-page .btn-pill .btn-icon-arrow {
   width: 10px;
-  height: auto;
+  height: 16px;
+  background: #fff;
+  transition: background 0.45s ease;
+  -webkit-mask-image: url(/law-accounting/assets/button-arrow-icon.png);
+  mask-image: url(/law-accounting/assets/button-arrow-icon.png);
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
 }
 
 .law-accounting-page .btn-pill:hover .btn-icon {
-  filter: brightness(1.15);
-  transform: rotate(45deg);
+  background: #fff;
+}
+
+.law-accounting-page .btn-pill:hover .btn-icon-arrow {
+  background: var(--gradient-accent-btn);
 }
 
 /* Nav */
@@ -495,7 +508,7 @@
 
 .law-accounting-page .hero-content {
   flex: 1;
-  max-width: 640px;
+  max-width:645px;
 }
 
 .law-accounting-page .hero-eyebrow {
@@ -780,6 +793,7 @@
 .law-accounting-page .problems .section-subtitle {
   max-width: 945px;
   margin: 15px auto 59px;
+  text-transform: capitalize;
 }
 
 .law-accounting-page .problems .section-cta {
@@ -802,6 +816,7 @@
   padding: 32px 24px;
   text-align: center;
   background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.4) 39.74%, rgba(75, 75, 75, 0.1) 153.42%) padding-box,
     linear-gradient(var(--card), var(--card)) padding-box,
     var(--gradient-accent-btn) border-box;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
@@ -1231,7 +1246,7 @@
 .law-accounting-page .faq-list {
   position: relative;
   z-index: 1;
-  max-width: 900px;
+  max-width: 970px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -1274,8 +1289,12 @@
   font-family: var(--heading-font);
   font-weight: 500;
   font-size: 20px;
-  line-height: 59px;
+  /* min-height: 59px; */
   text-transform: capitalize;
+}
+
+.law-accounting-page .faq-question-text {
+  line-height: normal;
 }
 
 .law-accounting-page .faq-toggle {
@@ -1326,6 +1345,7 @@
   margin-top: 11px;
   padding-top: 16px;
   border-top-color: rgba(255, 255, 255, 0.17);
+  max-width: 100%;
 }
 
 .law-accounting-page .faq-answer {
@@ -1610,8 +1630,9 @@
     width: 1.914vw;
     height: 1.914vw;
   }
-.law-accounting-page .btn-pill .btn-icon img {
+.law-accounting-page .btn-pill .btn-icon-arrow {
     width: 0.521vw;
+    height: 0.833vw;
   }
 .law-accounting-page .nav {
     padding: 2.604vw 0 1.25vw;
@@ -1637,7 +1658,7 @@
     padding: 7.813vw 0 8.542vw;
   }
 .law-accounting-page .hero-content {
-    max-width: 33.333vw;
+    max-width: 33.594vw;
   }
 .law-accounting-page .hero-eyebrow {
     font-size: 2.001vw;
@@ -1967,7 +1988,7 @@
     margin: 1.198vw 0 2.656vw;
   }
 .law-accounting-page .faq-list {
-    max-width: 46.875vw;
+    max-width: 50.521vw;
     gap: 1.146vw;
   }
 .law-accounting-page .faq-item {
@@ -1980,7 +2001,7 @@
   }
 .law-accounting-page .faq-question {
     font-size: 1.042vw;
-    line-height: 3.073vw;
+    /* min-height: 3.073vw; */
   }
   .law-accounting-page .faq-toggle {
     --toggle-size: 1.354vw;
@@ -1993,6 +2014,7 @@
 .law-accounting-page .faq-item.open .faq-answer {
     margin-top: 0.573vw;
     padding-top: 0.833vw;
+    max-width: 100%;
   }
 .law-accounting-page .book-call {
     padding: 6.094vw 0;
@@ -2158,9 +2180,9 @@
     width: 35px;
     height: 35px;
   }
-.law-accounting-page .btn-pill .btn-icon img {
+.law-accounting-page .btn-pill .btn-icon-arrow {
     width: 8px;
-    height: auto;
+    height: 12.8px;
   }
 .law-accounting-page .problems {
     padding: 70px 0 80px;
@@ -2462,7 +2484,7 @@
   }
 .law-accounting-page .faq-question {
     font-size: 17px;
-    line-height: 40px;
+    /* min-height: 40px; */
   }
 .law-accounting-page .faq-toggle {
     --toggle-size: 22px;
@@ -2602,6 +2624,11 @@
   }
 .law-accounting-page .footer-links a {
     font-size: 13px;
+  }
+  .law-accounting-page .faq-item.open .faq-answer {
+    margin-top: 11.002px;
+    padding-top: 15.994px;
+    max-width: 100%;
   }
 
 }
@@ -2895,7 +2922,7 @@
   }
 .law-accounting-page .faq-question {
     font-size: 14px;
-    line-height: 28px;
+    /* min-height: 28px; */
   }
 .law-accounting-page .faq-toggle {
     --toggle-size: 18px;
@@ -3149,7 +3176,7 @@
   }
 .law-accounting-page .faq-question {
     font-size: 13px;
-    line-height: 24px;
+    /* min-height: 24px; */
     letter-spacing: 0;
   }
 .law-accounting-page .faq-answer {

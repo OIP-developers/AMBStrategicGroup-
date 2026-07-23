@@ -56,7 +56,7 @@ export default function Faq() {
               onClick={() => toggleFaq(i)}
             >
               <div className="faq-question">
-                {item.q}
+                <span className="faq-question-text">{item.q}</span>
                 <span className="faq-toggle" aria-hidden="true" />
               </div>
               <div className="faq-answer-wrap">

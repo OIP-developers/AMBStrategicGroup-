@@ -38,9 +38,9 @@ export default function Problems() {
         <h2 className="section-title bottom-zoro">Where the</h2>
         <h2 className="section-title">fees quietly walk out</h2>
         <p className="section-subtitle">
-          For firms that live on intake, a missed call isn't a missed call —
-          it's a client who signed with whoever picked up first. And your
-          team is too busy on billable work to catch them all.
+          For firms that live on intake, a missed call isn't a missed call it's a client who
+          <br />
+          signed with whoever picked first. And your team is too busy on billable work to catch them all.
         </p>
       </div>
       <div className="problem-grid">
