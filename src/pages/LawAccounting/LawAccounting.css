@@ -1488,6 +1488,7 @@
   align-items: flex-start;
   justify-content: flex-end;
   gap: 128px;
+  margin-right: 62px;
 }
 .law-accounting-page .footer-location {
   font-family: var(--nav-font);
@@ -2071,6 +2072,7 @@
   }
 .law-accounting-page .footer-top .two-calaa {
     gap: 6.667vw;
+    margin-right: 3.229vw;
   }
 .law-accounting-page .footer-location {
     font-size: 0.625vw;
@@ -2248,8 +2250,8 @@
     gap: 20px;
   }
 .law-accounting-page .logo-img {
-    width: 170px;
-    height: 56px;
+    width: 200px;
+    height: 80px;
   }
 .law-accounting-page .nav-toggle {
     display: flex;
@@ -2568,8 +2570,8 @@
   }
 .law-accounting-page .footer-top {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: start;
     gap: 32px;
   }
 .law-accounting-page .footer-brand {
@@ -2578,14 +2580,15 @@
 .law-accounting-page .footer-brand p {
     font-size: 15px;
     line-height: 20px;
-    margin: 20px 0 16px;
+    margin: 19px 0 11px;
   }
 .law-accounting-page .footer-top .two-calaa {
-    flex-direction: row;
+    flex-direction:column;
     align-items: self-start;
     justify-content: space-between;
     width: 100%;
     gap: 32px;
+    margin: 0;
   }
 .law-accounting-page .footer-col {
     align-items: flex-start;
@@ -2601,8 +2604,8 @@
     gap: 12px;
   }
 .law-accounting-page .footer-col h4 {
-    font-size: 18px;
-    margin: 0 0 12px;
+    font-size: 22px;
+    margin: 0 0 10px;
   }
 .law-accounting-page .footer-col a {
     font-size: 14px;
@@ -2643,7 +2646,7 @@
     gap: 16px;
   }
 .law-accounting-page .logo-img {
-    width: 140px;
+    width: 180px;
     height: auto;
   }
 .law-accounting-page .nav-links {
@@ -2997,9 +3000,9 @@
     max-width: 100%;
   }
 .law-accounting-page .footer-brand p {
-    font-size: 13px;
-    line-height: 18px;
-    margin: 16px 0 12px;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 21px 0 5px;
   }
 .law-accounting-page .footer-location {
     font-size: 12px;
@@ -3014,8 +3017,9 @@
     flex-wrap: wrap;
   }
 .law-accounting-page .footer-col h4 {
-    font-size: 16px;
-    margin: 0 0 10px;
+    font-size: 20px;
+    margin: 0 0 11px;
+    line-height: normal;
   }
 .law-accounting-page .footer-col a {
     font-size: 13px;
@@ -3046,7 +3050,7 @@
 @media(max-width:599px){
 
 .law-accounting-page .logo-img {
-    width: 120px;
+    width: 160px;
   }
 .law-accounting-page .nav-links {
     font-size: 13px;
@@ -3186,14 +3190,28 @@
     font-size: 13px;
   }
 .law-accounting-page .footer-col {
-    align-items: center;
-    text-align: center;
+  align-items: flex-start;
+  text-align: left;
   }
 .law-accounting-page .footer-top .two-calaa {
-    flex-wrap: wrap;
-    justify-content: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
+  align-items: flex-start;
+  flex-direction: column;
+  }
+  .law-accounting-page .footer-col h4 {
+    font-size: 18px;
+    margin: 0 0 9px;
+    line-height: normal;
     width: 100%;
-    align-items: center;
+    max-width: 100%;
+    text-align: left;
+  }
+  .law-accounting-page .footer-col .lin-box .samiclasse {
+    align-items: flex-start;
+    gap: 9px;
+    width: 100%;
   }
 .law-accounting-page .footer-col a {
     font-size: 12px;
@@ -3201,9 +3219,14 @@
 .law-accounting-page .footer-links a {
     font-size: 12px;
   }
-.law-accounting-page .footer-bottom {
+  .law-accounting-page .footer-bottom {
     font-size: 12px;
-    justify-content: center;
+    justify-content: flex-start;
+  }
+  .law-accounting-page .footer-col .lin-box {
+    gap: 10px;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
 
 }
