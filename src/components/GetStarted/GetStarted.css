@@ -212,8 +212,8 @@
 }
 
 .getstarted__desc--dental {
-  width: auto;
-  max-width: 320px;
+  width: 100%;
+  max-width: 100%;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -232,16 +232,16 @@
 
 .getstarted__dental-tooth {
   position: absolute;
-  left: 310px;
-  top: -190px;
+  left: 90px;
+  top: 0;
   width: 240px;
   height: auto;
 }
 
 .getstarted__dental-star {
   position: absolute;
-  right: -320px;
-  bottom: 120px;
+  right: -120px;
+  bottom: -120px;
   width: 228px;
 }
 
@@ -275,6 +275,9 @@
   .getstarted__desc--dental {
     max-width: 100%;
     margin: 0 auto;
+    width: 80%;
+    font-size: 15px;
+    padding: 20px 0 50px;
   }
   .getstarted__dental-decor {
     display: none;
@@ -338,8 +341,8 @@
     color: #ffffff;
   }
   .getstarted__desc--dental {
-    width: auto;
-    max-width: 16.6667vw;
+    width: 100%;
+    max-width: 100%;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 0.9375vw;
@@ -356,15 +359,15 @@
   }
   .getstarted__dental-tooth {
     position: absolute;
-    left: 16.1458vw;
-    top: -9.8958vw;
+    left: 4.6875vw;
+    top: 0;
     width: 12.5vw;
     height: auto;
   }
   .getstarted__dental-star {
     position: absolute;
-    right: -16.6667vw;
-    bottom: 6.25vw;
+    right: -6.25vw;
+    bottom: -6.25vw;
     width: 11.875vw;
     animation: mdGetStartedStarSpin 9s linear infinite;
     transform-origin: center center;
@@ -377,6 +380,7 @@
     letter-spacing: -0.03em;
     color: #ff00bf;
     text-decoration: underline;
+    margin-top: 10.4167vw;
   }
   .getstarted__underline {
     display: block;

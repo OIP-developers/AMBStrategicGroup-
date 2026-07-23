@@ -1,6 +1,6 @@
 import { Fragment } from 'react'
 import toothImg from '../../imagesfolder/MedSpaLanding/bottleimg.png'
-import sparkleImg from '../../imagesfolder/medicaldental/costofwaiting/star.png'
+import sparkleImg from '../../imagesfolder/medicaldental/costofwaiting/star.webp'
 import arrowImg from '../../imagesfolder/medicaldental/herosection/buttonicon.png'
 import './MedSpaProblem.css'
 
