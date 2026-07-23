@@ -1,4 +1,18 @@
+import { useEffect } from 'react'
+
 export default function BookCall() {
+  useEffect(() => {
+    const script = document.createElement('script')
+    script.src = 'https://link.msgsndr.com/js/form_embed.js'
+    script.async = true
+    document.body.appendChild(script)
+    return () => {
+      if (document.body.contains(script)) {
+        document.body.removeChild(script)
+      }
+    }
+  }, [])
+
   return (
     <section id="calendar" className="book-call">
       <div className="book-call-card">
@@ -24,8 +38,8 @@ export default function BookCall() {
             <div className="getstarted__form-box">
               <iframe
                 src="https://api.leadconnectorhq.com/widget/booking/rx4FnQDUZqhEEzKmElBs"
-                style={{ width: '100%', border: 'none' }}
-                scrolling="auto"
+                style={{ width: '100%', border: 'none', overflow: 'hidden' }}
+                scrolling="no"
                 id="rx4FnQDUZqhEEzKmElBs_1782148430321"
               />
             </div>
