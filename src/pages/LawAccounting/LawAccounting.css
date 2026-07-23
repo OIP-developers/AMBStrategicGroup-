@@ -2592,16 +2592,18 @@
   }
 .law-accounting-page .footer-col {
     align-items: flex-start;
-    text-align: center;
+    text-align: left;
   }
 .law-accounting-page .footer-col .lin-box {
-    flex-direction: row;
-    gap: 40px;
+    flex-direction: column;
+    gap: 10px;
     justify-content: flex-start;
+    text-align: left;
   }
 .law-accounting-page .footer-col .lin-box .samiclasse {
-    align-items: center;
-    gap: 12px;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
   }
 .law-accounting-page .footer-col h4 {
     font-size: 22px;
