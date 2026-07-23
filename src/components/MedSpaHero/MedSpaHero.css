@@ -17,6 +17,11 @@
   50%      { transform: translateY(8px); }
 }
 
+@keyframes mdToothFloat {
+  0%, 100% { transform: translateY(0) scale(1.2); }
+  50%      { transform: translateY(-8px) scale(1.2); }
+}
+
 .ms-hero__row {
   display: flex;
   align-items: center;
@@ -242,10 +247,12 @@
 .ms-hero__tooth {
   position: absolute;
   z-index: 3;
-  width: 149px;
-  height: 179px;
-  left: -90px;
-  top: 240px;
+  width: 157px;
+  height: 264px;
+  left: -103px;
+  top: 210px;
+  object-fit: contain;
+  transform: scale(1.2);
 }
 
 .ms-hero__sparkle {
@@ -461,11 +468,13 @@
   .ms-hero__tooth {
     position: absolute;
     z-index: 3;
-    width: 7.7604vw;
-    height: 9.3229vw;
-    left: -4.6875vw;
-    top: 12.5vw;
-    animation: mdNoteFloat 5s ease-in-out infinite;
+    width: 8.1771vw;
+    height: 13.75vw;
+    left: -5.3646vw;
+    top: 10.9375vw;
+    object-fit: contain;
+    transform: scale(1.2);
+    animation: mdToothFloat 5s ease-in-out infinite;
     animation-delay: 0.3s;
   }
   .ms-hero__sparkle {
@@ -573,7 +582,7 @@
   .ms-hero__visual::before { width: 200px; height: 200px; top: 40px; right: 20px; filter: blur(100px); }
   .ms-hero__doctor { max-width: 100%; width: 100%; }
   .ms-hero__tooth { width: 100px; left: -20px; top: auto; bottom: 250px; }
-  .ms-hero__sparkle { display: none; }
+  .ms-hero__sparkle { display: block; right: 0; }
   .ms-hero__visual .ms-hero__note--top {
     position: relative;
     left: auto;
@@ -639,7 +648,7 @@
 @media (max-width: 320px) {
   .ms-hero__eyebrow { font-size: 16px; }
   .ms-hero__title { font-size: 20px; }
-  .ms-hero__desc { font-size: 13px; }
+  .ms-hero__desc { font-size: 13px; line-height: 1.6; }
   .ms-hero__visual { max-width: 100%; }
   .ms-hero__doctor { max-width: 100%; width: 100%; }
   .ms-hero__tooth { display: none; }

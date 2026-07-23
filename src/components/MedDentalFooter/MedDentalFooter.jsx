@@ -19,7 +19,7 @@ export default function MedDentalFooter() {
             <p className="md-footer__location">Woman-owned · founder-led · Teaneck, New Jersey</p>
           </div>
 
-          <div className="md-footer__col">
+          <div className="md-footer__col md-footer__col--page">
             <h4>This page</h4>
             <div className="md-footer__col-grid">
               <div>
@@ -33,7 +33,7 @@ export default function MedDentalFooter() {
             </div>
           </div>
 
-          <div className="md-footer__col">
+          <div className="md-footer__col md-footer__col--start">
             <h4>Get started</h4>
             <a href="#book-a-call" onClick={(e) => scrollTo(e, 'book-a-call')}>Book a strategy call</a>
             <a href="#book-a-call" onClick={(e) => scrollTo(e, 'book-a-call')}>Talk to us</a>

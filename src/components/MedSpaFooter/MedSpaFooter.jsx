@@ -19,7 +19,7 @@ export default function MedSpaFooter() {
             <p className="ms-footer__location">Woman-owned · founder-led · Teaneck, New Jersey</p>
           </div>
 
-          <div className="ms-footer__col">
+          <div className="ms-footer__col ms-footer__col--page">
             <h4>This page</h4>
             <div className="ms-footer__col-grid">
               <div>
@@ -33,7 +33,7 @@ export default function MedSpaFooter() {
             </div>
           </div>
 
-          <div className="ms-footer__col">
+          <div className="ms-footer__col ms-footer__col--start">
             <h4>Get started</h4>
             <a href="#book-a-call" onClick={(e) => scrollTo(e, 'book-a-call')}>Book a strategy call</a>
             <a href="#book-a-call" onClick={(e) => scrollTo(e, 'book-a-call')}>Talk to us</a>

@@ -274,7 +274,7 @@
     font-size: 0.9375vw;
     line-height: 140%;
     color: #ffffff;
-    width: 14.4792vw;
+    width: 15.625vw;
   }
   .ms-problem__btn {
     display: inline-flex;
@@ -359,8 +359,10 @@
   .ms-problem__grid { flex-direction: column; }
   .ms-problem__card { flex: 1; }
   .ms-problem__card-inner { padding: 22px 18px; }
-  .ms-problem__tooth { width: 80px; left: 10px; top: 180px; }
+  .ms-problem__tooth { display: none; }
   .ms-problem__sparkle { width: 130px; }
+  .ms-problem__card h3 br { display: none; }
+  .ms-problem__card h3 { margin-bottom: 15px; font-size: 22px; min-height: auto; }
 }
 
 @media (max-width: 599px) {
@@ -384,5 +386,8 @@
 
 @media (max-width: 320px) {
   .ms-problem__title { font-size: 20px; }
-  .ms-problem__card-inner { padding: 18px 14px; }
+  .ms-problem__card { border-radius: 8px; }
+  .ms-problem__card-inner { padding: 18px 14px; border-radius: 8px; }
+  .ms-problem__card h3 { font-size: 20px; min-height: auto; }
+  .ms-problem__card p { width: 100%; font-size: 12px; }
 }
