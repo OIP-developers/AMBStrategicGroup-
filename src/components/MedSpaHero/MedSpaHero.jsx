@@ -1,6 +1,6 @@
 import injectorImg from '../../imagesfolder/MedSpaLanding/medspaimg.png'
 import injectionImg from '../../imagesfolder/MedSpaLanding/injectionimg.png'
-import sparkleImg from '../../imagesfolder/medicaldental/herosection/herobannerstar.png'
+import sparkleImg from '../../imagesfolder/MedSpaLanding/spaherostar.png'
 import arrowImg from '../../imagesfolder/medicaldental/herosection/buttonicon.png'
 import checkImg from '../../imagesfolder/medicaldental/herosection/checkicon.png'
 import vectorHeroImg from '../../imagesfolder/medicaldental/herosection/vectorhero.png'

@@ -23,10 +23,8 @@
 }
 
 @keyframes msFlowerSway {
-  0%, 100% { transform: rotate(0deg) scale(1); }
-  25%      { transform: rotate(4deg) scale(1.03); }
-  50%      { transform: rotate(0deg) scale(0.97); }
-  75%      { transform: rotate(-4deg) scale(1.02); }
+  0%, 100% { transform: translateY(0) rotate(-2deg) scale(1); }
+  50%      { transform: translateY(-14px) rotate(2deg) scale(1.04); }
 }
 
 .ms-faq-wrap .ms-faq__tooth {

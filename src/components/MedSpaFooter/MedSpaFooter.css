@@ -81,7 +81,7 @@
 
 .ms-footer__legal {
   display: flex;
-  gap: 24px;
+  gap: 64px;
 }
 
 .ms-footer__legal a {
@@ -164,7 +164,7 @@
   }
   .ms-footer__legal {
     display: flex;
-    gap: 1.25vw;
+    gap: 3.3333vw;
   }
   .ms-footer__legal a {
     font-family: 'Inter', sans-serif;
@@ -197,6 +197,17 @@
 
 @media (max-width: 481px) {
   .ms-footer__logo { width: 120px; }
+  .ms-footer__bottom p {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: #b8b8b8;
+  }
+  .ms-footer__legal a {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: #d0d0d0;
+  }
+  .ms-footer__tagline { font-size: 14px; margin-bottom: 10px; max-width: 100%; }
 }
 
 @media (max-width: 320px) {
