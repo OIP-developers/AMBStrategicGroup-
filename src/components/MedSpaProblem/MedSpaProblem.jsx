@@ -62,7 +62,7 @@ export default function MedSpaProblem() {
 
         <div className="ms-problem__cta">
           <a href="#book-a-call" className="ms-problem__btn" onClick={scroll}>
-            Book A Free Consultation
+            <span className="ms-problem__btn-text">Book A Free Consultation</span>
             <span className="ms-problem__btn-circle">
               <span
                 className="ms-problem__btn-arrow-mask"

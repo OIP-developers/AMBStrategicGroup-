@@ -36,7 +36,7 @@ export default function MedSpaHero() {
 
             <div className="ms-hero__actions">
               <a href="#book-a-call" className="ms-hero__btn ms-hero__btn--primary" onClick={(e) => scroll(e, 'book-a-call')}>
-                Book A Free Consultation
+                <span className="ms-hero__btn-text">Book A Free Consultation</span>
                 <span className="ms-hero__btn-circle ms-hero__btn-circle--grad">
                   <span
                     className="ms-hero__btn-arrow-mask"
@@ -45,7 +45,7 @@ export default function MedSpaHero() {
                 </span>
               </a>
               <a href="#how-it-works" className="ms-hero__btn ms-hero__btn--white" onClick={(e) => scroll(e, 'how-it-works')}>
-                See how it works
+                <span className="ms-hero__btn-text">See how it works</span>
                 <span className="ms-hero__btn-circle ms-hero__btn-circle--grad-bg">
                   <span
                     className="ms-hero__btn-arrow-white-mask"

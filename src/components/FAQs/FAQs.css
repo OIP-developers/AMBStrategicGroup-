@@ -236,11 +236,9 @@
 }
 
 .faqs--medicaldental .faqs__tag, .faqs--medspa .faqs__tag {
-  display: inline-flex;
+  display: inline-block;
   align-items: center;
-  justify-content: center;
-  height: 36px;
-  padding: 10px 20px 4px;
+  padding: 10px 20px 5px;
   border-radius: 100px;
   background: linear-gradient(90deg, #ff00bf 0%, #008ef9 100%);
   font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
@@ -250,7 +248,6 @@
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
-  transform: translateY(3px);
 }
 
 .faqs--medicaldental .faqs__star, .faqs--medspa .faqs__star {
@@ -340,11 +337,9 @@
     margin-bottom: 2.5vw;
   }
   .faqs--medicaldental .faqs__tag, .faqs--medspa .faqs__tag {
-    display: inline-flex;
+    display: inline-block;
     align-items: center;
-    justify-content: center;
-    height: 1.875vw;
-    padding: 0.5208vw 1.0417vw 0.2083vw;
+    padding: 0.5208vw 1.0417vw 0.2604vw;
     border-radius: 5.2083vw;
     background: linear-gradient(90deg, #ff00bf 0%, #008ef9 100%);
     font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
@@ -354,7 +349,6 @@
     text-transform: uppercase;
     color: #ffffff;
     margin-bottom: 1.0417vw;
-    transform: translateY(0.1563vw);
   }
   .faqs--medicaldental .faqs__title, .faqs--medspa .faqs__title {
     font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
@@ -424,4 +418,9 @@
   .faqs--medicaldental .faqs__tag, .faqs--medspa .faqs__tag { height: auto; line-height: 1.1; padding: 12px 30px 6px; }
   .faqs--medicaldental .faq-item__question, .faqs--medspa .faq-item__question { font-size: 14px; }
   .faqs--medicaldental .faqs__left, .faqs--medspa .faqs__left { margin-bottom: 30px; }
+}
+
+@media (max-width: 320px) {
+  .faqs--medicaldental .faqs__tag, .faqs--medspa .faqs__tag { padding: 10px 30px 6px; font-size: 12px; }
+  .faqs--medicaldental .faqs__title, .faqs--medspa .faqs__title { font-size: 28px; }
 }

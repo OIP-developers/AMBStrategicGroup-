@@ -62,7 +62,7 @@ export default function MedSpaHowItWorks() {
 
         <div className="ms-hiw__cta">
           <a href="#book-a-call" className="ms-hiw__btn" onClick={scroll}>
-            Book A Free Consultation
+            <span className="ms-hiw__btn-text">Book A Free Consultation</span>
             <span className="ms-hiw__btn-circle">
               <span
                 className="ms-hiw__btn-arrow-mask"

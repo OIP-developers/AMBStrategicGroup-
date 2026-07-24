@@ -37,21 +37,18 @@
 }
 
 .md-trust__tag {
-  display: inline-flex;
+  display: inline-block;
   align-items: center;
-  justify-content: center;
-  height: auto;
-  padding: 10px 20px;
+  padding: 10px 20px 5px;
   border-radius: 100px;
   background: linear-gradient(90deg, #ff00bf 0%, #008ef9 100%);
   font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 13px;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 25px;
-  transform: translateY(3px);
 }
 
 .md-trust__title {
@@ -124,6 +121,10 @@
   margin-top: 4px;
 }
 
+.md-trust__card:hover .md-trust__card-icon {
+  transform: scale(1.15);
+}
+
 .md-trust__card-inner h3 {
   font-family: 'Inter', sans-serif;
   font-weight: 600;
@@ -143,6 +144,24 @@
 
 
 @media (min-width: 992px) {
+  .md-trust__card {
+    transition: transform 0.3s ease;
+  }
+  .md-trust__card:hover {
+    transform: translateY(-4px) scale(1.02);
+  }
+  .md-trust__card::before {
+    transition: filter 0.3s ease;
+  }
+  .md-trust__card:hover::before {
+    filter: brightness(1.3);
+  }
+  .md-trust__card-icon {
+    transition: transform 0.3s ease;
+  }
+  .md-trust__card:hover .md-trust__card-icon {
+    transform: scale(1.15);
+  }
   .md-trust {
     position: relative;
     padding: 4.6875vw 0;
@@ -177,21 +196,18 @@
     padding-top: 0;
   }
   .md-trust__tag {
-    display: inline-flex;
+    display: inline-block;
     align-items: center;
-    justify-content: center;
-    height: auto;
-    padding: 0.5208vw 1.0417vw;
+    padding: 0.5208vw 1.0417vw 0.2604vw;
     border-radius: 5.2083vw;
     background: linear-gradient(90deg, #ff00bf 0%, #008ef9 100%);
     font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
     font-weight: 500;
-    font-size: 0.7292vw;
+    font-size: 0.6771vw;
     letter-spacing: -0.03em;
     text-transform: uppercase;
     color: #ffffff;
     margin-bottom: 1.3021vw;
-    transform: translateY(0.1563vw);
   }
   .md-trust__title {
     font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
@@ -305,6 +321,15 @@
 }
 
 @media (max-width: 320px) {
-  .md-trust__title { font-size: 22px; }
-  .md-trust__card-inner { padding: 12px 14px; }
+  .md-trust__title { font-size: 29px; }
+  .md-trust__tag {
+    height: auto;
+    padding: 12px 20px 5px;
+    line-height: 1;
+    letter-spacing: 0;
+  }
+  .md-trust__bio { font-size: 12px; width: 100%; }
+  .md-trust__tagline { font-size: 13px; }
+  .md-trust__card-inner { padding: 16px 12px; gap: 10px; }
+  .md-trust__card-inner p { font-size: 12px; }
 }

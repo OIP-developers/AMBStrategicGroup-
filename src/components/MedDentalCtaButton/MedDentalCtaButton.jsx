@@ -9,7 +9,7 @@ export default function MedDentalCtaButton({ to = 'book-a-call', variant = 'prim
 
   return (
     <a href={`#${to}`} className={`md-btn md-btn--${variant}`} onClick={scroll}>
-      {children}
+      <span className="md-btn__text">{children}</span>
       <span className="md-btn__circle">
         <span
           className="md-btn__arrow-mask"

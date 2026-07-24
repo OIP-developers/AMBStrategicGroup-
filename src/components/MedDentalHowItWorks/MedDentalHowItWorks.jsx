@@ -43,7 +43,15 @@ export default function MedDentalHowItWorks() {
 
         <div className="md-hiw__grid">
           {steps.map((s) => (
-            <div key={s.num} className={`md-hiw__card ${s.highlight ? 'md-hiw__card--highlight' : ''}`}>
+            <div
+              key={s.num}
+              className={`md-hiw__card ${s.highlight ? 'md-hiw__card--highlight' : ''}`}
+              onMouseEnter={(e) => {
+                const rect = e.currentTarget.getBoundingClientRect()
+                const x = ((e.clientX - rect.left) / rect.width) * 100
+                e.currentTarget.style.setProperty('--hover-origin-x', `${x}%`)
+              }}
+            >
               <div className="md-hiw__card-inner">
                 <span className="md-hiw__num">{s.num}</span>
                 <h3>{s.title}</h3>
@@ -55,7 +63,7 @@ export default function MedDentalHowItWorks() {
 
         <div className="md-hiw__cta">
           <a href="#book-a-call" className="md-hiw__btn" onClick={scroll}>
-            Book A Free Consultation
+            <span className="md-hiw__btn-text">Book A Free Consultation</span>
             <span className="md-hiw__btn-circle">
               <span
                 className="md-hiw__btn-arrow-mask"

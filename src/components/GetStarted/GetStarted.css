@@ -252,7 +252,6 @@
   font-size: 18px;
   letter-spacing: -0.03em;
   color: #ff00bf;
-  text-decoration: underline;
   cursor: default;
 }
 
@@ -321,6 +320,10 @@
   .getstarted--medicaldental .getstarted__card, .getstarted--medspa .getstarted__card { gap: 40px; }
 }
 
+@media (max-width: 320px) {
+  .getstarted__title--dental { font-size: 26px; }
+}
+
 
 
 @media (min-width: 992px) {
@@ -379,7 +382,6 @@
     font-size: 0.9375vw;
     letter-spacing: -0.03em;
     color: #ff00bf;
-    text-decoration: underline;
     margin-top: 10.4167vw;
   }
   .getstarted__underline {

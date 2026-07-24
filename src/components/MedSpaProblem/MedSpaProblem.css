@@ -106,11 +106,12 @@
 }
 
 .ms-problem__btn {
+  position: relative;
+  overflow: hidden;
   display: inline-flex;
   align-items: center;
   gap: 13px;
-  height: 54.51px;
-  padding: 0 8px 0 22px;
+  padding: 9px 14px 9px 22px;
   border-radius: 53.5px;
   background: #ffffff;
   font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
@@ -118,29 +119,41 @@
   font-size: 15.44px;
   letter-spacing: -0.03em;
   color: #000000;
-  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.3s ease, color 0.3s ease;
+  transition: transform 0.25s ease;
 }
 
-.ms-problem__btn:hover {
-  box-shadow: 0 10px 24px rgba(255, 0, 191, 0.25), 0 4px 12px rgba(0, 142, 249, 0.2);
+.ms-problem__btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
   background: linear-gradient(101.72deg, #ff00bf 1.23%, #008ef9 94.61%);
-  color: #ffffff;
+  transform: scaleX(0);
+  transform-origin: right;
+  pointer-events: none;
+}
+
+.ms-problem__btn-text,
+.ms-problem__btn-circle {
+  position: relative;
+  z-index: 1;
+}
+
+.ms-problem__btn-text {
+  display: inline-block;
+  transform: translateY(3px);
 }
 
 .ms-problem__btn-circle {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 36.74px;
-  height: 36.74px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   background: linear-gradient(90deg, #ff00bf 0%, #008ef9 100%);
   flex-shrink: 0;
-  transition: background 0.3s ease;
-}
-
-.ms-problem__btn:hover .ms-problem__btn-circle {
-  background: #ffffff;
+  transition: background 0.4s ease;
 }
 
 .ms-problem__btn-arrow-mask {
@@ -154,11 +167,7 @@
   mask-size: contain;
   -webkit-mask-position: center;
   mask-position: center;
-  transition: background-color 0.3s ease;
-}
-
-.ms-problem__btn:hover .ms-problem__btn-arrow-mask {
-  background-color: #008ef9;
+  transition: background-color 0.4s ease;
 }
 
 .ms-problem::before {
@@ -196,8 +205,25 @@
 
 
 @media (min-width: 992px) {
+  .ms-problem__btn {
+    transition: transform 0.25s ease, box-shadow 0.4s ease, color 0.4s ease;
+  }
+  .ms-problem__btn::before {
+    transition: transform 0.4s ease;
+  }
+  .ms-problem__btn:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
   .ms-problem__btn:hover {
     box-shadow: 0 0.5208vw 1.25vw rgba(255, 0, 191, 0.25), 0 0.2083vw 0.625vw rgba(0, 142, 249, 0.2);
+    color: #ffffff;
+  }
+  .ms-problem__btn:hover .ms-problem__btn-circle {
+    background: #ffffff;
+  }
+  .ms-problem__btn:hover .ms-problem__btn-arrow-mask {
+    background-color: #008ef9;
   }
   .ms-problem {
     position: relative;
@@ -286,8 +312,7 @@
     display: inline-flex;
     align-items: center;
     gap: 0.6771vw;
-    height: 2.8391vw;
-    padding: 0 0.4167vw 0 1.1458vw;
+    padding: 0.4688vw 0.7292vw 0.4688vw 1.1458vw;
     border-radius: 2.7865vw;
     background: #ffffff;
     font-family: 'Orbiter FBS Trial', 'Plus Jakarta Sans', sans-serif;
@@ -296,12 +321,15 @@
     letter-spacing: -0.03em;
     color: #000000;
   }
+  .ms-problem__btn-text {
+    transform: translateY(0.1563vw);
+  }
   .ms-problem__btn-circle {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 1.9135vw;
-    height: 1.9135vw;
+    width: 1.8229vw;
+    height: 1.8229vw;
     border-radius: 50%;
     background: linear-gradient(90deg, #ff00bf 0%, #008ef9 100%);
     flex-shrink: 0;
@@ -391,9 +419,32 @@
 }
 
 @media (max-width: 320px) {
-  .ms-problem__title { font-size: 20px; }
+  .ms-problem__title { font-size: 26px; line-height: 111%; letter-spacing: 0; }
+  .ms-problem__tag {
+    padding: 10px 17px 6px;
+    font-size: 13px;
+    line-height: 111%;
+    letter-spacing: 0;
+    margin-bottom: 26px;
+    transform: translateY(0px);
+  }
   .ms-problem__card { border-radius: 8px; }
   .ms-problem__card-inner { padding: 18px 14px; border-radius: 8px; }
   .ms-problem__card h3 { font-size: 20px; min-height: auto; }
   .ms-problem__card p { width: 100%; font-size: 12px; }
+  .ms-problem__btn {
+    gap: 12px;
+    height: unset;
+    padding: 9px 12px 9px 20px;
+    font-size: 15px;
+    letter-spacing: 0;
+  }
+  .ms-problem__btn-circle {
+    width: 30px;
+    height: 30px;
+  }
+  .ms-problem__btn-arrow-mask {
+    width: 8px;
+    height: 12px;
+  }
 }
