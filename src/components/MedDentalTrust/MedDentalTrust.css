@@ -19,11 +19,7 @@
 }
 
 .md-trust__stethoscope {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 250px;
-  height: 300px;
+  display: none;
 }
 
 .md-trust__wrap {
@@ -152,6 +148,14 @@
 
 
 @media (min-width: 992px) {
+  .md-trust__stethoscope {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 13.0208vw;
+    height: 15.625vw;
+  }
   .md-trust__card {
     transition: transform 0.3s ease;
   }
