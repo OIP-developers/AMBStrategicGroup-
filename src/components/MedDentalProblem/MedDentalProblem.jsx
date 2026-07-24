@@ -1,4 +1,4 @@
-import toothImg from '../../imagesfolder/medicaldental/costofwaiting/3d-tooth.webp'
+import toothImg from '../../imagesfolder/medicaldental/md-trust section/stethoscope-3d.png'
 import sparkleImg from '../../imagesfolder/medicaldental/costofwaiting/star.webp'
 import arrowImg from '../../imagesfolder/medicaldental/herosection/buttonicon.png'
 import './MedDentalProblem.css'

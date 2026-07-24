@@ -1,5 +1,4 @@
 import doctorImg from '../../imagesfolder/medicaldental/herosection/herodoctorimg.png'
-import toothImg from '../../imagesfolder/medicaldental/herosection/herotooth.png'
 import sparkleImg from '../../imagesfolder/medicaldental/herosection/herobannerstar.png'
 import arrowImg from '../../imagesfolder/medicaldental/herosection/buttonicon.png'
 import checkImg from '../../imagesfolder/medicaldental/herosection/checkicon.png'
@@ -65,7 +64,6 @@ export default function MedDentalHero() {
           </div>
 
           <div className="md-hero__visual">
-            <img src={toothImg} alt="" className="md-hero__tooth" />
             <img src={doctorImg} alt="Friendly dental practice doctor" className="md-hero__doctor" />
             <img src={sparkleImg} alt="" className="md-hero__sparkle" />
 

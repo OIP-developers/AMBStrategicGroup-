@@ -183,10 +183,10 @@
 .md-problem__tooth {
   position: absolute;
   z-index: 0;
-  width: 243px;
+  width: 228px;
   height: auto;
-  left: 150px;
-  top: 160px;
+  left: 200px;
+  top: 30px;
 }
 
 .md-problem__sparkle {
@@ -345,10 +345,10 @@
   .md-problem__tooth {
     position: absolute;
     z-index: 0;
-    width: 12.6563vw;
+    width: 11.875vw;
     height: auto;
-    left: 7.8125vw;
-    top: 8.3333vw;
+    left: 10.4167vw;
+    top: 1.5625vw;
   }
   .md-problem__sparkle {
     position: absolute;

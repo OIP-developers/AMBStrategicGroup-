@@ -1,5 +1,4 @@
 import injectorImg from '../../imagesfolder/MedSpaLanding/medspaimg.png'
-import injectionImg from '../../imagesfolder/MedSpaLanding/injectionimg.png'
 import sparkleImg from '../../imagesfolder/MedSpaLanding/spaherostar.png'
 import arrowImg from '../../imagesfolder/medicaldental/herosection/buttonicon.png'
 import checkImg from '../../imagesfolder/medicaldental/herosection/checkicon.png'
@@ -66,7 +65,7 @@ export default function MedSpaHero() {
           </div>
 
           <div className="ms-hero__visual">
-            <img src={injectionImg} alt="" className="ms-hero__tooth" />
+            <img src={sparkleImg} alt="" className="ms-hero__tooth" />
             <img src={injectorImg} alt="Injector performing a treatment" className="ms-hero__doctor" />
             <img src={sparkleImg} alt="" className="ms-hero__sparkle" />
 
@@ -80,7 +79,7 @@ export default function MedSpaHero() {
               <span className="ms-hero__note-icon">
                 <img src={vectorHeroImg} alt="" />
               </span>
-              <span>A skincare consultation is booked for 5 PM.</span>
+              <span className="ms-hero__note-text">A skincare consultation is booked for 5 PM.</span>
             </div>
           </div>
 
