@@ -9,6 +9,11 @@
   to   { transform: rotate(360deg); }
 }
 
+@keyframes mdProblemToothFloat {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-10px); }
+}
+
 .md-problem__tag {
   display: inline-block;
   height: auto;
@@ -187,6 +192,7 @@
   height: auto;
   left: 200px;
   top: 30px;
+  animation: mdProblemToothFloat 4s ease-in-out infinite;
 }
 
 .md-problem__sparkle {
@@ -380,7 +386,7 @@
   .md-problem__title { font-size: 28px; }
   .md-problem__subtitle { font-size: 14px; margin-bottom: 28px; }
   .md-problem__card-inner { padding: 22px 18px; }
-  .md-problem__tooth { display: none; }
+  .md-problem__tooth { display: block; width: 150px; left: 30px; top: 0; }
   .md-problem__sparkle { width: 130px; }
 }
 

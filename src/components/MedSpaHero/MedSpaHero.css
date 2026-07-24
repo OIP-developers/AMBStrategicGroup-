@@ -243,8 +243,6 @@
   left: -102px;
   top: 190px;
   object-fit: contain;
-  animation: mdSparkleSpin 9s linear infinite;
-  transform-origin: center center;
 }
 
 .ms-hero__sparkle {
@@ -612,7 +610,7 @@
   .ms-hero__visual::before { width: 200px; height: 200px; top: 40px; right: 20px; filter: blur(100px); }
   .ms-hero__doctor { max-width: 100%; width: 100%; }
   .ms-hero__tooth { width: 100px; left: -20px; top: auto; bottom: 250px; }
-  .ms-hero__sparkle { display: block; right: 0; }
+  .ms-hero__sparkle { display: block; right: 0; width: 100px; }
   .ms-hero__visual .ms-hero__note--top {
     position: relative;
     left: auto;
@@ -643,7 +641,7 @@
   .ms-hero__visual { max-width: 100%; display: flex; flex-direction: column; align-items: center; }
   .ms-hero__doctor { max-width: 100%; width: 100%; }
   .ms-hero__tooth { width: 80px; left: -20px; top: auto; bottom: 200px; }
-  .ms-hero__sparkle { width: 110px; top: 20px; right: 0; }
+  .ms-hero__sparkle { width: 70px; top: 20px; right: 0; }
   .ms-hero__note { padding: 12px 14px 12px 14px; gap: 10px; }
   .ms-hero__visual .ms-hero__note--top {
     position: relative;
@@ -676,6 +674,7 @@
   .ms-hero__visual { max-width: 100%; }
   .ms-hero__doctor { max-width: 100%; width: 100%; }
   .ms-hero__tooth { display: none; }
+  .ms-hero__sparkle { display: none; }
   .ms-hero__btn {
     gap: 12px;
     padding: 9px 14px 9px 22px;
@@ -710,7 +709,7 @@
   .ms-hero__visual { max-width: 100%; }
   .ms-hero__doctor { max-width: 100%; width: 100%; }
   .ms-hero__tooth { display: none; }
-  .ms-hero__sparkle { width: 60px; top: 20px; right: 0; }
+  .ms-hero__sparkle { display: none; }
   .ms-hero__btn {
     gap: 12px;
     height: unset;

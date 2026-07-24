@@ -382,7 +382,7 @@
   .ms-problem__card h3 { margin-bottom: 15px; font-size: 22px; }
   .ms-problem__card p { width: 100%; font-size: 14px; }
   .ms-problem::before { width: 220px; height: 220px; left: -80px; top: 40px; filter: blur(120px); }
-  .ms-problem__tooth { width: 100px; left: 10px; top: 210px; }
+  .ms-problem__tooth { width: 100px; left: 10px; top: 170px; }
   .ms-problem__sparkle { width: 190px; right: 20px; bottom: 0; }
 }
 
