@@ -18,6 +18,14 @@
   pointer-events: none;
 }
 
+.md-trust__stethoscope {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 250px;
+  height: 300px;
+}
+
 .md-trust__wrap {
   max-width: 1346.5px;
   margin: 0 auto;

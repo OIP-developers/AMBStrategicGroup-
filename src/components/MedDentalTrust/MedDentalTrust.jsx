@@ -1,4 +1,5 @@
 import mdVectorImg from '../../imagesfolder/medicaldental/md-trust section/mdvector.png'
+import stethoscopeImg from '../../imagesfolder/medicaldental/md-problem/stethoscope3d.png'
 import './MedDentalTrust.css'
 
 const stats = [
@@ -10,6 +11,7 @@ const stats = [
 export default function MedDentalTrust() {
   return (
     <section className="md-trust">
+      <img src={stethoscopeImg} alt="" className="md-trust__stethoscope" />
       <div className="md-trust__wrap">
         <div className="md-trust__row">
 
