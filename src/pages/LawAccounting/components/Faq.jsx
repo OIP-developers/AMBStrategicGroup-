@@ -20,7 +20,7 @@ const FAQS = [
 ]
 
 export default function Faq() {
-  const [openFaqs, setOpenFaqs] = useState([0, 1, 2, 3])
+  const [openFaqs, setOpenFaqs] = useState([])
 
   const toggleFaq = (i) => {
     setOpenFaqs((prev) =>

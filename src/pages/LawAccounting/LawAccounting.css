@@ -2840,7 +2840,7 @@
   }
 .law-accounting-page .pricing-card {
     min-width: 100%;
-    padding:60px 22px 60px 22px;
+    padding:40px 22px 40px 22px;
   }
 .law-accounting-page .most-popular {
     top: -14px;
@@ -2971,6 +2971,7 @@
   }
 .law-accounting-page .book-call-text {
     max-width: 100%;
+    text-align: center;
   }
 .law-accounting-page .book-call-text h2 {
     max-width: 100%;
@@ -3066,6 +3067,13 @@
     gap: 10px;
     flex-wrap: wrap;
   }
+  .law-accounting-page .hero-content {
+    max-width: 100%;
+    text-align: center;
+  }
+  .law-accounting-page .hero-chip {
+    display: none;
+  }
 
 }
 
@@ -3088,9 +3096,16 @@
     letter-spacing: 0;
   }
 .law-accounting-page .hero-desc {
-    font-size: 13px;
-    line-height: 150%;
-    margin: 0 0 25px;
+    font-size: 12px;
+    line-height: 140%;
+    margin: 0 0 20px;
+  }
+  .law-accounting-page .pricing-card {
+    min-width: 100%;
+    padding: 30px 16px 30px 16px;
+  }
+  .law-accounting-page .pricing-grid {
+    gap: 70px;
   }
 .law-accounting-page .hero-cta {
     margin: 10px 0 50px;
