@@ -370,7 +370,7 @@
   .getstarted__dental-star {
     position: absolute;
     right: -6.25vw;
-    bottom: -6.25vw;
+    bottom: -3.125vw;
     width: 11.875vw;
     animation: mdGetStartedStarSpin 9s linear infinite;
     transform-origin: center center;
@@ -382,7 +382,7 @@
     font-size: 0.9375vw;
     letter-spacing: -0.03em;
     color: #ff00bf;
-    margin-top: 10.4167vw;
+    margin-top: 8vw;
   }
   .getstarted__underline {
     display: block;

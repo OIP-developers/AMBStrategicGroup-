@@ -130,7 +130,7 @@
   z-index: 1;
   left: 50%;
   top: -18px;
-  transform: translateX(-50%) translateY(3px);
+  transform: translateX(-50%) translateY(0px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -445,7 +445,7 @@
     z-index: 1;
     left: 50%;
     top: -0.9375vw;
-    transform: translateX(-50%) translateY(0.1563vw);
+    transform: translateX(-50%) translateY(0px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -598,7 +598,7 @@
 }
 
 @media (max-width: 599px) {
-  .ms-pkg__title { font-size: 23px; }
+  .ms-pkg__title { font-size: 28px; letter-spacing: 0; }
   .ms-pkg__subtitle { font-size: 13px; max-width: 100%; }
   .ms-pkg__leftstar { display: none; }
   .ms-pkg::before { display: none; }
@@ -606,8 +606,11 @@
   .ms-pkg__card { width: 100%; margin: 0; }
   .ms-pkg__timeline { margin-bottom: 20px; }
   .ms-pkg__features-heading { margin-bottom: 13px; }
-  .ms-pkg__features li { font-size: 16px; line-height: 33px; }
+  .ms-pkg__features li { font-size: 15px; line-height: 30px; }
+  .ms-pkg__features li::before { top: 11px; }
   .ms-pkg__btn-circle { width: 30px; height: 30px; }
+  .ms-pkg__tag { font-size: 14px; line-height: 111%; letter-spacing: 0; margin-bottom: 25px; transform: translateY(0px); }
+  .ms-pkg__badge { padding: 8px 17px 4px; font-size: 12px; letter-spacing: 0; }
   .ms-pkg__card--highlight .ms-pkg__card-inner::before { transform: scaleX(1); }
   .ms-pkg__card--highlight .ms-pkg__btn::before { transform: scaleX(1); }
   .ms-pkg__card--highlight .ms-pkg__btn { color: #ffffff; }
@@ -616,15 +619,17 @@
 }
 
 @media (max-width: 481px) {
-  .ms-pkg__title { font-size: 24px; }
+  .ms-pkg__title { font-size: 28px; letter-spacing: 0; }
   .ms-pkg__card-title { font-size: 22px; padding: 0 10px; }
   .ms-pkg__timeline { padding: 0 10px; }
   .ms-pkg__features-heading { padding: 0 10px; font-size: 16px; }
   .ms-pkg__features { padding: 0 10px; margin-bottom: 40px; }
-  .ms-pkg__features li { font-size: 16px; line-height: 33px; }
+  .ms-pkg__features li { font-size: 15px; line-height: 30px; }
+  .ms-pkg__features li::before { top: 11px; }
   .ms-pkg__btn { letter-spacing: 0; }
   .ms-pkg__btn-circle { width: 30px; height: 30px; }
-  .ms-pkg__badge { height: auto; padding: 10px 18px; letter-spacing: 0; line-height: 1.1; }
+  .ms-pkg__tag { font-size: 14px; line-height: 111%; letter-spacing: 0; margin-bottom: 25px; transform: translateY(0px); }
+  .ms-pkg__badge { height: auto; padding: 8px 17px 4px; letter-spacing: 0; line-height: 1.1; font-size: 12px; }
 }
 
 @media (max-width: 320px) {
