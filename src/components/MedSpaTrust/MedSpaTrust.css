@@ -396,10 +396,11 @@
   .ms-trust__title { font-size: 28px; margin-bottom: 19px; letter-spacing: 0; }
   .ms-trust__bio { font-size: 12px; }
   .ms-trust__card-inner p { font-size: 14px; }
-  .ms-trust__right { width: 100%; gap: 30px; }
+  .ms-trust__right { width: 100%; gap: 20px; }
   .ms-trust__card::before { border-radius: 12px; }
   .ms-trust__card-inner { border-radius: 12px; flex-wrap: unset; }
   .ms-trust__tag { height: auto; padding: 8px 22px 5px; line-height: 1; font-size: 12px; letter-spacing: 0; margin-bottom: 25px; transform: translateY(0px); }
+  .ms-trust__tagline { font-size: 16px; }
 }
 
 @media (max-width: 320px) {

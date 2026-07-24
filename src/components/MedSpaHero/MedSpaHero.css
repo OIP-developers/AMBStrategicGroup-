@@ -664,6 +664,28 @@
   .ms-hero__visual { max-width: 100%; }
   .ms-hero__doctor { max-width: 100%; width: 100%; }
   .ms-hero__tooth { display: none; }
+  .ms-hero__btn {
+    gap: 12px;
+    padding: 9px 14px 9px 22px;
+    font-size: 15px;
+    letter-spacing: 0;
+  }
+  .ms-hero__btn-circle {
+    width: 30px;
+    height: 30px;
+  }
+  .ms-hero__btn-arrow-mask {
+    width: 8px;
+    height: 14px;
+  }
+  .ms-hero__btn-arrow-white-mask {
+    width: 8px;
+    height: 14px;
+  }
+  .ms-hero__btn-text {
+    display: inline-block;
+    transform: translateY(1px);
+  }
 }
 
 @media (max-width: 320px) {

@@ -436,8 +436,15 @@
 
 @media (max-width: 481px) {
   .ms-hiw { padding: 30px 0; }
-  .ms-hiw__title { font-size: 28px; }
-  .ms-hiw__tag { padding: 12px 20px; line-height: 1.1; }
+  .ms-hiw__title { font-size: 30px; }
+  .ms-hiw__tag {
+    padding: 12px 20px 6px;
+    height: unset;
+    font-size: 12px;
+    letter-spacing: 0;
+    margin-bottom: 28px;
+    transform: translateY(0px);
+  }
   .ms-hiw__card-inner { padding: 18px 12px; }
   .ms-hiw__btn-circle { width: 30px; height: 30px; }
   .ms-hiw__btn-arrow-mask { width: 8px; height: 12px; }

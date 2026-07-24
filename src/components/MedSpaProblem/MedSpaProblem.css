@@ -420,6 +420,7 @@
   .ms-problem__tooth { display: none; }
   .ms-problem__sparkle { display: none; }
   .ms-problem__tag { letter-spacing: 0; transform: translateY(0px); margin-bottom: 25px; }
+  .ms-problem__btn-arrow-mask { width: 8px; height: 12px; }
 }
 
 @media (max-width: 320px) {

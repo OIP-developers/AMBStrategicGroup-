@@ -626,10 +626,11 @@
   .ms-pkg__features { padding: 0 10px; margin-bottom: 40px; }
   .ms-pkg__features li { font-size: 15px; line-height: 30px; }
   .ms-pkg__features li::before { top: 11px; }
-  .ms-pkg__btn { letter-spacing: 0; }
+  .ms-pkg__btn { letter-spacing: 0; height: unset; }
   .ms-pkg__btn-circle { width: 30px; height: 30px; }
-  .ms-pkg__tag { font-size: 14px; line-height: 111%; letter-spacing: 0; margin-bottom: 25px; transform: translateY(0px); }
-  .ms-pkg__badge { height: auto; padding: 8px 17px 4px; letter-spacing: 0; line-height: 1.1; font-size: 12px; }
+  .ms-pkg__btn-arrow { width: 8px; height: 14px; }
+  .ms-pkg__tag { font-size: 12px; line-height: 111%; letter-spacing: 0; margin-bottom: 25px; transform: translateY(0px); }
+  .ms-pkg__badge { height: auto; padding: 9px 17px 5px; letter-spacing: 0; line-height: 1.1; font-size: 12px; }
 }
 
 @media (max-width: 320px) {
