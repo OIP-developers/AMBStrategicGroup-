@@ -161,7 +161,7 @@
   .about__title         { font-size: 3.13vw; padding: 1.25vw 0 0.78vw; }
   .about__desc          { width: 43.23vw; font-size: 0.83vw; }
   .about__right         { gap: 1.98vw; }
-  .about__person-img    { width: 12.81vw; height: 12.45vw; border-radius: 1.04vw; }
+  .about__person-img    { width: 12.81vw; height: 12.45vw; }
   .about__person-info   { height: 12.45vw; }
   .about__founder       { font-size: 0.83vw; padding-bottom: 0.68vw; }
   .about__name          { width: 9.74vw; font-size: 3.17vw; padding-bottom: 1.30vw; }

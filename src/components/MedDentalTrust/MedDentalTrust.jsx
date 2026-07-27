@@ -17,7 +17,7 @@ export default function MedDentalTrust() {
 
           <div className="md-trust__left">
             <span className="md-trust__tag">Why AMB</span>
-            <h2 className="md-trust__title">Why practices trust AMB</h2>
+            <h2 className="md-trust__title">Why Practices Trust AMB</h2>
             <p className="md-trust__bio">
               Patient data isn't an afterthought. We build HIPAA-conscious workflows with
               governance baked in — not bolted on after the fact.

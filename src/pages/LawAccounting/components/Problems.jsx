@@ -4,7 +4,7 @@ const PROBLEMS = [
   {
     titleLine1: 'Missed intake',
     titleLine2: ' calls',
-    desc: 'A single unanswered call can be a matter worth tens of thousands in fees — signed by whoever called back first.',
+    desc: 'A single unanswered call can be a matter worth tens of thousands in fees — retained by whoever called back first.',
   },
   {
     titleLine1: 'Unqualified',
@@ -36,11 +36,11 @@ export default function Problems() {
       />
       <div className="section-header problems-header">
         <h2 className="section-title bottom-zoro">Where the</h2>
-        <h2 className="section-title">fees quietly walk out</h2>
+        <h2 className="section-title">Fees Quietly Walk Out</h2>
         <p className="section-subtitle">
-          For firms that live on intake, a missed call isn't a missed call it's a client who
+          For firms that live on intake, a missed call isn't just a missed call
           <br />
-          signed with whoever picked first. And your team is too busy on billable work to catch them all.
+          — it's a client who gets retained by whoever picks up first. And your team is too busy on billable work to catch them all.
         </p>
       </div>
       <div className="problem-grid">

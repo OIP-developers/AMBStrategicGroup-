@@ -29,13 +29,13 @@ export default function MedSpaHero() {
 
             <p className="ms-hero__desc">
               Aesthetic leads don't wait. AMB answers every DM, form, and missed call within
-              seconds — day or night — qualifies the treatment, and books the consult before
+              seconds — day or night — qualifies each lead, and books the consult before
               your competitor even replies.
             </p>
 
             <div className="ms-hero__actions">
               <a href="#book-a-call" className="ms-hero__btn ms-hero__btn--primary" onClick={(e) => scroll(e, 'book-a-call')}>
-                <span className="ms-hero__btn-text">Book A Free Consultation</span>
+                <span className="ms-hero__btn-text">Book a Free Consultation</span>
                 <span className="ms-hero__btn-circle ms-hero__btn-circle--grad">
                   <span
                     className="ms-hero__btn-arrow-mask"
@@ -44,7 +44,7 @@ export default function MedSpaHero() {
                 </span>
               </a>
               <a href="#how-it-works" className="ms-hero__btn ms-hero__btn--white" onClick={(e) => scroll(e, 'how-it-works')}>
-                <span className="ms-hero__btn-text">See how it works</span>
+                <span className="ms-hero__btn-text">See How It Works</span>
                 <span className="ms-hero__btn-circle ms-hero__btn-circle--grad-bg">
                   <span
                     className="ms-hero__btn-arrow-white-mask"

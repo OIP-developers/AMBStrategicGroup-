@@ -29,7 +29,7 @@ export default function MedDentalFAQ() {
       <img src={toothImg} alt="" className="md-faq__tooth" loading="lazy" width="235" height="264" />
       <FAQs
         className="faqs--medicaldental"
-        tag="FAQ's"
+        tag="FAQs"
         title="Straight Answers"
         items={faqs}
       />

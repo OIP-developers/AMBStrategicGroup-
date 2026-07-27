@@ -98,7 +98,6 @@
 .about__person-img {
   width: 246px;
   height: 239px;
-  border-radius: 20px;
   object-fit: cover;
   flex-shrink: 0;
 }

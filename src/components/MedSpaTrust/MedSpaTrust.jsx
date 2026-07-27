@@ -15,12 +15,12 @@ export default function MedSpaTrust() {
 
           <div className="ms-trust__left">
             <span className="ms-trust__tag">Why AMB</span>
-            <h2 className="ms-trust__title">Why aesthetic practices choose AMB</h2>
+            <h2 className="ms-trust__title">Why Aesthetic Practices Choose AMB</h2>
             <p className="ms-trust__bio">
-              These are medical procedures, and patient data is handled that way
+              These are medical procedures, and patient data is handled that way.
               <br />
-              HIPAA-conscious, governed, and secure while the system stays laser-focused
-              on filling your calendar.
+              The system is HIPAA-conscious, governed, and secure — while staying
+              laser-focused on filling your calendar.
               <br /><br />
               AMB is a woman-owned, founder-led consulting firm led by Azra Rehan, with
               practitioner experience across Accenture, Guidehouse, Bank of America, and

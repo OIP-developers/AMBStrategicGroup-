@@ -60,10 +60,10 @@ export default function MedSpaPackages() {
       <img src={leftStarImg} alt="" className="ms-pkg__leftstar" />
       <div className="container">
         <span className="ms-pkg__tag">Packages</span>
-        <h2 className="ms-pkg__title">Start small. Scale when it pays for itself.</h2>
+        <h2 className="ms-pkg__title">Start Small. Scale When It Pays for Itself.</h2>
         <p className="ms-pkg__subtitle">
           Every tier books into your existing GHL calendar. Pick where to start.
-          most practices see the Starter pay for itself before Gold goes live.
+          Most practices see the Starter package pay for itself before upgrading to Gold.
         </p>
 
         <div className="ms-pkg__cards">
@@ -101,7 +101,7 @@ export default function MedSpaPackages() {
                   className={`ms-pkg__btn ${pkg.variant === 'highlight' ? 'ms-pkg__btn--grad' : 'ms-pkg__btn--white'}`}
                   onClick={scroll}
                 >
-                  <span className="ms-pkg__btn-text">Book A Call</span>
+                  <span className="ms-pkg__btn-text">Book a Call</span>
                   <span className="ms-pkg__btn-circle">
                     <span
                       className="ms-pkg__btn-arrow"

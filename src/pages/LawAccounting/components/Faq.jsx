@@ -44,7 +44,7 @@ export default function Faq() {
       />
       <div className="section-header">
         <span className="badge">FAQ</span>
-        <h2 className="section-title">Straight answers</h2>
+        <h2 className="section-title">Straight Answers</h2>
       </div>
       <div className="faq-list">
         {FAQS.map((item, i) => {

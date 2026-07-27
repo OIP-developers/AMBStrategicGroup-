@@ -28,8 +28,8 @@ const packages = [
       'AI voice receptionist (calls + after-hours)',
       'Booking, reschedule & cancellation handling',
       'No-show reduction sequences',
-      'Automated recall / recare campaigns',
-      'Follow-up until booked',
+      'Automated recall and recare campaigns',
+      'Follow-Up until booked',
     ],
     variant: 'highlight',
     popular: true,
@@ -41,7 +41,7 @@ const packages = [
     featuresHeading: 'EVERYTHING IN GOLD, PLUS',
     features: [
       'Multi-provider & multi-location routing',
-      'Treatment-plan follow-ups',
+      'Treatment-plan Follow-Ups',
       'Review generation engine',
       'Custom AI workflows',
       'Ongoing optimization',
@@ -61,10 +61,10 @@ export default function MedDentalPackages() {
       <img src={leftStarImg} alt="" className="md-pkg__leftstar" />
       <div className="container">
         <span className="md-pkg__tag">Packages</span>
-        <h2 className="md-pkg__title">Start small. Scale when it pays for itself.</h2>
+        <h2 className="md-pkg__title">Start Small. Scale When It Pays for Itself.</h2>
         <p className="md-pkg__subtitle">
           Every tier books into your existing GHL calendar. Pick where to start.
-          most practices see the Starter pay for itself before Gold goes live.
+          Most practices see the Starter package pay for itself before Gold goes live.
         </p>
 
         <div className="md-pkg__cards">
@@ -102,7 +102,7 @@ export default function MedDentalPackages() {
                   className={`md-pkg__btn ${pkg.variant === 'highlight' ? 'md-pkg__btn--grad' : 'md-pkg__btn--white'}`}
                   onClick={scroll}
                 >
-                  <span className="md-pkg__btn-text">Book A Call</span>
+                  <span className="md-pkg__btn-text">Book a Call</span>
                   <span className="md-pkg__btn-circle">
                     <span
                       className="md-pkg__btn-arrow"

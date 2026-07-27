@@ -5,12 +5,12 @@ const steps = [
   {
     num: '01',
     title: 'Capture',
-    desc: 'Every DM, form, and missed call is captured the instant it lands Instagram, TikTok, website, phone.',
+    desc: 'Every DM, form, and missed call is captured the moment it comes in—from Instagram, TikTok, your website, or your phone.',
   },
   {
     num: '02',
     title: 'Qualify',
-    desc: 'The AI answers pricing and candidacy questions and qualifies treatment interest, budget, and timing.',
+    desc: "AI answers pricing and candidacy questions while qualifying each lead's budget and timing.",
     highlight: true,
   },
   {
@@ -20,7 +20,7 @@ const steps = [
   },
   {
     num: '04',
-    title: 'Followup',
+    title: 'Follow-Up',
     desc: 'Reminders, deposit confirmations, and 3-month reactivation keep the calendar full.',
   },
 ]
@@ -35,7 +35,7 @@ export default function MedSpaHowItWorks() {
     <section id="how-it-works" className="ms-hiw">
       <div className="container">
         <span className="ms-hiw__tag">How It Works</span>
-        <h2 className="ms-hiw__title">Capture. Qualify. Book. Follow up.</h2>
+        <h2 className="ms-hiw__title">Capture. Qualify. Book. Follow-Up.</h2>
         <p className="ms-hiw__subtitle">
           One system running quietly behind your team — plugged into the tools you already use.
         </p>
@@ -62,7 +62,7 @@ export default function MedSpaHowItWorks() {
 
         <div className="ms-hiw__cta">
           <a href="#book-a-call" className="ms-hiw__btn" onClick={scroll}>
-            <span className="ms-hiw__btn-text">Book A Free Consultation</span>
+            <span className="ms-hiw__btn-text">Book a Free Consultation</span>
             <span className="ms-hiw__btn-circle">
               <span
                 className="ms-hiw__btn-arrow-mask"

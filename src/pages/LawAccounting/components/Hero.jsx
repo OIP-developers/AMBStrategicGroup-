@@ -4,13 +4,13 @@ export default function Hero() {
   return (
     <section className="hero">
       <div className="hero-content">
-        <p className="hero-eyebrow">Every missed call is a signed client</p>
+        <p className="hero-eyebrow">Every missed call is a retained client</p>
         <h1 className="hero-title">For the firm that answered.</h1>
         <p className="hero-desc">
-          AMB builds AI intake and client-communication systems for law and
+          AMB builds AI-powered intake and client communication systems for law and
           accounting firms — answering, qualifying, and booking consults
           24/7, while filtering out the inquiries that waste your team's
-          time. Confidentiality and governance built in.
+          time. Confidentiality and governance are built in.
         </p>
         <BookAFreeConsultation className="hero-cta" />
         <div className="hero-badges">

@@ -17,10 +17,10 @@ export default function BookCall() {
     <section id="calendar" className="book-call">
       <div className="book-call-card">
         <div className="book-call-text">
-          <h2>Book a strategy call</h2>
+          <h2>Book a Strategy Call</h2>
           <div className="para-text-img">
                 <p>
-                In 30 minutes we'll map where your practice is leaking calls and
+                In 30 minutes we'll map where your firm is leaking calls and
                 revenue — and exactly what a 7-day system would fix first. No
                 pressure, no jargon.
               </p>

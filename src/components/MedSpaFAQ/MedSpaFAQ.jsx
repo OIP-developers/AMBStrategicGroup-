@@ -29,7 +29,7 @@ export default function MedSpaFAQ() {
       <img src={toothImg} alt="" className="ms-faq__tooth" loading="lazy" width="235" height="238" />
       <FAQs
         className="faqs--medspa"
-        tag="FAQ's"
+        tag="FAQs"
         title="Straight Answers"
         items={faqs}
       />

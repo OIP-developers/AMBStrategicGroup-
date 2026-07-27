@@ -35,7 +35,7 @@ export default function MedDentalFooter() {
 
           <div className="md-footer__col md-footer__col--start">
             <h4>Get started</h4>
-            <a href="#book-a-call" onClick={(e) => scrollTo(e, 'book-a-call')}>Book a strategy call</a>
+            <a href="#book-a-call" onClick={(e) => scrollTo(e, 'book-a-call')}>Book a Strategy Call</a>
             <a href="#book-a-call" onClick={(e) => scrollTo(e, 'book-a-call')}>Talk to us</a>
           </div>
         </div>
@@ -46,7 +46,7 @@ export default function MedDentalFooter() {
           <p>© 2026 AMB Strategic Group · Woman-Owned Business</p>
           <div className="md-footer__legal">
             <Link to="/privacy-policy">Privacy Policy</Link>
-            <Link to="/terms-of-services">Terms of Services</Link>
+            <Link to="/terms-of-services">Terms of Service</Link>
           </div>
         </div>
 

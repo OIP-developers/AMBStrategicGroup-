@@ -37,10 +37,10 @@ export default function GetStarted({
           {/* Left */}
           {dentalVariant ? (
             <div className="getstarted__left getstarted__left--dental">
-              <h2 className="getstarted__title getstarted__title--dental">Book A<br />Strategy Call</h2>
+              <h2 className="getstarted__title getstarted__title--dental">Book a<br />Strategy Call</h2>
               <img src={dentalLineImg} alt="" className="getstarted__underline" />
               <p className="getstarted__desc getstarted__desc--dental">
-                In 30 minutes we'll map where your practice is leaking calls and revenue —
+                In 30 minutes, we'll map where your practice is leaking calls and revenue —
                 and exactly what a 7-day system would fix first. No pressure, no jargon.
               </p>
 
@@ -75,7 +75,7 @@ export default function GetStarted({
                 className="getstarted__dental-link"
                 onClick={(e) => e.preventDefault()}
               >
-                Book Your Free AI Strategy Session Today
+                Book a Free Consultation
               </a>
             </div>
           ) : (

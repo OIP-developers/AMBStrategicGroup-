@@ -4,7 +4,7 @@ const PROCESS = [
   {
     number: '01',
     title: 'Capture',
-    desc: 'Every call, form, and website inquiry is captured instantly nothing goes to voicemail after hours.',
+    desc: 'Every call, form, and website inquiry is captured instantly—nothing goes to voicemail after hours.',
   },
   {
     number: '02',
@@ -19,8 +19,8 @@ const PROCESS = [
   },
   {
     number: '04',
-    title: 'Follow up',
-    desc: 'Automated follow-up chases every consult to booked; for accounting, it chases missing documents too.',
+    title: 'Follow-Up',
+    desc: 'Automated follow-up chases every prospect until they\'re booked; for accounting, it chases missing documents too.',
   },
 ]
 
@@ -29,7 +29,7 @@ export default function Process() {
     <section id="process" className="process">
       <div className="section-header process-header">
         <span className="badge">How It Works</span>
-        <h2 className="section-title">Capture. Qualify. Book. Follow up.</h2>
+        <h2 className="section-title">Capture. Qualify. Book. Follow-Up.</h2>
         <p className="section-subtitle">
           One system running quietly behind your team — plugged into the
           tools you already use.

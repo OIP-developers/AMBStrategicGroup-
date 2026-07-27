@@ -35,7 +35,7 @@ export default function MedDentalProblem() {
 
       <div className="container">
         <span className="md-problem__tag">The Cost of Waiting</span>
-        <h2 className="md-problem__title">Where the schedule quietly leaks</h2>
+        <h2 className="md-problem__title">Where Your Schedule Quietly Leaks</h2>
         <p className="md-problem__subtitle">
           Most practices don't lose patients to bad care. They lose them to a phone nobody
           could pick up and a recall list nobody had time to chase.
@@ -54,7 +54,7 @@ export default function MedDentalProblem() {
 
         <div className="md-problem__cta">
           <a href="#book-a-call" className="md-problem__btn" onClick={scroll}>
-            <span className="md-problem__btn-text">Book A Free Consultation</span>
+            <span className="md-problem__btn-text">Book a Free Consultation</span>
             <span className="md-problem__btn-circle">
               <span
                 className="md-problem__btn-arrow-mask"

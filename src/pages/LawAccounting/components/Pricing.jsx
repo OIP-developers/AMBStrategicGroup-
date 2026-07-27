@@ -22,7 +22,7 @@ const PRICING = [
       'AI voice receptionist that qualifies callers',
       'Replaces message-only answering service',
       'After-hours coverage',
-      'Follow-up until the consult is booked',
+      'Follow-Up until the consult is booked',
       'Document-request reminders (accounting)',
     ],
   },
@@ -51,12 +51,12 @@ export default function Pricing() {
       <div className="section-header">
         <span className="badge">PACKAGES</span>
         <h2 className="section-title">
-          Start small. Scale when it pays for itself.
+          Start Small. Scale When It Pays for Itself.
         </h2>
         <p className="section-subtitle">
           Every tier books into your existing GHL calendar.
           <br />
-          Pick where to start most practices see the Starter pay for itself before Gold goes live.
+          Pick where to start most firms see the Starter pay for itself before Gold goes live.
         </p>
       </div>
       <div className="pricing-grid">
@@ -79,7 +79,7 @@ export default function Pricing() {
               ))}
             </ul>
             <button type="button" className="btn-pill" onClick={scrollToCalendar}>
-              <span className="btn-label">Book a call</span>
+              <span className="btn-label">Book a Call</span>
               <BtnIcon />
             </button>
           </div>

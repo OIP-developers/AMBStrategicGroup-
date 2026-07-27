@@ -20,7 +20,7 @@ const steps = [
   },
   {
     num: '04',
-    title: 'Followup',
+    title: 'Follow-Up',
     desc: 'Automated recall and no-show sequences bring patients back and keep the chairs full.',
   },
 ]
@@ -36,7 +36,7 @@ export default function MedDentalHowItWorks() {
       <div className="md-hiw__glow" />
       <div className="container">
         <span className="md-hiw__tag">How It Works</span>
-        <h2 className="md-hiw__title">Capture. Qualify. Book. Follow up.</h2>
+        <h2 className="md-hiw__title">Capture. Qualify. Book. Follow-Up.</h2>
         <p className="md-hiw__subtitle">
           One system running quietly behind your team — plugged into the tools you already use.
         </p>
@@ -63,7 +63,7 @@ export default function MedDentalHowItWorks() {
 
         <div className="md-hiw__cta">
           <a href="#book-a-call" className="md-hiw__btn" onClick={scroll}>
-            <span className="md-hiw__btn-text">Book A Free Consultation</span>
+            <span className="md-hiw__btn-text">Book a Free Consultation</span>
             <span className="md-hiw__btn-circle">
               <span
                 className="md-hiw__btn-arrow-mask"

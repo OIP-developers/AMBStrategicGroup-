@@ -10,8 +10,8 @@ const cards = [
     desc: "Ad leads arrive at 2 AM. Whoever replies first wins the consult — and it usually isn't you.",
   },
   {
-    title: 'Calls missed\nmid-treatment',
-    desc: "Your injector can't stop mid-appointment. Every missed call is a $400–$1,500 consult lost.",
+    title: 'Calls Missed\nMid-Treatment',
+    desc: "Your injector can't stop mid-appointment. Every missed call could mean losing a $400–$1,500 consultation.",
   },
   {
     title: 'No-shows & \nlost deposits',
@@ -36,7 +36,7 @@ export default function MedSpaProblem() {
 
       <div className="container">
         <span className="ms-problem__tag">The Cost of Waiting</span>
-        <h2 className="ms-problem__title">Where the consults slip away</h2>
+        <h2 className="ms-problem__title">Where Your Consults Slip Away</h2>
         <p className="ms-problem__subtitle">
           In aesthetics, the fastest reply wins. Every hour a lead waits, the odds of booking
           fall off a cliff and most of your leads arrive when the front desk is closed.
@@ -62,7 +62,7 @@ export default function MedSpaProblem() {
 
         <div className="ms-problem__cta">
           <a href="#book-a-call" className="ms-problem__btn" onClick={scroll}>
-            <span className="ms-problem__btn-text">Book A Free Consultation</span>
+            <span className="ms-problem__btn-text">Book a Free Consultation</span>
             <span className="ms-problem__btn-circle">
               <span
                 className="ms-problem__btn-arrow-mask"

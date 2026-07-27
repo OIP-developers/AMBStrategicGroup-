@@ -28,7 +28,7 @@ export default function HowWeCan() {
 
         <div className="howwecan__top">
           <h2 className="howwecan__title">
-            How we can transform<br />your business.
+            How We Can Transform<br />Your Business.
           </h2>
           <p className="howwecan__desc">
             We operate at the intersection of business consulting and applied AI.<br />

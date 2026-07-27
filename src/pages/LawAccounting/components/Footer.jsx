@@ -32,7 +32,7 @@ export default function Footer() {
             </div>
             <div className="footer-col">
               <h4>Get started</h4>
-              <a href="#" onClick={(e) => { e.preventDefault(); scrollToCalendar() }}>Book a strategy call</a>
+              <a href="#" onClick={(e) => { e.preventDefault(); scrollToCalendar() }}>Book a Strategy Call</a>
               <a href="#" onClick={(e) => { e.preventDefault(); scrollToCalendar() }}>Talk to us</a>
             </div>
           </div>
@@ -42,7 +42,7 @@ export default function Footer() {
         <span>© {new Date().getFullYear()} AMB Strategic Group. All rights reserved.</span>
         <div className="footer-links">
           <Link to="/privacy-policy">Privacy Policy</Link>
-          <Link to="/terms-of-services">Terms of Services</Link>
+          <Link to="/terms-of-services">Terms of Service</Link>
         </div>
       </div>
     </footer>
