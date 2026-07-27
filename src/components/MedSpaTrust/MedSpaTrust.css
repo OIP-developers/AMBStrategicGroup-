@@ -29,7 +29,6 @@
 .ms-trust__wrap {
   max-width: 1346.5px;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
 .ms-trust__row {
@@ -222,7 +221,6 @@
   .ms-trust__wrap {
     max-width: 70.1302vw;
     margin: 0 auto;
-    padding: 0 1.0417vw;
   }
   .ms-trust__row {
     position: relative;
