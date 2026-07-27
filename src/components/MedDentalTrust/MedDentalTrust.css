@@ -330,7 +330,7 @@
 
 @media (max-width: 599px) {
   .md-trust__title { font-size: 26px; margin-bottom: 26px; }
-  .md-trust__bio { font-size: 13px; }
+  .md-trust__bio { font-size: 13px; width: 100%; }
   .md-trust::before { display: none; }
   .md-trust__card-inner h3 { font-size: 20px; }
   .md-trust__stethoscope { display: none; }

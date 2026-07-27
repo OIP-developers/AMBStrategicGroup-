@@ -77,7 +77,7 @@ export default function MedDentalHero() {
               <span className="md-hero__note-icon">
                 <img src={vectorHeroImg} alt="" />
               </span>
-              <span>patient is experiencing pain after a recent filling and needs your advice</span>
+              <span className="md-hero__note-text">patient is experiencing pain after a recent filling and needs your advice</span>
             </div>
           </div>
 

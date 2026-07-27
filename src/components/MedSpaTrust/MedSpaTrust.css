@@ -362,10 +362,11 @@
   .ms-trust::before { width: 500px; height: 500px; left: -250px; top: -100px; filter: blur(120px); }
   .ms-trust__row { flex-direction: column; gap: 40px; }
   .ms-trust__left { width: 100%; text-align: center; }
-  .ms-trust__title { font-size: 40px; }
+  .ms-trust__title { font-size: 40px; width: 80%; margin: 0 auto 16px; }
   .ms-trust__bio { font-size: 15px; width: 80%; margin: 0 auto 33px; }
   .ms-trust__right { width: 100%; }
-  .ms-trust__card-inner { height: auto; padding: 16px 20px; }
+  .ms-trust__card-inner { height: auto; padding: 16px 20px; border-radius: 14px; }
+  .ms-trust__card::before { border-radius: 14px; }
   .ms-trust__row::before,
   .ms-trust__row::after {
     display: none;
