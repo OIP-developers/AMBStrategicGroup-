@@ -472,7 +472,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 6px;
+  gap: 5px;
   width: 40px;
   height: 40px;
   padding: 0;
@@ -485,9 +485,9 @@
 .law-accounting-page .nav-toggle span {
   display: block;
   width: 24px;
-  height: 3px;
-  border-radius: 3px;
-  background: var(--gradient-accent-btn);
+  height: 2px;
+  border-radius: 2px;
+  background: #ffffff;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
@@ -513,6 +513,7 @@
   align-items: center;
   gap:87px;
   padding: 150px 0 164px;
+  overflow: visible;
 }
 
 .law-accounting-page .hero-content {
@@ -659,7 +660,7 @@
 .law-accounting-page .chip-3 {
   width: 239px;
   background: rgba(31, 31, 31, 0.9);
-  left: 70%;
+  left:85%;
   top: 32%;
   animation-delay: 0.8s;
 }
@@ -853,7 +854,7 @@
   font-weight: 500;
   max-width: 282px;
   color: var(--white);
-  margin: 0;
+  margin: 0 auto;
 }
 
 /* Process — "Capture. Qualify. Book. Follow up." */
@@ -2232,10 +2233,12 @@
     left: -30px;
   }
 .law-accounting-page .problem-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 25px;
   }
 .law-accounting-page .problem-card {
-    min-width: 230px;
+    min-width: 0;
     border: 1px solid transparent;
     border-radius: 13px;
     padding: 28px 20px;
@@ -2249,6 +2252,7 @@
 .law-accounting-page .problem-card p {
     font-size: 14px;
     line-height: 154%;
+    margin: 0 auto;
   }
 .law-accounting-page .decor-star-problems {
     width: 200px;
@@ -2278,36 +2282,40 @@
     display: none;
   }
 .law-accounting-page .nav-links {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    left: auto;
+    width: 400px;
+    max-width: none;
+    height: 100vh;
+    max-height: none;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 12px;
-    padding: 0;
-    max-height: 0;
-    overflow: hidden;
-    opacity: 0;
-    border: 1px solid transparent;
-    border-radius: 12px;
-    background:
-      linear-gradient(var(--card), var(--card)) padding-box,
-      var(--gradient-accent-btn) border-box;
-    font-size: 16px;
-    transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 28px;
+    margin-top: 0;
+    padding: 80px 28px 30px;
+    overflow-y: auto;
+    opacity: 1;
+    border: none;
+    border-radius: 0;
+    background: #111111;
+    font-size: 18px;
+    font-weight: 400;
+    transition: right 0.35s ease;
     z-index: 15;
+    box-shadow: -4px 0 30px rgba(0, 0, 0, 0.6);
   }
 .law-accounting-page .nav-links.open {
-    max-height: 400px;
-    opacity: 1;
-    padding: 24px 0;
+    right: 0;
   }
 .law-accounting-page .mobile-cta {
     display: inline-flex;
-    margin-top: 4px;
+    margin-top: 8px;
+  }
+.law-accounting-page .mobile-cta .btn-label {
+    white-space: nowrap;
   }
 
   /* Hero extras */
@@ -2316,9 +2324,11 @@
   }
 .law-accounting-page .hero-content {
     max-width: 100%;
+    text-align: center;
   }
 .law-accounting-page .hero-badges {
     gap: 24px;
+    justify-content: center;
   }
 .law-accounting-page .hero-badge {
     font-size: 13px;
@@ -2350,12 +2360,15 @@
     margin-top: 50px;
   }
 .law-accounting-page .process-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
 .law-accounting-page .process-card {
-    min-width: 220px;
+    min-width: 0;
     border-radius: 4px;
     padding: 20px 22px 36px 20px;
+    text-align: center;
   }
 .law-accounting-page .process-card:hover {
     transform: translateY(-4px) translateZ(0);
@@ -2426,6 +2439,7 @@
   }
 .law-accounting-page .pricing-features li {
     font-size: 14px;
+    margin-left: 0;
   }
 .law-accounting-page .pricing-card .btn-pill {
     min-width: 150px;
@@ -2535,6 +2549,7 @@
   }
 .law-accounting-page .book-call-text {
     max-width: 100%;
+    text-align: center;
   }
 .law-accounting-page .book-call-text h2 {
     max-width: 100%;
@@ -2669,10 +2684,9 @@
     height: auto;
   }
 .law-accounting-page .nav-links {
-    gap: 18px;
-    font-size: 14px;
-    flex-wrap: wrap;
-    justify-content: center;
+    width: 100%;
+    max-width: none;
+    justify-content: flex-start;
   }
 
   /* Hero */
@@ -2769,6 +2783,7 @@
       display: none;
   }
 .law-accounting-page .problem-grid {
+    grid-template-columns: 1fr;
     gap: 16px;
   }
 .law-accounting-page .problem-card {
@@ -2805,6 +2820,7 @@
     margin-top: 32px;
   }
 .law-accounting-page .process-grid {
+    grid-template-columns: 1fr;
     gap: 16px;
   }
 .law-accounting-page .process-card {
@@ -3082,10 +3098,6 @@
 
 .law-accounting-page .logo-img {
     width: 160px;
-  }
-.law-accounting-page .nav-links {
-    font-size: 13px;
-    gap: 14px;
   }
 .law-accounting-page .hero-eyebrow {
     font-size: 17px;
