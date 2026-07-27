@@ -42,7 +42,7 @@ export default function Footer() {
         <span>© {new Date().getFullYear()} AMB Strategic Group. All rights reserved.</span>
         <div className="footer-links">
           <Link to="/privacy-policy">Privacy Policy</Link>
-          <Link to="/terms-of-services">Terms of Service</Link>
+          <Link to="/terms-of-service">Terms of Service</Link>
         </div>
       </div>
     </footer>

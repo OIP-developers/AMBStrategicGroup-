@@ -54,7 +54,7 @@ export default function MedDentalProblem() {
 
         <div className="md-problem__cta">
           <a href="#book-a-call" className="md-problem__btn" onClick={scroll}>
-            <span className="md-problem__btn-text">Book a Free Consultation</span>
+            <span className="md-problem__btn-text">Book a Free Appointment</span>
             <span className="md-problem__btn-circle">
               <span
                 className="md-problem__btn-arrow-mask"

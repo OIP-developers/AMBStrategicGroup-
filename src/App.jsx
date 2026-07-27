@@ -26,7 +26,7 @@ function App() {
       <Route path="/faqs"                    element={<FAQsPage />} />
       <Route path="/contact"                 element={<ContactPage />} />
       <Route path="/privacy-policy"          element={<PrivacyPolicyPage />} />
-      <Route path="/terms-of-services"       element={<TermsOfServicesPage />} />
+      <Route path="/terms-of-service"        element={<TermsOfServicesPage />} />
       <Route path="/medicaldental"           element={<MedicalDentalPage />} />
       <Route path="/law-accounting"          element={<LawAccountingPage />} />
       <Route path="/med-spa"                 element={<MedSpaPage />} />

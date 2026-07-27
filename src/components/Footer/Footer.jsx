@@ -82,7 +82,7 @@ export default function Footer() {
           <p className="footer__copy">© 2026 AMB Strategic Group · Woman-Owned Business</p>
           <div className="footer__legal">
             <Link to="/privacy-policy">Privacy Policy</Link>
-            <Link to="/terms-of-services">Terms of Service</Link>
+            <Link to="/terms-of-service">Terms of Service</Link>
           </div>
         </div>
       </div>

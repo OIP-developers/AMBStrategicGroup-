@@ -63,7 +63,7 @@ export default function MedDentalHowItWorks() {
 
         <div className="md-hiw__cta">
           <a href="#book-a-call" className="md-hiw__btn" onClick={scroll}>
-            <span className="md-hiw__btn-text">Book a Free Consultation</span>
+            <span className="md-hiw__btn-text">Book a Free Appointment</span>
             <span className="md-hiw__btn-circle">
               <span
                 className="md-hiw__btn-arrow-mask"

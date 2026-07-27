@@ -41,12 +41,12 @@ export default function MedDentalNavbar() {
             </a>
           ))}
           <div className="md-navbar__cta md-navbar__cta--mobile">
-            <MedDentalCtaButton to="book-a-call">Book a Free Consultation</MedDentalCtaButton>
+            <MedDentalCtaButton to="book-a-call">Book a Free Appointment</MedDentalCtaButton>
           </div>
         </nav>
 
         <div className="md-navbar__cta md-navbar__cta--desktop">
-          <MedDentalCtaButton to="book-a-call">Book a Free Consultation</MedDentalCtaButton>
+          <MedDentalCtaButton to="book-a-call">Book a Free Appointment</MedDentalCtaButton>
         </div>
 
         <button

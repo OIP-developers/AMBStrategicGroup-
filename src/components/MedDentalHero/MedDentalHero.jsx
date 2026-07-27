@@ -34,7 +34,7 @@ export default function MedDentalHero() {
 
             <div className="md-hero__actions">
               <a href="#book-a-call" className="md-hero__btn md-hero__btn--primary" onClick={(e) => scroll(e, 'book-a-call')}>
-                <span className="md-hero__btn-text">Book a Free Consultation</span>
+                <span className="md-hero__btn-text">Book a Free Appointment</span>
                 <span className="md-hero__btn-circle md-hero__btn-circle--grad">
                   <span
                     className="md-hero__btn-arrow-mask"
