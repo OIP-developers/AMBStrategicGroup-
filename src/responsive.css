@@ -110,8 +110,17 @@
   .aisolutions__icons                   { gap: 0.63vw; }
   .aisolutions__icon                    { height: 5.83vw; }
   .aisolutions__cta                     { padding-top: 3.13vw; }
-  .aisolutions__cta-btn                 { gap: 0.42vw; font-size: 0.73vw; line-height: 0.94vw; padding: 0.78vw 1.30vw; border-radius: 0.36vw; }
-
+  .aisolutions__cta-btn{ 
+   gap: 0.42vw; 
+   font-size: 0.73vw; 
+   line-height: 0.94vw; 
+   padding: 0.78vw 1.30vw; 
+   border-radius: 0.36vw; 
+   }
+   .aisolutions__cta-btn-icon {
+      width: 0.703vw;
+      height: 0.703vw;
+   }
   /* ── AISolutions v2 grid ── */
   .aisolutions__grid                    { gap: 1.25vw; }
   .aisolutions__card.aisolutions__card-v2 { padding: 1.67vw; }
