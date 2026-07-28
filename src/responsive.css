@@ -23,6 +23,18 @@
   .navbar--scrolled     { box-shadow: 0 0.10vw 1.04vw rgba(0,0,0,0.5); }
   .navbar__link         { gap: 0.36vw; }
   .navbar__link::before { width: 0.36vw; height: 0.36vw; }
+  .navbar__dropdown-arrow { width: 0.4167vw; height: 0.4167vw; border-right-width: 0.1042vw; border-bottom-width: 0.1042vw; margin-top: -0.2083vw; }
+  .navbar__dropdown-toggle--open .navbar__dropdown-arrow { margin-top: 0.2083vw; }
+  .navbar__dropdown-menu {
+    top: calc(100% + 1.0417vw);
+    min-width: 11.4583vw;
+    border-radius: 0.625vw;
+    padding: 0.5208vw;
+    gap: 0.2083vw;
+    box-shadow: 0 1.0417vw 2.0833vw rgba(0, 0, 0, 0.5);
+  }
+  .navbar__dropdown-menu::before { border-radius: 0.625vw; padding: 0.05vw; }
+  .navbar__dropdown-link { padding: 0.5208vw 0.7292vw; border-radius: 0.4167vw; font-size: 0.7813vw; }
 
   /* ── Hero ── */
   .hero                       { padding: 7.60vw 0 1.56vw; }
