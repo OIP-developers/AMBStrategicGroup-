@@ -32,7 +32,7 @@ const PRICING = [
     label: 'EVERYTHING IN GOLD, PLUS',
     features: [
       'Document intake & status-update AI',
-      'Multi-practice / multi-service routing',
+      'Multi-firm / multi-service routing',
       'Client reactivation & advisory upsell',
       'Custom AI workflows',
       'Ongoing optimization',

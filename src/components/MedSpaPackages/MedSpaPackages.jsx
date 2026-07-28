@@ -27,7 +27,7 @@ const packages = [
       'AI voice receptionist for missed calls',
       'No-show & deposit reminder flows',
       'Dormant-client reactivation (3-month cycle)',
-      'Outbound follow-up sequences',
+      'Outbound Follow-Up sequences',
       'Review & referral requests',
     ],
     variant: 'highlight',
