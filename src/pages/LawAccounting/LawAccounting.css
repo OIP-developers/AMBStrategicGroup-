@@ -341,7 +341,6 @@
   font-weight: 600;
   font-size: 15.44px;
   letter-spacing: 0;
-  text-transform: capitalize;
   color: #000;
   transition: transform 0.25s ease, box-shadow 0.25s ease, color 0.35s ease 0.1s;
   min-height: 54.32px;
@@ -518,7 +517,7 @@
 
 .law-accounting-page .hero-content {
   flex: 1;
-  max-width:645px;
+  max-width: 662px;
 }
 
 .law-accounting-page .hero-eyebrow {
@@ -801,7 +800,7 @@
 }
 
 .law-accounting-page .problems .section-subtitle {
-  max-width: 945px;
+  max-width: 630px;
   margin: 15px auto 59px;
   text-transform: capitalize;
 }
@@ -1671,7 +1670,7 @@
     padding: 7.813vw 0 8.542vw;
   }
 .law-accounting-page .hero-content {
-    max-width: 33.594vw;
+    max-width: 34.4792vw;
   }
 .law-accounting-page .hero-eyebrow {
     font-size: 2.001vw;
@@ -1799,7 +1798,7 @@
     max-width: 25.781vw;
   }
 .law-accounting-page .problems .section-subtitle {
-    max-width: 49.219vw;
+    max-width: 32.8125vw;
     margin: 0.781vw auto 3.073vw;
   }
 .law-accounting-page .problems .section-cta {
