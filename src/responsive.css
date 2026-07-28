@@ -316,7 +316,7 @@
 
   /* ── GetStarted ── */
   .getstarted                     { padding: 2.60vw 0; }
-  .getstarted__card               { gap: 2.08vw; padding: 2.08vw 3.13vw 2.08vw 4.69vw; border-radius: 1.04vw; backdrop-filter: blur(6.51vw); }
+  .getstarted__card               { gap: 2.08vw; padding: 2.08vw 3.13vw 2.08vw 4.69vw; border-radius: 1.04vw; }
   .getstarted__card::before       { border-radius: 1.04vw; padding: 0.05vw; }
   .getstarted__left               { width: 27.81vw; padding-top: 7.29vw; }
   .getstarted__title              { width: 27.81vw; font-size: 3.65vw; }
