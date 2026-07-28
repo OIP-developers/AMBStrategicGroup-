@@ -6,11 +6,13 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-top">
           <div className="footer-brand">
-            <img
-              src="/law-accounting/assets/logo.png"
-              alt="AMB Strategic Group"
-              className="logo-img logo-img-footer"
-            />
+            <Link to="/">
+              <img
+                src="/law-accounting/assets/logo.png"
+                alt="AMB Strategic Group"
+                className="logo-img logo-img-footer"
+              />
+            </Link>
             <p>Driving Business Transformation Through Strategy, Systems &amp; AI</p>
             <span className="footer-location">
               Woman-owned · founder-led · Teaneck, New Jersey

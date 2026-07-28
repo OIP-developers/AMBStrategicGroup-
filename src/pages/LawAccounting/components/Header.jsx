@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { BookAFreeConsultation } from './Buttons.jsx'
 
 export default function Header() {
@@ -8,7 +9,9 @@ export default function Header() {
 
   return (
     <header className="nav">
-      <img src="/law-accounting/assets/logo.png" alt="AMB Strategic Group" className="logo-img" />
+      <Link to="/">
+        <img src="/law-accounting/assets/logo.png" alt="AMB Strategic Group" className="logo-img" />
+      </Link>
       <button
         className={`nav-toggle${menuOpen ? ' open' : ''}`}
         aria-label="Toggle menu"

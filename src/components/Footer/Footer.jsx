@@ -32,7 +32,9 @@ export default function Footer() {
           {/* Row 1: Logo + Desc | Nav */}
           <div className="footer__row1">
             <div className="footer__left">
-              <img src={footerLogo} alt="AMB Strategic Group" className="footer__logo" />
+              <Link to="/">
+                <img src={footerLogo} alt="AMB Strategic Group" className="footer__logo" />
+              </Link>
               <p className="footer__desc">
                 Whether you're modernizing a regulated platform, standing up governance,
                 or exploring where AI fits in your operating model — we'd be glad to talk.

@@ -256,7 +256,7 @@
     position: fixed;
     top: 0;
     right: -100%;
-    width: 100%;
+    width: 400px;
     height: 100vh;
     background: #111111;
     flex-direction: column;
@@ -328,7 +328,7 @@
 
   .navbar__cta--mobile {
     display: inline-flex;
-    width: 100%;
+    width: fit-content;
     justify-content: center;
   }
 
@@ -344,6 +344,10 @@
     width: 220px;
     height: auto;
     display: block;
+  }
+
+  .navbar__nav {
+    width: 100%;
   }
 }
 

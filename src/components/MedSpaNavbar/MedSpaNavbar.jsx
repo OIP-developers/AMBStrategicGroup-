@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import logoImg from '../../imagesfolder/ambheaderlogo.png'
 import MedDentalCtaButton from '../MedDentalCtaButton/MedDentalCtaButton'
 import './MedSpaNavbar.css'
@@ -25,9 +26,9 @@ export default function MedSpaNavbar() {
     <header className="ms-navbar">
       <div className="container ms-navbar__inner">
 
-        <div className="ms-navbar__logo">
+        <Link to="/" className="ms-navbar__logo">
           <img src={logoImg} alt="AMB Strategic Group" />
-        </div>
+        </Link>
 
         <nav className={`ms-navbar__links ${menuOpen ? 'ms-navbar__links--open' : ''}`}>
           {navLinks.map((link) => (
