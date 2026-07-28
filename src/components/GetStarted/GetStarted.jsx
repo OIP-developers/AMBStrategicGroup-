@@ -37,7 +37,7 @@ export default function GetStarted({
           {/* Left */}
           {dentalVariant ? (
             <div className="getstarted__left getstarted__left--dental">
-              <h2 className="getstarted__title getstarted__title--dental">Book a<br />Strategy Call</h2>
+              <h2 className="getstarted__title getstarted__title--dental">Book a <br />Strategy Call</h2>
               <img src={dentalLineImg} alt="" className="getstarted__underline" />
               <p className="getstarted__desc getstarted__desc--dental">
                 In 30 minutes, we'll map where your practice is leaking calls and revenue —
@@ -59,7 +59,7 @@ export default function GetStarted({
             </div>
           ) : spaVariant ? (
             <div className="getstarted__left getstarted__left--dental">
-              <h2 className="getstarted__title getstarted__title--dental">Book a<br />Strategy Call</h2>
+              <h2 className="getstarted__title getstarted__title--dental">Book a <br />Strategy Call</h2>
               <img src={dentalLineImg} alt="" className="getstarted__underline" />
               <p className="getstarted__desc getstarted__desc--dental">
                 In 30 minutes, we'll show you where consults are slipping away and how a
@@ -81,7 +81,7 @@ export default function GetStarted({
           ) : (
             <div className="getstarted__left">
               <div className="getstarted__title-wrap">
-                <h2 className="getstarted__title">Ready to<br />Automate<br />Your Business?</h2>
+                <h2 className="getstarted__title">Ready to <br />Automate <br />Your Business?</h2>
                 <img src={starImg} alt="" className="getstarted__star" />
               </div>
               <p className="getstarted__desc">

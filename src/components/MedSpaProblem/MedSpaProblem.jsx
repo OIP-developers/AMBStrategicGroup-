@@ -10,7 +10,7 @@ const cards = [
     desc: "Ad leads arrive at 2 AM. Whoever replies first wins the consult — and it usually isn't you.",
   },
   {
-    title: 'Calls Missed\nMid-Treatment',
+    title: 'Calls Missed \nMid-Treatment',
     desc: "Your injector can't stop mid-appointment. Every missed call could mean losing a $400–$1,500 consultation.",
   },
   {
