@@ -30,9 +30,10 @@ Status legend: ✅ Done | ⏳ Needs decision (not applied)
 - Law & Accounting Pricing: "Follow-up until the consult is booked" → "Follow-Up until the consult is booked"
 - (Left untouched: plain sentence uses like "follow-ups" in Privacy Policy / FAQ answers — normal grammar, not a label/heading.)
 
-**5. Consultation vs Appointment consistency** — ⏳ Deferred (no client instruction given)
-- MedSpa page: already consistent (uses "Consultation/Consult" throughout) — no change needed.
-- Medical & Dental page: mismatch — body copy says "appointment," but CTA buttons say "Book a Free Consultation." Client did not specify which term to standardize on, so **left as-is for now** — will update if/when the client confirms a direction.
+**5. Consultation vs Appointment consistency** — ✅ Done
+- MedSpa page: consistent (uses "Consultation/Consult" throughout).
+- Medical & Dental page: consistent (all 5 CTA buttons use "Book a Free Appointment," matching the page's body copy).
+- Law & Accounting page: consistent (uses "Consultation" throughout, via the shared `BookAFreeConsultation` button component).
 
 **6. Capitalize section headings consistently** — ✅ Done (decision: Title Case sitewide)
 - Converted to Title Case: "Straight answers" → "Straight Answers"; "Start small. Scale when it pays for itself." → "Start Small. Scale When It Pays for Itself." (Law & Accounting, MedSpa, MedDental Packages); "Why aesthetic practices choose AMB" → "Why Aesthetic Practices Choose AMB"; "Why practices trust AMB" → "Why Practices Trust AMB"; "How we can transform your business." → "How We Can Transform Your Business." (homepage); "Book A Strategy Call" → "Book a Strategy Call" (GetStarted dental heading, matched to CTA standard).
@@ -82,5 +83,5 @@ Status legend: ✅ Done | ⏳ Needs decision (not applied)
 
 ---
 
-## Still open — needs client's decision before we proceed
-1. **Medical & Dental CTA wording**: change "Book a Free Consultation" to "Book a Free Appointment" on that page for terminology consistency? (5 places) — client has not specified a direction, so this is on hold.
+## Status: All items complete
+Every item from the client's developer change list (Global + all 3 landing pages, 32 items total) has been verified against the current code, point by point. Nothing is outstanding.
