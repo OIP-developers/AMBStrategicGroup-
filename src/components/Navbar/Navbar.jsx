@@ -7,6 +7,14 @@ import './Navbar.css'
 const navLinks = [
   { label: 'Home',                    to: '/'                       },
   { label: 'About',                   to: '/about'                  },
+  {
+    label: 'Industries',
+    dropdown: [
+      { label: 'Med Spa',             to: '/med-spa'                },
+      { label: 'Medical & Dental',    to: '/medicaldental'          },
+      { label: 'Law & Accounting',    to: '/law-accounting'         },
+    ],
+  },
   { label: 'Business Transformation', to: '/business-transformation' },
   { label: 'AI & Automation',         to: '/ai-automation'          },
   { label: 'FAQs',                    to: '/faqs'                   },
@@ -14,9 +22,13 @@ const navLinks = [
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const [industriesOpen, setIndustriesOpen] = useState(false)
   const location = useLocation()
 
-  const closeMenu = () => setMenuOpen(false)
+  const closeMenu = () => {
+    setMenuOpen(false)
+    setIndustriesOpen(false)
+  }
 
   return (
     <header className="navbar">
@@ -28,14 +40,39 @@ export default function Navbar() {
 
         <nav className={`navbar__nav ${menuOpen ? 'navbar__nav--open' : ''}`}>
           {navLinks.map((link) => (
-            <Link
-              key={link.to}
-              to={link.to}
-              className={`navbar__link ${location.pathname === link.to ? 'navbar__link--active' : ''}`}
-              onClick={closeMenu}
-            >
-              <span className="navbar__link-text" data-text={link.label}>{link.label}</span>
-            </Link>
+            link.dropdown ? (
+              <div key={link.label} className="navbar__dropdown-wrap">
+                <button
+                  type="button"
+                  className={`navbar__link navbar__dropdown-toggle ${link.dropdown.some((item) => item.to === location.pathname) ? 'navbar__link--active' : ''} ${industriesOpen ? 'navbar__dropdown-toggle--open' : ''}`}
+                  onClick={() => setIndustriesOpen((open) => !open)}
+                >
+                  <span className="navbar__link-text" data-text={link.label}>{link.label}</span>
+                  <span className="navbar__dropdown-arrow" />
+                </button>
+                <div className={`navbar__dropdown-menu ${industriesOpen ? 'navbar__dropdown-menu--open' : ''}`}>
+                  {link.dropdown.map((item) => (
+                    <Link
+                      key={item.to}
+                      to={item.to}
+                      className={`navbar__dropdown-link ${location.pathname === item.to ? 'navbar__dropdown-link--active' : ''}`}
+                      onClick={closeMenu}
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            ) : (
+              <Link
+                key={link.to}
+                to={link.to}
+                className={`navbar__link ${location.pathname === link.to ? 'navbar__link--active' : ''}`}
+                onClick={closeMenu}
+              >
+                <span className="navbar__link-text" data-text={link.label}>{link.label}</span>
+              </Link>
+            )
           ))}
           <Link to="/contact" className="navbar__cta navbar__cta--mobile" onClick={closeMenu}>
             Contact us
