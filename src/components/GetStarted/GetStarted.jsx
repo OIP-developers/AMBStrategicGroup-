@@ -75,7 +75,7 @@ export default function GetStarted({
                 className="getstarted__dental-link"
                 onClick={(e) => e.preventDefault()}
               >
-                Book a Free Consultation
+                Book a Free Appointment
               </a>
             </div>
           ) : (

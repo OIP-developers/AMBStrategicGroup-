@@ -701,19 +701,36 @@
   animation: law-hero-spin 16s linear infinite;
 }
 
-.law-accounting-page .decor-bookcall-1 {
+/* .law-accounting-page .decor-bookcall-1 {
   width: 280px;
   height: 280px;
   opacity: 0.8;
   right: 0px;
   bottom: -130px;
+} */
+ .law-accounting-page .decor-bookcall-1 {
+  width: 280px;
+  height: 280px;
+  opacity: 0.8;
+  right: 0px;
+  position: relative;
+  bottom:auto;
 }
-.law-accounting-page .para-text-img {
+/* .law-accounting-page .para-text-img {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   margin: 82px 0 199px 0;
   position: relative;
+} */
+ .law-accounting-page .para-text-img {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 82px 0 139px 0;
+  position: relative;
+  flex-direction: column;
+  gap: 60px;
 }
 .law-accounting-page .decor-bookcall-2 {
     width: 252px;
@@ -1410,13 +1427,21 @@
   margin: 0;
 }
 
-.law-accounting-page .book-call-text p {
+/* .law-accounting-page .book-call-text p {
   max-width: 304px;
   font-size: 22px;
   line-height: 150%;
   letter-spacing: -0.22px;
   color: var(--white);
   margin:0 40px 0 0;
+} */
+.law-accounting-page .book-call-text p {
+  max-width:100%;
+  font-size: 22px;
+  line-height: 150%;
+  letter-spacing: -0.22px;
+  color: var(--white);
+  margin:0;
 }
 
 .law-accounting-page .getstarted__right {
@@ -1750,11 +1775,15 @@
 .law-accounting-page .decor-bookcall-1 {
     width: 14.583vw;
     height: 14.583vw;
-    bottom: -6.771vw;
+    /* bottom: -6.771vw; */
   }
-.law-accounting-page .para-text-img {
+  .law-accounting-page .para-text-img {
+    margin: 4.271vw 0 7.24vw 0;
+    gap: 3.125vw;
+  }
+/* .law-accounting-page .para-text-img {
     margin: 4.271vw 0 10.365vw 0;
-  }
+  } */
 .law-accounting-page .decor-bookcall-2 {
     width: 13.125vw;
     height: 13.177vw;
@@ -2045,11 +2074,15 @@
     font-size: 3.646vw;
     letter-spacing: -0.109vw;
   }
-.law-accounting-page .book-call-text p {
+/* .law-accounting-page .book-call-text p {
     max-width: 15.833vw;
     font-size: 1.146vw;
     letter-spacing: -0.011vw;
     margin:0 2.083vw 0 0;
+  } */
+  .law-accounting-page .book-call-text p {
+    font-size: 1.146vw;
+    letter-spacing: -0.011vw;
   }
 .law-accounting-page .getstarted__right {
     min-width: 15.625vw;
@@ -2563,12 +2596,12 @@
 .law-accounting-page .para-text-img {
     margin: 16px 0 20px;
   }
-.law-accounting-page .decor-bookcall-1 {
+/* .law-accounting-page .decor-bookcall-1 {
     z-index: -1;
     opacity: 0.35;
     right: -10px;
-    bottom: -30px;
-  }
+    bottom: -30px; 
+  } */
 .law-accounting-page .getstarted__right {
     min-width: 100%;
     width: 100%;
@@ -2585,11 +2618,11 @@
     font-size: 18px;
     margin-top: 24px;
   }
-.law-accounting-page .decor-bookcall-1 {
+/* .law-accounting-page .decor-bookcall-1 {
     width: 170px;
     height: 170px;
     bottom: -50px;
-  }
+  } */
 .law-accounting-page .decor-bookcall-2 {
     width: 160px;
     height: 160px;
@@ -2663,6 +2696,9 @@
     max-width: 100%;
   }
   .law-accounting-page .faq-item.open .faq-answer br {
+    display: none;
+  }
+  .law-accounting-page .para-text-img .imagebox {
     display: none;
   }
 
@@ -3014,10 +3050,10 @@
     font-size: 15px;
     margin-top: 18px;
   }
-.law-accounting-page .decor-bookcall-1 {
+/* .law-accounting-page .decor-bookcall-1 {
     width: 110px;
     height: 110px;
-  }
+  } */
 .law-accounting-page .decor-bookcall-2 {
     width: 100px;
     height: 100px;
