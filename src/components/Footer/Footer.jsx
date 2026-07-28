@@ -15,6 +15,12 @@ const navLinks = [
   { label: 'Contact Us',              to: '/contact'                 },
 ]
 
+const industryLinks = [
+  { label: 'Med Spa',          to: '/med-spa'       },
+  { label: 'Medical Dental',   to: '/medicaldental' },
+  { label: 'Law & Accounting', to: '/law-accounting' },
+]
+
 const socialIcons = [
   { label: 'Facebook',  img: facebookIcon, href: 'https://www.facebook.com/profile.php?id=61590599206805' },
   { label: 'Instagram', img: instaIcon,     href: 'https://www.instagram.com/ambstrategicgroup/' },
@@ -40,13 +46,28 @@ export default function Footer() {
                 or exploring where AI fits in your operating model — we'd be glad to talk.
               </p>
             </div>
-            <nav className="footer__nav">
-              {navLinks.map((link) => (
-                <Link key={link.label} to={link.to} className="footer__nav-link">
-                  <span className="footer__nav-link-text" data-text={link.label}>{link.label}</span>
-                </Link>
-              ))}
-            </nav>
+            <div className="footer__links">
+              <div className="footer__link-col">
+                <h4 className="footer__col-title">Quick Links</h4>
+                <nav className="footer__nav">
+                  {navLinks.map((link) => (
+                    <Link key={link.label} to={link.to} className="footer__nav-link">
+                      <span className="footer__nav-link-text" data-text={link.label}>{link.label}</span>
+                    </Link>
+                  ))}
+                </nav>
+              </div>
+              <div className="footer__link-col">
+                <h4 className="footer__col-title">Industries</h4>
+                <nav className="footer__nav">
+                  {industryLinks.map((link) => (
+                    <Link key={link.label} to={link.to} className="footer__nav-link">
+                      <span className="footer__nav-link-text" data-text={link.label}>{link.label}</span>
+                    </Link>
+                  ))}
+                </nav>
+              </div>
+            </div>
           </div>
 
           {/* Row 2: Social Icons | Contact + Location */}
