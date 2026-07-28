@@ -41,12 +41,12 @@ export default function MedSpaNavbar() {
             </a>
           ))}
           <div className="ms-navbar__cta ms-navbar__cta--mobile">
-            <MedDentalCtaButton to="book-a-call">Book a Free Consultation</MedDentalCtaButton>
+            <MedDentalCtaButton to="book-a-call">Book a Free Appointment</MedDentalCtaButton>
           </div>
         </nav>
 
         <div className="ms-navbar__cta ms-navbar__cta--desktop">
-          <MedDentalCtaButton to="book-a-call">Book a Free Consultation</MedDentalCtaButton>
+          <MedDentalCtaButton to="book-a-call">Book a Free Appointment</MedDentalCtaButton>
         </div>
 
         <button

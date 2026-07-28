@@ -352,7 +352,7 @@
   .footer__right          { gap: 5.99vw; }
   .footer__info-block     { max-width: 11.46vw; }
   .footer__info-title     { font-size: 1.35vw; line-height: 1.61vw; padding-bottom: 1.46vw; }
-  .footer__info-text      { font-size: 0.94vw; line-height: 1.15vw; }
+  .footer__info-text      { font-size: 0.94vw; line-height: 1.67vw; }
   .footer__info-text--mb      { margin-bottom: 0.52vw; }
   .footer__info-text--address { width: 10.42vw; }
   .footer__bottom         { padding: 3.13vw 0 2.60vw; }
