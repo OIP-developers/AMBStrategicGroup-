@@ -562,14 +562,17 @@
   .getstarted__contacts { flex-direction: column; gap: 20px; }
   .getstarted__form-box { height: auto; }
 
+  .footer::after      { height: 100%; }
   .footer__main       { padding: 70px 0 50px; }
   .footer__row1       { flex-direction: column; gap: 50px; margin-bottom: 50px; }
   .footer__left       { width: 100%; }
+  .footer__desc       { width: 70%; font-size: 18px; line-height: 139%; padding-top: 28px; }
   .footer__links      { gap: 100px; }
   .footer__col-title  { font-size: 22px; line-height: 24px; padding-bottom: 26px; }
   .footer__nav        { gap: 14px; }
   .footer__row2       { flex-direction: column; gap: 40px; }
-  .footer__right      { gap: 80px; }
+  .footer__right      { gap: 80px; order: 1; }
+  .footer__social     { order: 2; }
   .footer__info-block { max-width: 100%; }
   .footer__info-title { font-size: 22px; line-height: 24px; padding-bottom: 26px; }
   .footer__social-label { font-size: 16px; line-height: 21px; margin-bottom: 22px; }
@@ -845,8 +848,9 @@
   .getstarted__desc   { font-size: 15px; padding: 16px 0 30px; }
   .getstarted__contacts { gap: 16px; }
 
-  .footer__main       { padding: 60px 0 50px; }
+  .footer__main       { padding: 30px 0 30px; }
   .footer__row1       { flex-direction: column; gap: 30px; margin-bottom: 30px; }
+  .footer__desc       { width: 100%; font-size: 18px; line-height: 139%; padding-top: 28px; }
   .footer__row2       { flex-direction: column; gap: 30px; }
   .footer__links      { flex-direction: column; gap: 24px; }
   .footer__nav        { gap: 14px; }
@@ -1058,9 +1062,11 @@
   .faqs__title        { font-size: 26px; }
   .faqs__desc         { font-size: 13px; }
 
-  .footer__logo       { width: 140px; }
+  .footer__main       { padding: 30px 0 20px; }
+  .footer__logo       { width: 180px; }
   .footer__nav        { gap: 10px; }
-  .footer__info-title { font-size: 17px; }
+  .footer__info-title { font-size: 20px; padding-bottom: 10px; }
+  .footer__col-title  { font-size: 20px; padding-bottom: 11px; }
   .footer__info-text  { font-size: 14px; }
   .footer__copy       { font-size: 12px; }
 }
