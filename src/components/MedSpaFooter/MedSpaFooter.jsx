@@ -14,7 +14,9 @@ export default function MedSpaFooter() {
 
         <div className="ms-footer__top">
           <div className="ms-footer__brand">
-            <img src={logoImg} alt="AMB Strategic Group" className="ms-footer__logo" />
+            <Link to="/">
+              <img src={logoImg} alt="AMB Strategic Group" className="ms-footer__logo" />
+            </Link>
             <p className="ms-footer__tagline">Driving Business Transformation Through Strategy, Systems &amp; AI</p>
             <p className="ms-footer__location">Woman-owned · founder-led · Teaneck, New Jersey</p>
           </div>

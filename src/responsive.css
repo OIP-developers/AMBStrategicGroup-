@@ -582,6 +582,7 @@
   .about__name        { font-size: 40px; width: auto; }
   .about__boxes       { flex-wrap: wrap; gap: 20px; margin-top: 50px; }
   .about__box         { flex: none; width: 100%; }
+  .about__box-label   { width: 100%; }
   .about__btn-wrap    { margin-top: 40px; }
   .about__desc        { width: 90%; font-size: 14px; line-height: 160%; }
 

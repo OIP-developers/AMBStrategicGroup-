@@ -14,7 +14,9 @@ export default function MedDentalFooter() {
 
         <div className="md-footer__top">
           <div className="md-footer__brand">
-            <img src={logoImg} alt="AMB Strategic Group" className="md-footer__logo" />
+            <Link to="/">
+              <img src={logoImg} alt="AMB Strategic Group" className="md-footer__logo" />
+            </Link>
             <p className="md-footer__tagline">Driving Business Transformation Through Strategy, Systems &amp; AI</p>
             <p className="md-footer__location">Woman-owned · founder-led · Teaneck, New Jersey</p>
           </div>
