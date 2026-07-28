@@ -45,7 +45,7 @@
 
 .footer__left {
   flex-shrink: 0;
-  width: 64%;
+  width: 61%;
 }
 
 .footer__logo {
@@ -67,7 +67,7 @@
 /* Nav */
 .footer__links {
   display: flex;
-  gap: 80px;
+  gap: 151px;
   align-items: flex-start;
 }
 
@@ -216,7 +216,7 @@
 }
 
 .footer__info-block {
-  max-width: 220px;
+  max-width: 100%;
 }
 
 .footer__info-title {
