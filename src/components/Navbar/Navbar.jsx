@@ -55,8 +55,6 @@ export default function Navbar() {
                     <Link
                       key={item.to}
                       to={item.to}
-                      target="_blank"
-                      rel="noopener noreferrer"
                       className={`navbar__dropdown-link ${location.pathname === item.to ? 'navbar__dropdown-link--active' : ''}`}
                       onClick={closeMenu}
                     >
