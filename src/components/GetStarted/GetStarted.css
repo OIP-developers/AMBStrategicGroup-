@@ -271,6 +271,9 @@
   .getstarted__title--dental {
     font-size: 42px;
   }
+  .getstarted__dental-link {
+    letter-spacing: 0;
+  }
   .getstarted__desc--dental {
     max-width: 100%;
     margin: 0 auto;
@@ -314,7 +317,7 @@
 }
 
 @media (max-width: 481px) {
-  .getstarted__title--dental { font-size: 26px; }
+  .getstarted__title--dental { font-size: 26px; letter-spacing: 0; }
   .getstarted__title--dental br { display: none; }
   .getstarted__dental-link { font-size: 13px; }
   .getstarted--medicaldental .getstarted__card, .getstarted--medspa .getstarted__card { gap: 40px; }
