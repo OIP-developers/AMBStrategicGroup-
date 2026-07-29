@@ -1003,7 +1003,8 @@
 
   .howwecan__title    { font-size: 19px; }
 
-  .howitworks__title  { font-size: 18px; }
+  .howitworks__title  { font-size: 20px; }
+  .pkg-card           { max-width: 100%; border-radius: 16px; padding: 35px 15px 35px 15px; }
 
   .packages__title    { font-size: 22px; }
   .pkg-card__title    { font-size: 24px; }
@@ -1055,9 +1056,13 @@
 
   .getstarted__card   { flex-direction: column-reverse; padding: 0; gap: 60px; }
   .getstarted__left   { width: 100%; padding-top: 0; order: 1; }
-  .getstarted__title  { font-size: 24px; }
+  .getstarted__title  { font-size: 22px; }
   .getstarted__desc   { font-size: 13px; }
   .getstarted__form-box { height: auto; }
+  .getstarted__contacts { gap: 18px; }
+  .getstarted__contact-item { gap: 14px; }
+  .getstarted__contact-text { font-size: 13px; }
+  .hwc-card__btn      { font-size: 14px; line-height: 20px; padding: 16px 10px; }
 
   .faqs__title        { font-size: 26px; }
   .faqs__desc         { font-size: 13px; }
