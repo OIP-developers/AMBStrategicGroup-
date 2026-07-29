@@ -567,7 +567,7 @@
   .footer__row1       { flex-direction: column; gap: 50px; margin-bottom: 50px; }
   .footer__left       { width: 100%; }
   .footer__desc       { width: 70%; font-size: 18px; line-height: 139%; padding-top: 28px; }
-  .footer__links      { gap: 100px; }
+  .footer__links      { gap: 110px; }
   .footer__col-title  { font-size: 22px; line-height: 24px; padding-bottom: 26px; }
   .footer__nav        { gap: 14px; }
   .footer__row2       { flex-direction: column; gap: 40px; }
@@ -1024,7 +1024,7 @@
   .about-banner__stat-number  { font-size: 24px; }
   .about-banner__stat-label   { font-size: 12px; }
 
-  .faqs-banner__title           { font-size: 19px; }
+  .faqs-banner__title           { font-size: 22px; letter-spacing: 0; }
   .faqs-banner__desc            { font-size: 12px; }
 
   .ai-banner__title             { font-size: 19px; }
