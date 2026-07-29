@@ -44,7 +44,7 @@ export default function Pricing() {
   return (
     <section id="pricing" className="pricing">
       <img
-        src="/law-accounting/assets/boc-new-image/three-image.png"
+        src="/law-accounting/assets/boc-new-image/three-image.webp"
         alt=""
         className="decor-img decor-pricing"
       />

@@ -28,12 +28,12 @@ export default function Hero() {
       <div className="hero-visual">
         <div className="hero-visual-inner">
           <img
-            src="/law-accounting/assets/hero-gavel-scale.png"
+            src="/law-accounting/assets/hero-gavel-scale.webp"
             alt="Scales of justice and gavel"
             className="hero-visual-img"
           />
           <img
-            src="/law-accounting/assets/figma-star.png"
+            src="/law-accounting/assets/figma-star.webp"
             alt=""
             className="decor-img decor-hero-star"
           />

@@ -224,7 +224,7 @@
   border-radius: 50%;
   background: var(--gold);
   opacity: 0.5;
-  filter: blur(250px);
+  filter: blur(100px);
   pointer-events: none;
   z-index: 0;
 }
@@ -1602,7 +1602,7 @@
 @media(min-width:991px){
 
 .law-accounting-page .glow {
-    filter: blur(13.021vw);
+    filter: blur(5.2083vw);
   }
 .law-accounting-page .glow-1 {
     width: 20.833vw;

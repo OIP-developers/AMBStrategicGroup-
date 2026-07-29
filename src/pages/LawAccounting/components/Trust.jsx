@@ -17,7 +17,7 @@ export default function Trust() {
   return (
     <section id="trust" className="trust">
       <img
-        src="/law-accounting/assets/figma-star.png"
+        src="/law-accounting/assets/figma-star.webp"
         alt=""
         className="decor-img decor-star-a"
       />

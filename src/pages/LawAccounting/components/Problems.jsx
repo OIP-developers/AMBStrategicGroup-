@@ -27,10 +27,10 @@ export default function Problems() {
   return (
     <section id="problems" className="problems">
       <div className="imagebefor">
-        <img src="/law-accounting/assets/boc-new-image/one-imag.png" alt="" className="decor-img decor-gavel-1" />
+        <img src="/law-accounting/assets/boc-new-image/one-imag.webp" alt="" className="decor-img decor-gavel-1" />
       </div>
       <img
-        src="/law-accounting/assets/boc-new-image/two-imag.png"
+        src="/law-accounting/assets/boc-new-image/two-imag.webp"
         alt=""
         className="decor-img decor-star-problems"
       />

@@ -33,12 +33,12 @@ export default function Faq() {
       <div className="glow glow-faq-1" />
       <div className="glow glow-faq-2" />
       <img
-        src="/law-accounting/assets/boc-new-image/four-right.png"
+        src="/law-accounting/assets/boc-new-image/four-right.webp"
         alt=""
         className="decor-img decor-star-c"
       />
       <img
-        src="/law-accounting/assets/boc-new-image/five-left.png"
+        src="/law-accounting/assets/boc-new-image/five-left.webp"
         alt=""
         className="decor-img decor-star-faq-2"
       />

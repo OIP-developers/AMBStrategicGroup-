@@ -25,7 +25,7 @@ export default function BookCall() {
                 pressure, no jargon.
               </p>
             <div className="imagebox">
-              <img src="/law-accounting/assets/figma-star-group.png" alt="" className="decor-img decor-bookcall-1"
+              <img src="/law-accounting/assets/figma-star-group.webp" alt="" className="decor-img decor-bookcall-1"
               />
             </div>
           </div>
