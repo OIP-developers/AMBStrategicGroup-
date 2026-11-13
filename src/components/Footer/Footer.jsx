@@ -22,8 +22,8 @@ const industryLinks = [
 ]
 
 const socialIcons = [
-  { label: 'Facebook',  img: facebookIcon, href: 'https://www.facebook.com/profile.php?id=61590599206805' },
-  { label: 'Instagram', img: instaIcon,     href: 'https://www.instagram.com/ambstrategicgroup/' },
+  { label: 'Facebook',  img: facebookIcon, href: 'https://www.facebook.com/profile.php?id=61595962223387' },
+  { label: 'Instagram', img: instaIcon,     href: 'https://www.instagram.com/amb_strategicgroup/' },
   // { label: 'LinkedIn',  img: linkedIcon,    href: 'https://www.linkedin.com/company/amb-strategic-group/?viewAsMember=true' },
   // { label: 'X',         img: xIcon,         href: 'https://www.x.com'               },
 ]
